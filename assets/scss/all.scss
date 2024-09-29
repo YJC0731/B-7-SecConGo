@@ -1,5 +1,5 @@
-@import './layout/header.scss';
-@import './layout/footer.scss';
-
-
-@import './pages/index.scss';
+@import "bootstrap/scss/functions";
+@import "./helpers/variables";
+@import "bootstrap/scss/bootstrap";
+$utilities: map-merge( $utilities, ( "font-size": map-merge( map-get($utilities, "font-size"), ( responsive: true), ), ));
+@import "bootstrap/scss/utilities/api";
