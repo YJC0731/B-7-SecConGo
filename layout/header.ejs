@@ -25,7 +25,16 @@
                         </ul>
                         <!-- 右側選單 -->
                         <div class="d-flex align-items-center">
-                            <a href="#" class="me-6"><img src="../assets/images/icon/search.png" alt="search"></a>
+                            <a href="#" class="me-6" id="searchButton"><img src="../assets/images/icon/search.png" alt="search"></a>
+                            <!-- 放大鏡的搜尋框 -->
+                            <div id="searchBox" class="collapse position-relative">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="搜尋">
+                                    <span class="input-group-text">
+                                    <button type="button" id="closeSearchBox" class="btn-close"></button>
+                                </span>
+                                </div>
+                            </div>
                             <!-- 購物車 Dropdown -->
                             <div class="dropdown">
                                 <a href="#" class="me-8" id="cartDropdown" data-bs-toggle="dropdown" aria-expanded="false">
