@@ -1,37 +1,148 @@
 <header>
     <div class="header">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg ">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="../assets/images/logo.png" alt="logo">
-                    </a>
+                    <!-- logo -->
+                    <a class="navbar-brand" href="../pages/index.html"><img src="../assets/images/logo.png" alt="logo"></a>
+                    <!-- 漢堡選單按鈕 -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- 中間選單 -->
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto ">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">關於我們</a>
+                                <a class="nav-link text-neutral-800 " aria-current="page" href="#">關於我們</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#123">活動議程</a>
+                                <a class="nav-link text-neutral-800" href="#">活動議程</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#123">售票資訊</a>
+                                <a class="nav-link text-neutral-800" href="#">售票資訊</a>
                             </li>
+
                         </ul>
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#123">Link</a>
-                            </li>
-                        </ul>
+                        <!-- 右側選單 -->
+                        <div class="d-flex align-items-center">
+                            <a href="#" class="me-6"><img src="../assets/images/icon/search.png" alt="search"></a>
+                            <!-- 購物車 Dropdown -->
+                            <div class="dropdown">
+                                <a href="#" class="me-8" id="cartDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="../assets/images/icon/shopping-bag.png" alt="shopping-bag">
+                                </a>
+                                <!-- Dropdown 購物車內容 -->
+                                <div class="dropdown-menu dropdown-menu-end p-4" aria-labelledby="cartDropdown" style="width: 300px;">
+                                    <div class="d-flex align-items-center">
+                                        <img src="../assets/images/icon/shopping-bag.png" alt="cart">
+                                        <h5>購物車</h5>
+                                        <img src="../assets/images/icon/cancel.png" alt="cancel" class="ms-auto">
+                                    </div>
+                                    <hr>
+                                    <div class="cart-item">
+                                        <p><strong>【國際組織票 Full Pass】</strong></p>
+                                        <p>張數: 1</p>
+                                        <p>單價: NT$2,400</p>
+                                    </div>
+                                    <div class="cart-item">
+                                        <p><strong>【國際組織票 day1】</strong></p>
+                                        <p>張數: 2</p>
+                                        <p>單價: NT$1,200</p>
+                                    </div>
+                                    <hr>
+                                    <p>總數: 3</p>
+                                    <p>金額: NT$4,800</p>
+                                    <button class="btn btn-danger w-100" style="background-color: #FF5A5F;">結帳</button>
+                                </div>
+                            </div>
+                            <img src="../assets/images/Ellipse 60.png" alt="login" class="me-8" data-bs-toggle="modal" data-bs-target="#loginModal">
+                            <div class="btn-group btn-language-toggle" role="group" aria-label="Language toggle">
+                                <button type="button" class="btn btn-language btn-secondary-500 text-white ">中文</button>
+                                <button type="button" class="btn btn-language btn-outline-secondary-500 text-neutral-700 flex-grow-1">EN</button>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </nav>
         </div>
     </div>
 </header>
+<!-- 登入 Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header border-0 pb-0">
+                <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- 標籤區塊（登入與註冊） -->
+                <ul class="nav nav-tabs justify-content-center mb-6 border-bottom-0" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" aria-controls="login" aria-selected="true">登入</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="register-tab" data-bs-toggle="tab" data-bs-target="#register" type="button" role="tab" aria-controls="register" aria-selected="false">註冊</button>
+                    </li>
+                </ul>
+
+                <!-- Tab 內容區塊 -->
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                        <form>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="請輸入">
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <label for="password" class="form-label">密碼</label>
+                                    <a href="#" class="text-end" style="color: #FF5A5F;">忘記密碼？</a>
+                                </div>
+                                <div class="input-group">
+                                    <input type="password" class="form-control" id="password" placeholder="請輸入">
+                                    <span class="input-group-text">
+        <img src="../assets/images/icon/eye.png" alt="eye">
+    </span>
+                                </div>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input type="checkbox" class="form-check-input" id="rememberMe">
+                                <label class="form-check-label" for="rememberMe">記住帳密</label>
+                            </div>
+                            <button type="submit" class="btn btn-danger w-100" style="background-color: #FF5A5F;">登入</button>
+                        </form>
+                    </div>
+                    <!-- 註冊區塊 -->
+                    <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+                        <!-- 在此處放置註冊表單內容 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Offcanvas 購物車內容 -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+    <div class="offcanvas-header">
+        <h5 id="cartOffcanvasLabel">購物車</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <!-- 購物車內容 -->
+        <div class="cart-item">
+            <p><strong>【國際組織票 Full Pass】</strong></p>
+            <p>張數: 1</p>
+            <p>單價: NT$2,400</p>
+        </div>
+        <div class="cart-item">
+            <p><strong>【國際組織票 day1】</strong></p>
+            <p>張數: 2</p>
+            <p>單價: NT$1,200</p>
+        </div>
+        <hr>
+        <p>總數: 3</p>
+        <p>金額: NT$4,800</p>
+        <button class="btn btn-danger w-100" style="background-color: #FF5A5F;">結帳</button>
+    </div>
+</div>
