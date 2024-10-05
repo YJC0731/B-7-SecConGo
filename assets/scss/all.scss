@@ -3,3 +3,104 @@
 @import "bootstrap/scss/bootstrap";
 $utilities: map-merge( $utilities, ( "font-size": map-merge( map-get($utilities, "font-size"), ( responsive: true), ), ));
 @import "bootstrap/scss/utilities/api";
+// 使每個 slide 的圖片居中並具備動畫效果
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.swiper-slide img {
+    height: 680px;
+    // width: 1240px;
+    transition: transform 0.3s ease;
+    filter: brightness(0.5);
+    /* 預設較黯淡的顏色 */
+}
+
+.swiper-slide-active img {
+    transform: scaleX(1.2);
+    /* 中間圖片放大 */
+    filter: brightness(1);
+}
+
+.swiper-slide-next img,
+.swiper-slide-prev img {
+    transform: scaleX(0.8);
+    /* 左右圖片縮小 */
+    filter: brightness(0.2);
+    /* 左右圖片較黯淡 */
+}
+
+
+/* 設定所有分頁點默認為圓形 */
+
+.swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    /* 保持圓形 */
+    background-color: $neutral-500;
+    opacity: 0.5;
+    transition: width 0.3s, height 0.3s, background-color 0.3s, opacity 0.3s;
+}
+
+
+/* 當前活動的分頁點變為橢圓形 */
+
+.swiper-pagination-bullet-active {
+    width: 40px;
+    /* 橢圓形寬度 */
+    height: 16px;
+    /* 橢圓形高度 */
+    border-radius: 40px;
+    /* 橢圓形效果 */
+    background-color: $secondary-500;
+    opacity: 1;
+    /* 活動的分頁點完全不透明 */
+}
+
+.swiper {
+    position: relative;
+}
+
+
+/* 將分頁點容器置中 */
+
+.swiper-pagination {
+    position: absolute;
+    bottom: 24px;
+    /* 距離底部的距離 */
+    left: 50%;
+    /* 水平居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* 分頁點之間的距離 */
+}
+
+// navbar文字間隔
+.navbar {
+    .nav-item {
+        .nav-link {
+            margin-right: 72px;
+        }
+        &:last-child {
+            .nav-link {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+// 中文/EN 按鈕設計
+.btn-language-toggle {
+    width: 128px;
+    height: 40px;
+}
+
+.btn-language {
+    flex: 1;
+}
