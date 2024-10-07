@@ -1,4 +1,23 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+// navbar文字間隔
+.navbar {
+    .nav-item {
+        .nav-link {
+            margin-right: 72px;
+        }
+        &:last-child {
+            .nav-link {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+// 中文/EN 按鈕設計
+.btn-language-toggle {
+    width: 128px;
+    height: 40px;
+}
+
+.btn-language {
+    flex: 1;
 }

@@ -1,3 +1,61 @@
-.index-title {
-  font-size: 100px;
+// about區域開始
+.about {
+    padding: 120px 0;
+    .about-intro {
+        .about-intro-title {
+            margin-top: 54px;
+            .about-background-text {
+                font-size: 72px;
+                font-weight: 400;
+                color: $neutral-200;
+                bottom: 16px;
+                left: 0;
+                z-index: -1;
+            }
+            h1 {
+                z-index: 1;
+            }
+        }
+    }
+    .about-img {
+        margin-top: 72px;
+    }
+}
+
+// information開始
+.information {
+    padding: 120px 0;
+    .card-btn {
+        right: 13px; // 距離右側13px
+        bottom: 13px; // 距離底部13px
+        padding: 4px;
+        .btn {
+            z-index: 1; // 保證按鈕在偽元素之上
+            overflow: hidden; // 防止偽元素溢出按鈕範圍
+            display: inline-block;
+            // 透過偽元素來製作背景區塊
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba(255, 102, 0, 0.8); // 預設背景顏色
+                z-index: -1; // 背景置於按鈕下方
+                transition: all 0.3s ease; // 背景區塊的動畫效果
+                border-radius: 8px; // 圓角
+                opacity: 0; // 預設透明
+            }
+            // hover 效果
+            &:hover::before {
+                opacity: 1; // 當 hover 到按鈕時，背景區塊顯示
+            }
+        }
+    }
+}
+
+// chairperson開始
+.chairperson {
+    padding: 120px 0;
 }
