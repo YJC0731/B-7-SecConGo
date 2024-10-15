@@ -1,5 +1,15 @@
+/* 導入字體：先英文後中文，最後放通用字型*/
+
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Noto+Sans+TC:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+body {
+    font-family: "Holtwood One SC", serif, "Noto Sans TC", sans-serif;
+    /* 引入主要字體與通用字體*/
+    line-height: 1.5;
+}
+
 img {
-    display: block;
+    vertical-align: middle;
     max-width: 100%;
     height: auto;
 }
