@@ -1,6 +1,6 @@
 .swiper-slide {
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
     width: 600px; // 減少每個 slide 的寬度，避免中間圖片過大
     max-width: 1240px;
@@ -54,11 +54,10 @@
 .swiper-wrapper {
     display: flex;
     gap: -20px; // 減少間距為 0
-    justify-content: center; // 中間圖片居中，左右圖片對齊
+    // justify-content: center; // 中間圖片居中，左右圖片對齊
 }
 
 .swiper {
-    width: 100vw; // 滿版寬度
     overflow: hidden;
 }
 
