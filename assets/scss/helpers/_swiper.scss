@@ -1,41 +1,74 @@
-// 使每個 slide 的圖片居中並具備動畫效果
 .swiper-slide {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: transform 0.3s ease;
+    width: 600px; // 減少每個 slide 的寬度，避免中間圖片過大
+    max-width: 1240px;
+    overflow: hidden;
 }
 
 .swiper-slide img {
+    width: 120%; // 寬度略大於100%，確保部分顯示
     height: 680px;
-    // width: 1240px;
-    transition: transform 0.3s ease;
+    object-fit: cover; // 裁切圖片保持比例
+    object-position: center; // 默認顯示圖片的中心
+    transition: transform 0.5s ease-in-out, object-position 0.5s ease-in-out;
     filter: brightness(0.5);
-    /* 預設較黯淡的顏色 */
 }
 
+
+/* 中間圖片的顯示：放大並完全顯示 */
+
 .swiper-slide-active img {
-    transform: scaleX(1.2);
-    /* 中間圖片放大 */
+    transform: translateX(0%) scale(1.1); // 輕微放大中間圖片，避免過度突出
+    object-position: center; // 中間圖片顯示整張圖片
     filter: brightness(1);
 }
 
+
+/* 左右圖片顯示部分內容，並且保持縮小狀態 */
+
 .swiper-slide-next img,
 .swiper-slide-prev img {
-    transform: scaleX(0.8);
-    /* 左右圖片縮小 */
-    filter: brightness(0.2);
-    /* 左右圖片較黯淡 */
+    transform: scale(0.9); // 縮小左右圖片
+    filter: brightness(0.3);
 }
 
 
-/* 設定所有分頁點默認為圓形 */
+/* 左邊圖片顯示右半部分 */
+
+.swiper-slide-prev img {
+    object-position: right; // 顯示圖片的右半部分
+}
+
+
+/* 右邊圖片顯示左半部分 */
+
+.swiper-slide-next img {
+    object-position: left; // 顯示圖片的左半部分
+}
+
+
+/* 控制 slide 間的間距 */
+
+.swiper-wrapper {
+    display: flex;
+    gap: -20px; // 減少間距為 0
+    justify-content: center; // 中間圖片居中，左右圖片對齊
+}
+
+.swiper {
+    width: 100vw; // 滿版寬度
+    overflow: hidden;
+}
+
+
+/* 調整分頁點的樣式 */
 
 .swiper-pagination-bullet {
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    /* 保持圓形 */
     background-color: $neutral-500;
     opacity: 0.5;
     transition: width 0.3s, height 0.3s, background-color 0.3s, opacity 0.3s;
@@ -46,32 +79,8 @@
 
 .swiper-pagination-bullet-active {
     width: 40px;
-    /* 橢圓形寬度 */
     height: 16px;
-    /* 橢圓形高度 */
     border-radius: 40px;
-    /* 橢圓形效果 */
     background-color: $secondary-500;
     opacity: 1;
-    /* 活動的分頁點完全不透明 */
-}
-
-.swiper {
-    position: relative;
-}
-
-
-/* 將分頁點容器置中 */
-
-.swiper-pagination {
-    position: absolute;
-    bottom: 24px;
-    /* 距離底部的距離 */
-    left: 50%;
-    /* 水平居中 */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    /* 分頁點之間的距離 */
 }

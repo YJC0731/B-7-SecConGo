@@ -1,12 +1,12 @@
 import './assets/scss/all.scss';
 
-console.log("Hello world!");
+// banner swiper
 const swiper = new Swiper('.mySwiper', {
-    slidesPerView: 3, // 顯示三個 slide
-    spaceBetween: 10, // Slide 之間的距離
+    slidesPerView: 'auto', // 自動根據 CSS 的寬度調整
+    spaceBetween: -20, // Slide 之間的距離
     centeredSlides: true, // 中心對齊
     loop: true, // 循環播放
-    freeMode: false, // 自由模式
+    freeMode: true, // 自由模式
     pagination: {
         el: '.swiper-pagination', // 分頁點容器
         clickable: true, // 允許點擊分頁點
@@ -16,7 +16,37 @@ const swiper = new Swiper('.mySwiper', {
         disableOnInteraction: false,
     },
 });
+// co-chair swiper
+document.addEventListener('DOMContentLoaded', function() {
+    // 初始化 Banner 區域的 Swiper
+    var bannerSwiper = new Swiper('.mySwiper', {
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
 
+    // 初始化 Co-Chair 區域的 Swiper
+    var coChairSwiper = new Swiper('.coChairSwiper', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+});
 // 搜尋框
 document.getElementById('searchButton').addEventListener('click', function() {
     let searchBox = document.getElementById('searchBox');
