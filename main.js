@@ -47,6 +47,10 @@ document.addEventListener('DOMContentLoaded', function() {
         },
     });
 });
+// 登入頁面跳轉
+document.getElementById('login-tab').addEventListener('click', function() {
+    window.location.href = 'memberOrder.html'; // 這裡替換為你想跳轉的頁面 URL
+});
 // 搜尋框
 document.getElementById('searchButton').addEventListener('click', function() {
     let searchBox = document.getElementById('searchBox');
