@@ -1,0 +1,79 @@
+// font
+
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Noto+Sans+TC:wght@100..900&display=swap');
+
+// base
+
+body{
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+
+// utilities
+
+.lh-one-half {
+  line-height: 1.5;
+}
+
+.display-inline-block{
+  display: inline-block;
+}
+
+.mt-20 {
+  margin-top: 80px;
+}
+
+.mb-4 {
+  margin-bottom: 16px;
+}
+
+.mb-6 {
+  margin-bottom: 24px;
+}
+
+.mr-2{
+  margin-right: 8px;
+}
+
+
+
+
+// pages
+
+.banner {
+  height: 680px;
+  background: url(/assets/images/banner7.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card-img-top {
+  width: 160px;
+  margin: 0 auto;
+}
+
+.price-text {
+  display: inline-block;
+}
+
+.check-list{
+  list-style: none;
+  padding: 16px 0 0 24px;
+}
+
+.check {
+  width: 16px;
+  display: inline-block;
+}
+
+// .w-208{
+//   width: 208px;
+//   margin: 0 auto;
+// }
+
+.w-279{
+  width: 279px;
+  margin: 0 auto;
+}
+
+
