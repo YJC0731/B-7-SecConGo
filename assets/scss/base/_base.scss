@@ -10,6 +10,14 @@ ul {
     list-style-type: none;
 }
 
+a {
+    display: inline-block;
+    text-decoration: none;
+    /* 文字下底線做清除*/
+    color: inherit;
+    /* 顏色給為黑色*/
+}
+
 img {
     vertical-align: middle;
     max-width: 100%;
