@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <%- include('./layout/header'); -%>
+
+
+
+    <div class="container d-flex"><!--最外層div-->
+        <div class="list "><!--放左側的順序表-->
+            <a href="#">活動議程表</a>
+            <a href="#">講師陣容</a>
+            <a href="#">講師徵稿</a>
+            
+        </div> 
+        <div><!--3個表個表單的div-->
+            <div>
+                <div class="form pb-11 pt-11 pr-8 pl-8"><!--活動議程表的div-->
+                    <h2 class="mb-6">活動議程表</h2>
+                    <div class="form-title-detail mb-6">
+                    <span >本活動需購票入場（ <a class="event-agenda-a" href="#">線上購票</a> ）</span>
+                    <span class="d-block">若有任何疑問，歡迎與我們聯繫： SecConGo@server.org</span>
+                    </div>
+                    <div class="event-seat mb-6 "><!--abc廳-->
+                        <ul class="d-flex justify-content-center">
+                            <li class="mr-6"><a href="#infoABC">ABC 廳(上午場)</a></li>
+                            <li class="mr-6"><a href="#infoA">A 廳(下午場)</a></li>
+                            <li class="mr-6"><a href="#infoB">B 廳(下午場)</a></li>
+                            <li><a href="#infoC">C 廳(下午場)</a></li>
+                        </ul>
+                    </div>
+                    
+
+                    
+                    <div class="info-display" id="infoABC"><!--活動議程表行程表div-->
+                        <table class="event-schedule">
+                            <tr class="event-schedule-border">
+                                <th class="event-schedule-title-time">時間</th>
+                                <th>議程</th>
+                            </tr>
+                            <tr class="event-schedule-border">
+                                <td class="event-schedule-time">09:30 ~ 09:40</td>
+                                <td class="event-schedule-issue">Opening 開幕致詞<span>(08:30 開始報到)</span></td>
+                            </tr>
+                            <tr class="event-schedule-border">
+                                <td class="event-schedule-time">09:40 ~ 10:20</td>
+                                <td>
+                                    <a class="event-schedule-issue" href="#">Zero Trust Architecture: Redefining Security in a Borderless World</a>
+                                    <div>
+                                        <a class="event-schedule-speaker" href="#">James  Oconnor</a>
+                                        <span class="f-color-86">Global Security | Cybersecurity Strategist</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="event-schedule-border">
+                                <td class="event-schedule-time">10:20 ~ 11:00</td>
+                                <td>
+                                    <a class="event-schedule-issue" href="#">Cybersecurity Compliance in a Global Regulatory Environment</a>
+                                    <div>
+                                        <a class="event-schedule-speaker" href="#">Olivia Martinez</a>
+                                        <span class="f-color-86">CyberSec Innovations | Chief Security Architect</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="event-schedule-border bg-f8">
+                                <td class="event-schedule-time">11:00 ~ 11:10</td>
+                                <td class="fz-5 f-color-5B">Tea Break 中場休息</td>
+                            </tr>
+                            <tr class="event-schedule-border">
+                                <td class="event-schedule-time">11:10 ~ 11:50</td>
+                                <td>
+                                    <a class="event-schedule-issue" href="#">社交工程攻擊的預防與應對策略</a>
+                                    <div>
+                                        <a class="event-schedule-speaker" href="#">王智勇 (Zhi-Yong Wang)</a>
+                                        <span class="f-color-86">CyberTech Solution Ltd. | 資訊安全分析師</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="bg-f8">
+                                <td class="event-schedule-time">12:00 ~ 13:00</td>
+                                <td class="fz-5 f-color-5B">Lunch 午餐<span class="fz-4 pl-2">(Full Pass / Speaker)</span></td>
+                            </tr>
+                        </table>
+
+                    </div>
+                    
+                    <div class="info-display" id="infoA"><!--活動議程表行程表div-->
+                        <table class="event-schedule ">
+                            <tr class="event-schedule-border">
+                                <th class="event-schedule-title-time">時間</th>
+                                <th>議程</th>
+                            </tr>
+                            <tr class="event-schedule-border">
+                                <td class="event-schedule-time">13:10 ~ 13:50</td>
+                                <td>
+                                    <a class="event-schedule-issue" href="#">應對分散式拒絕服務攻擊 ( DDOS ) 的新策略</a>
+                                    <div>
+                                        <a class="event-schedule-speaker" href="#">田中一郎 ( Ichiro Tanaka )</a>
+                                        <span class="f-color-86">日本資訊安全公司 ( Nihon InfoSec Co., Ltd. )｜技術協理</span>
+                                    </div>
+                                </td>
+                                
+                            </tr>
+                            <tr class="event-schedule-border">
+                                <td class="event-schedule-time">13:50 ~ 14:30</td>
+                                <td>
+                                    <a class="event-schedule-issue" href="#">Advanced Persistent Threats (APTs): Detection and Mitigation Strategies</a>
+                                    <div>
+                                        <a class="event-schedule-speaker" href="#">Michael Davis</a>
+                                        <span class="f-color-86">Global CyberDefend｜Director of Cybersecurity Operations</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="event-schedule-border bg-f8">
+                                <td class="event-schedule-time">14:30 ~ 15:00</td>
+                                <td class="fz-5 f-color-5B">Tea Break 中場休息</td>
+                            </tr>
+                            <tr class="event-schedule-border">
+                                <td class="event-schedule-time">15:00 ~ 15:40</td>
+                                <td>
+                                    <a class="event-schedule-issue" href="#">人為因素在資訊安全中的作用與風險管理</a>
+                                    <div>
+                                        <a class="event-schedule-speaker" href="#">李佳穎 ( Chia-Ying Lee )</a>
+                                        <span class="f-color-86">智慧資安股份有限公司｜資安顧問 (Cybersecurity Consultant)</span>
+                                    </div>
+                                </td>
+                            </tr>
+                           
+                            <tr class="event-schedule-border">
+                                <td class="event-schedule-time">15:40 ~ 16:20</td>
+                                <td>
+                                    <a class="event-schedule-issue" href="#">Cybersecurity in the Age of Remote Work: New Threats and Solutions</a>
+                                    <div>
+                                        <a class="event-schedule-speaker" href="#">Sarah Anderson</a>
+                                        <span class="f-color-86">SecureTech Solutions｜Chief Information Security Officer (CISO)</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="bg-f8">
+                                <td class="event-schedule-time">16:30 ~ 16:50</td>
+                                <td class="fz-5 f-color-5B">Close Remark / Lucky Draw ( B廳 )</td>
+                            </tr>
+                        </table>
+
+                    </div>
+
+                    <div class="info-display" id="infoB"><!--活動議程表行程表div-->
+                        <table class="event-schedule ">
+                            <tr class="event-schedule-border">
+                                <th class="event-schedule-title-time">時間</th>
+                                <th>議程</th>
+                            </tr>
+                            <tr class="event-schedule-border">
+                                <td class="event-schedule-time">13:10 ~ 13:50</td>
+                                <td>
+                                    <a class="event-schedule-issue" href="#">網絡安全演習:從演練到實戰</a>
+                                    <div>
+                                        <a class="event-schedule-speaker" href="#">李明華 ( Ming-Hua Li )</a>
+                                        <span class="f-color-86">National Tsing Hua University｜資訊安全助理教授</span>
+                                    </div>
+                                </td>
+                                
+                            </tr>
+                            <tr class="event-schedule-border">
+                                <td class="event-schedule-time">13:50 ~ 14:30</td>
+                                <td>
+                                    <a class="event-schedule-issue" href="#">人工智能與機器學習在程式安全中的應用</a>
+                                    <div>
+                                        <a class="event-schedule-speaker" href="#">John Lee</a>
+                                        <span class="f-color-86">資安科技股份有限公司 ( CyberTech Solutions Ltd. )｜資深資訊安全工程師</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="event-schedule-border bg-f8">
+                                <td class="event-schedule-time">14:30 ~ 15:00</td>
+                                <td class="fz-5 f-color-5B">Tea Break 中場休息</td>
+                            </tr>
+                            <tr class="event-schedule-border">
+                                <td class="event-schedule-time">15:00 ~ 15:40</td>
+                                <td>
+                                    <a class="event-schedule-issue" href="#">Securing the Internet of Things (IoT): Best Practices and Challenges</a>
+                                    <div>
+                                        <a class="event-schedule-speaker" href="#">Carlos Alvarez</a>
+                                        <span class="f-color-86">Seguridad Global｜Chief Security Officer (CSO)</span>
+                                    </div>
+                                </td>
+                            </tr>
+                           
+                            <tr class="event-schedule-border">
+                                <td class="event-schedule-time">15:40 ~ 16:20</td>
+                                <td>
+                                    <a class="event-schedule-issue" href="#">DevSecOps : 將安全性融入軟體開發生命周期</a>
+                                    <div>
+                                        <a class="event-schedule-speaker" href="#">林文彬 (Wen-Bin Lin)</a>
+                                        <span class="f-color-86">台灣資安公司｜資安工程師 (Security Engineer)</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="bg-f8">
+                                <td class="event-schedule-time">16:30 ~ 16:50</td>
+                                <td class="fz-5 f-color-5B">Close Remark / Lucky Draw ( B廳 )</td>
+                            </tr>
+                        </table>
+
+                    </div>
+
+
+                    <div class="info-display" id="infoC"><!--活動議程表行程表div-->
+                        <table class="event-schedule ">
+                            <tr class="event-schedule-border">
+                                <th class="event-schedule-title-time">時間</th>
+                                <th>議程</th>
+                            </tr>
+                            <tr class="event-schedule-border">
+                                <td class="event-schedule-time">13:10 ~ 13:50</td>
+                                <td>
+                                    <a class="event-schedule-issue" href="#">建立抗量子計算的加密體系</a>
+                                    <div>
+                                        <a class="event-schedule-speaker" href="#">陳偉明 ( Wei-Ming Chen )</a>
+                                        <span class="f-color-86">Taiwan Cybersecurity Research Institute｜資訊安全研究員</span>
+                                    </div>
+                                </td>
+                                
+                            </tr>
+                            <tr class="event-schedule-border">
+                                <td class="event-schedule-time">13:50 ~ 14:30</td>
+                                <td>
+                                    <a class="event-schedule-issue" href="#">物聯網設備的安全挑戰與最佳實踐</a>
+                                    <div>
+                                        <a class="event-schedule-speaker" href="#">Emily Zhang</a>
+                                        <span class="f-color-86">China Cyber Solutions｜Chief Technology Officer ( CTO )</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="event-schedule-border bg-f8">
+                                <td class="event-schedule-time">14:30 ~ 15:00</td>
+                                <td class="fz-5 f-color-5B">Tea Break 中場休息</td>
+                            </tr>
+                            <tr class="event-schedule-border">
+                                <td class="event-schedule-time">15:00 ~ 15:40</td>
+                                <td>
+                                    <a class="event-schedule-issue" href="#">數據隱私與合規挑戰:全球視角</a>
+                                    <div>
+                                        <a class="event-schedule-speaker" href="#">王淑惠 (Shu-Hui Wang)</a>
+                                        <span class="f-color-86">National Taiwan University of Science and Technology｜資訊安全講師 ( Cybersecurity Lecturer )</span>
+                                    </div>
+                                </td>
+                            </tr>
+                           
+                            <tr class="event-schedule-border">
+                                <td class="event-schedule-time">15:40 ~ 16:20</td>
+                                <td>
+                                    <a class="event-schedule-issue" href="#">Fortifying National Cyber Defense: A Strategic Approach to Information Security</a>
+                                    <div>
+                                        <a class="event-schedule-speaker" href="#">Sophie Dubois</a>
+                                        <span class="f-color-86">CyberDefence France｜Director of Information Security</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="bg-f8">
+                                <td class="event-schedule-time">16:30 ~ 16:50</td>
+                                <td class="fz-5 f-color-5B">Close Remark / Lucky Draw ( B廳 )</td>
+                            </tr>
+                        </table>
+
+                    </div>
+                    
+
+
+                </div>
+            </div>
+            <div> <!--講師陣容div-->
+
+            </div>
+
+
+            <div class="speaker-contri mt-6"><!--講師徵稿div-->
+                <div class="bg-f pt-8 pb-8 pr-8 pl-8">
+                    <div class="mb-6">
+                        <div class="bg-f d-flex justify-content-between align-item-center"><!--title-->
+                            <div>
+                                <h2>2024 講師徵稿</h2>
+                                <span class="d-block fz-5 f-color-86">Call for Speaker Application Form</span>
+                            </div>
+                            <div class="speaker-contri-btn"><!--按鈕-->
+                        
+                                <button class="pt-2 pb-2 pr-4 pl-4" type="button" >登入/註冊以投稿</button>
+                            </div>
+                        </div>
+                        <div class="mt-6 ">
+                            <p class="f-color-5B">資咖購 SecConGo 會議活動將於 10 月 20 日在台北舉辦，促進國際資安技術發展與學術交流，現公開徵求議程講師。<br>若您有意願分享資安領域的議題，歡迎提出申請，議程委員會將在 9 月 12 日前回覆您。</p>
+                        </div>
+                    </div>
+                    <div class="speaker-contri-seek pt-6 pb-6 pl-6">
+                        <div class=" mb-6">
+                            <span class="d-block f-color-5B">根據本年度大會主軸，我們徵求演講主題如下：</span>
+                            <div class="pt-2">
+                                <ul>
+                                    <li>雲端資安 <span class="fz-4">(Cloud Security)</span></li>
+                                    <li>智慧應用安全 <span class="fz-4">(Smart Application Security)</span></li>
+                                    <li>欺敵防禦技術 <span class="fz-4">(Deception Defense Technology)</span></li>
+                                    <li>零信任架構 <span class="fz-4">(Zero Trust Architecture)</span></li>
+                                    <li>應用程式安全 <span class="fz-4">(Application Security)</span></li>
+                                    <li>資安事件分析技術 <span class="fz-4">(Information Security lnsident Analysis Technology)</span></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="f-color-5B">
+                            <span class="d-block pb-2">徵求講者議程要求：</span>
+                            <span>                              專題演講 40 分鐘 (含開場及 Q&A )，需符合上述議題。  
+                            </span>
+                        </div>
+                    </div>
+                    <div class="speaker-contri-agree mt-6">
+                        <span class="d-block">
+                            資咖購 SecConGo 得將本人因參加本次活動所提供之個人資料，提供予主辦單位進行蒐集、處理及利用。本人亦同意台灣數位安全聯盟得寄發各類活動、課程及產品行銷有關之 eDM 或與商品或服務有關之訊息或行銷宣傳品至本人參加本活動過程中所填寫的聯絡地址及電子郵件信箱外，亦得以其認為適當之方式以電話或其他通訊方式提供各類活動、課程及產品行銷相關訊息予本人。
+                        </span>
+                        <span class="d-block">
+                            聯絡窗口 (Contact)：<a href="#"> SecConGo＠server.org</a>
+                        </span>
+                    </div>
+                    
+                    <div class="speaker-info">
+                        <div><!--聯絡人資料-->
+                            <div class="d-flex speaker-info-title-border">
+                                <div class="speaker-info-title pb-2">
+                                   <span class="d-block pr-6">聯絡人資料</span>
+                                </div>
+                                <div>
+                                    <span class="d-block f-color-primary">* 為必填欄位</span>
+
+                                </div>
+                            </div>
+                            <form action="#">
+                                <label class="f-color-86" for="name">姓名 | Full Name <span class="f-color-primary">*</span></label>
+                                <br>
+                                <input class="speaker-info-enter-box" type="text" id="name" placeholder="請輸入">
+
+
+
+
+
+                            </form>
+
+
+
+
+
+
+
+
+
+                        </div>
+                        <div><!--投稿資料-->
+
+
+
+
+
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div> 
+        
+
+    </div>
+    
+
+     
+
+
+
+   
+    
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+</body>
+</html>
