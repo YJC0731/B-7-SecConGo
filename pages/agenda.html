@@ -2,14 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>agenda</title>
     
 </head>
 <body>
     <%- include('./layout/header'); -%>
-
-
 
     <div class="container d-flex"><!--最外層div-->
         <div class="list "><!--放左側的順序表-->
@@ -338,9 +337,56 @@
                                 </div>
                             </div>
                             <form action="#">
-                                <label class="f-color-86" for="name">姓名 | Full Name <span class="f-color-primary">*</span></label>
-                                <br>
-                                <input class="speaker-info-enter-box" type="text" id="name" placeholder="請輸入">
+                                <div>
+                                    <div class="d-flex pt-6">    
+                                        <div class="pr-6">
+                                            <label class="f-color-86" for="name">姓名 | Full Name <span class="f-color-primary">*</span></label>
+                                            <br>
+                                            <input class="speaker-info-enter-box" type="text" id="name" placeholder="請輸入">
+                                        </div>
+
+                                        <div>
+                                            <label class="f-color-86" for="public-name">公開姓名 | Public Name<span class="f-color-primary">*</span></label>
+                                            <br>
+                                            <input class="speaker-info-enter-box" type="text" id="public-name" placeholder="請輸入">
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex pt-6">    
+                                        <div class="pr-6">
+                                            <label class="f-color-86" for="email">電子郵件 | E-mail<span class="f-color-primary">*</span></label>
+                                            <br>
+                                            <input class="speaker-info-enter-box" type="text" id="email" placeholder="請輸入">
+                                        </div>
+
+                                        <div>
+                                            <label class="f-color-86" for="tel">聯絡電話 | Mobile or Telephone Number<span class="f-color-primary">*</span></label>
+                                            <br>
+                                            <input class="speaker-info-enter-box" type="text" id="tel" placeholder="請輸入">
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex pt-6">    
+                                        <div class="pr-6">
+                                            <label class="f-color-86" for="company">公司/組織名稱 | Company or Organization Name<span class="f-color-primary">*</span></label>
+                                            <br>
+                                            <input class="speaker-info-enter-box" type="text" id="company" placeholder="請輸入">
+                                        </div>
+
+                                        <div>
+                                            <label class="f-color-86" for="job">職稱 | Job Title<span class="f-color-primary">*</span></label>
+                                            <br>
+                                            <input class="speaker-info-enter-box" type="text" id="job" placeholder="請輸入">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="speaker-info-enter-bio pt-6">
+                                    <label class="f-color-86" for="biography">自我介紹 | Speaker Biography<span class="f-color-primary">*</span></label>
+                                    <br>
+                                    <textarea class="speaker-info-enter-bio-box" name="biography" id="biography" placeholder="請輸入"></textarea>
+                                </div>
+
 
 
 
@@ -416,6 +462,10 @@
         
 
     </div>
+
+
+
+    
     
 
      
