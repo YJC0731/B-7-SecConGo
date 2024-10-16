@@ -1,354 +1,407 @@
-*,*::before,*::after{
-    box-sizing:border-box;
-}
-img{
-    height:auto;
-    max-width:100%;
-    vertical-align:middle;
-}
-a{
-    text-decoration: none;
-    color:inherit;
-    display:inline-block;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-body{
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+body {
     line-height: 1.5;
     font-family: "Noto Sans TC", sans-serif;
-    background: #F8F8F8;
+    // background: #F8F8F8;
 }
 
-.container{
+.container {
     width: 1296px;
     margin: 0 auto;
-    
 }
-
-
-
-
 
 
 /*------------表單*/
-.list{
+
+.list {
     padding-top: 120px;
     padding-right: 72px;
 }
-.list a{
-    display:block;
+
+.list a {
+    display: block;
     margin-bottom: 64px;
     font-size: 20px;
     font-weight: 700;
     color: #868686;
-    
 }
-.list a:hover{
-    color: #FB9700;
 
+.list a:hover {
+    color: #FB9700;
 }
-.form{
+
+.form {
     text-align: center;
     background: #FFFFFF;
 }
 
-h2{
+h2 {
     color: #064162;
     font-weight: 700;
     font-size: 40px;
 }
-.d-block{
+
+.d-block {
     display: block;
 }
-.form-title-detail{
+
+.form-title-detail {
     color: #5B5B5B;
 }
-.event-agenda-a{
+
+.event-agenda-a {
     color: #F16C5D;
     text-decoration: underline;
     /*再找bs5連結，底線偏移*/
 }
-.event-seat{
+
+.event-seat {
     color: #868686;
     font-size: 20px;
     font-weight: 400;
     display: inline-block;
     border-bottom: 1px solid #E4E4E4;
-}  
+}
 
-.event-seat li a{
+.event-seat li a {
     text-decoration: none;
     padding-bottom: 4px;
-    line-height: 1.5; 
+    line-height: 1.5;
     /*border-bottom: 3px solid transparent;*/
     /*滑過畫面會跳動，加上面那行空出空間，當hover時，畫面就不會跳動*/
 }
 
-.event-seat li a:hover{
+.event-seat li a:hover {
     color: #F16C5D;
     font-weight: bold;
     box-shadow: 0px -3px #F16C5D inset;
     /*border-bottom: 3px solid #F16C5D;  */
 }
 
-.event-schedule{
+.event-schedule {
     width: 996px;
-    text-align:center;
-   line-height: 1.5;
-   
+    text-align: center;
+    line-height: 1.5;
 }
-.event-schedule td a{
-    display: block;
-    text-decoration:underline;
 
-}  
-.event-schedule td,th{
-    
-    vertical-align:middle;
-    padding: 12px 0px;
-    
+.event-schedule td a {
+    display: block;
+    text-decoration: underline;
 }
-.event-schedule-time{
+
+.event-schedule td,
+th {
+    vertical-align: middle;
+    padding: 12px 0px;
+}
+
+.event-schedule-time {
     color: #2c2c2c;
     border-right: 1px solid #E4E4E4;
 }
-.event-schedule-title-time{
+
+.event-schedule-title-time {
     border-right: 1px solid #E4E4E4;
     width: 220px;
 }
 
-.event-schedule th{
+.event-schedule th {
     color: #5B5B5B;
     background: #F0F0F0;
 }
 
-.event-schedule-border{
+.event-schedule-border {
     border-bottom: 1px solid #E4E4E4;
-    
 }
-.event-schedule-issue{
+
+.event-schedule-issue {
     font-size: 20px;
     color: #5B5B5B;
     font-weight: 700;
     margin-bottom: 16px;
 }
 
-.event-schedule-issue span{
+.event-schedule-issue span {
     font-size: 16px;
     font-weight: normal;
     padding-left: 8px;
 }
-.event-schedule-speaker{
+
+.event-schedule-speaker {
     color: #868686;
     font-weight: 700;
     margin-bottom: 4px;
 }
-.info-display{ /* 隱藏目標資訊 */
+
+.info-display {
+    /* 隱藏目標資訊 */
     display: none;
 }
+
 .info-display:target {
-    display: block; /* 顯示目標資訊 */
+    display: block;
+    /* 顯示目標資訊 */
 }
-.speaker-contri button{
+
+.speaker-contri button {
     color: #ffffff;
     background-color: #F16C5D;
     border-radius: 8px;
     border: none;
-    cursor:pointer;
+    cursor: pointer;
 }
-.speaker-contri button:hover{
-    
 
+.speaker-contri button:hover {}
 
-}
-.speaker-contri-seek li{
+.speaker-contri-seek li {
     list-style: disc;
     color: #F16C5D;
     font-size: 20px;
 }
-.speaker-contri-seek ul li::marker{ /*可以更改ul li的點點大小或顏色*/
-    font-size: 12px;
 
+.speaker-contri-seek ul li::marker {
+    /*可以更改ul li的點點大小或顏色*/
+    font-size: 12px;
 }
-.speaker-contri-seek ul{
+
+.speaker-contri-seek ul {
     padding-left: 20px;
 }
-.speaker-contri-seek{
+
+.speaker-contri-seek {
     border: 2px solid #e4e4e4;
     border-radius: 12px;
-
 }
-.speaker-contri-agree{
+
+.speaker-contri-agree {
     width: 996px;
     letter-spacing: 0.1px;
     color: #868686;
 }
-.speaker-contri-agree a{
+
+.speaker-contri-agree a {
     color: #3D8BB7;
-    text-decoration:underline;
+    text-decoration: underline;
 }
-.speaker-info{
+
+.speaker-info {
     width: 996px;
     background-color: #f8f8f8;
 }
-.speaker-info-title{
+
+.speaker-info-title {
     font-size: 20px;
     font-weight: 700;
-    color: #5b5b5b;            
+    color: #5b5b5b;
 }
-.speaker-info-title-border{
-    border-bottom: 1px solid #D1D1D1;
 
+.speaker-info-title-border {
+    border-bottom: 1px solid #D1D1D1;
 }
-.speaker-info-enter-box{
+
+.speaker-info-enter-box {
     width: 462px;
-    border: 1px solid #e0e0e0; 
-    border-radius: 8px; 
-    height: 46px;  
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    height: 46px;
     font-size: 20px;
     padding: 8px 12px;
 }
-.speaker-info-enter-bio-box{
+
+.speaker-info-enter-bio-box {
     width: 948px;
-    border: 1px solid #e0e0e0; 
-    border-radius: 8px; 
-    height: 190px;  
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    height: 190px;
     font-size: 20px;
     padding: 8px 12px;
 }
-.speaker-info-enter-bio textarea{
+
+.speaker-info-enter-bio textarea {
     resize: none;
 }
- 
+
 input::-webkit-input-placeholder {
     /* placeholder颜色 */
     color: #a1a1a1;
     /* placeholder字体大小 */
-   
-    
 }
 
 
 /*utilities*/
 
-.d-flex{
-    display:flex;
-    
+.d-flex {
+    display: flex;
 }
-.justify-content-between{
-    justify-content:space-between;
+
+.justify-content-between {
+    justify-content: space-between;
 }
-.justify-content-center{
+
+.justify-content-center {
     justify-content: center;
 }
-.align-item-center{
+
+.align-item-center {
     align-items: center;
 }
+
+
 /*.text-align-center{
     text-align: center;
 }*/
 
 
 /*顏色*/
-.bg-f8{
+
+.bg-f8 {
     background-color: #f8f8f8;
 }
-.bg-f{
+
+.bg-f {
     background-color: #fff;
 }
-.f-color-5B{
+
+.f-color-5B {
     color: #5B5B5B;
 }
-.f-color-86{
-    color:#868686;
-}
-.f-color-primary{
-    color:#F16C5D;
+
+.f-color-86 {
+    color: #868686;
 }
 
-
+.f-color-primary {
+    color: #F16C5D;
+}
 
 
 /*字大小*/
-.fz-4{
+
+.fz-4 {
     font-size: 16px;
 }
-.fz-5{
+
+.fz-5 {
     font-size: 20px;
 }
 
+
 /*m、p值*/
-.mb-6{
+
+.mb-6 {
     margin-bottom: 24px;
 }
-.mt-6{
+
+.mt-6 {
     margin-top: 24px;
 }
-.mb-11{
+
+.mb-11 {
     margin-bottom: 80px;
 }
-.pb-11{
+
+.pb-11 {
     padding-bottom: 80px;
 }
-.pt-11{
-   padding-top: 80px; 
+
+.pt-11 {
+    padding-top: 80px;
 }
-.mt-11{
+
+.mt-11 {
     margin-top: 80px;
 }
-.mr-8{
+
+.mr-8 {
     margin-right: 40px;
 }
-.ml-8{
+
+.ml-8 {
     margin-left: 40px;
 }
-.mb-8{
+
+.mb-8 {
     margin-bottom: 40px;
 }
-.mt-8{
+
+.mt-8 {
     margin-top: 40px;
 }
-.mr-6{
+
+.mr-6 {
     margin-right: 24px;
 }
-.pl-2{
+
+.pl-2 {
     padding-left: 8px;
 }
-.pr-6{
+
+.pr-6 {
     padding-right: 24px;
 }
-.pl-6{
+
+.pl-6 {
     padding-left: 24px;
 }
-.pb-6{
+
+.pb-6 {
     padding-bottom: 24px;
 }
-.pt-6{
+
+.pt-6 {
     padding-top: 24px;
 }
-.pt-2{
+
+.pt-2 {
     padding-top: 8px;
 }
-.pb-2{
+
+.pb-2 {
     padding-bottom: 8px;
 }
-.pr-4{
+
+.pr-4 {
     padding-right: 16px;
 }
-.pl-4{
+
+.pl-4 {
     padding-left: 16px;
 }
-.pt-8{
+
+.pt-8 {
     padding-top: 40px;
 }
-.pb-8{
+
+.pb-8 {
     padding-bottom: 40px;
 }
-.pr-8{
+
+.pr-8 {
     padding-right: 40px;
 }
-.pl-8{
+
+.pl-8 {
     padding-left: 40px;
 }
+
+
 /*th td padding值 
 .pt-3{
     padding-top: 12px;
@@ -357,6 +410,8 @@ input::-webkit-input-placeholder {
     padding-bottom: 12px;
 }
 */
+
+
 /**{
     outline: 1px solid black;
 }*/
