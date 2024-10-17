@@ -127,6 +127,14 @@ body{
   border: 0;
 }
 
+.card-footer a:hover{
+  transform: scale(1.1);
+}
+
 .border-btn{
   border: 1px solid #F16C5D;
+}
+
+.note-list{
+  list-style: initial;
 }
