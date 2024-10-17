@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>memberOrder</title>
+  <script type="module" crossorigin src="/B-7-SecConGo/assets/main-7f9a828c.js"></script>
+  <link rel="stylesheet" href="/B-7-SecConGo/assets/main-6f94f348.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg ">
+                    <div class="container-fluid">
+                        <!-- logo -->
+                        <a class="navbar-brand " href="../pages/index.html"><img src="/B-7-SecConGo/assets/logo-67f8a7f0.png" alt="logo"></a>
+                        <!-- 漢堡選單按鈕 -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                        <!-- 中間選單 -->
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto ">
+                                <li class="nav-item">
+                                    <a class="nav-link text-neutral-800 px-0" aria-current="page" href="#">關於我們</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-neutral-800 px-0" href="#">活動議程</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-neutral-800 px-0" href="#">售票資訊</a>
+                                </li>
+
+                            </ul>
+                            <!-- 右側選單 -->
+                            <div class="d-flex align-items-center">
+                                <a href="#" class="me-6" id="searchButton"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGJSURBVHgB7VRNboJAFB7AA3CD2r0xdtdlPUG3RE1aT6A9QesJqrvutAkQlt5AjmAIB2DZJdsm/PT7UkyRwgCy9Useb5h57/uYN28Q4ooaKFULhmE8aJr2qijKKE1THT6EP8I+bdveiS4C0+l0C/csyVtblvUiGkAtIX8nOb8Ytorj+BZkCj3mSRrCltlH1OJsB5PJhMRbkidJMkYpjsUExIywfsBQh+jYcRxXNN0BEp/oUedVGTnBecRtOOYZiRoUSzTiA1+2lyVFUbTLx7cR0PnAtgNZUm5dFy0FeICs840sCS3cz8e3ETjVfS5L6vV6j9lQWsp/AmzLzC/YLWUJ2fwbx2iGjaiBln/xPC8YDofs93uIGIPB4Bv25ft+yLJgbaGq6gdvNmLYyhuuyQRKb/JsNluDZFGZ9PvboEiQ3YWgKlYtmzRNcwkCnoNLshMpbA8bo03vSA7r4y4ccofebAdNQFKSU0RIdnKxQFORTgJNRFTRESQjqfg7k7O/bGeBgogLPxdXtMEPX3u/++bLwRwAAAAASUVORK5CYII=" alt="search"></a>
+                                <!-- 放大鏡的搜尋框 -->
+                                <div id="searchBox" class="collapse position-relative">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="搜尋">
+                                        <span class="input-group-text">
+                                    <button type="button" id="closeSearchBox" class="btn-close"></button>
+                                </span>
+                                    </div>
+                                </div>
+                                <!-- 購物車 Dropdown -->
+                                <div class="dropdown">
+                                    <a href="#" class="me-8 d-flex align-items-center" id="cartDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADzSURBVHgB7VTBDYMwDAwl/OkGsAHdoGMg8ai6QbsB3YANKh5IPBmhG3SFjJAPT5ReqiBFgSpJUR9UnGRELrbPNsKErB2Bi1Oe50kYhvcgCDIhRAzqMQzDuW1btlhAJqeUPlViHRwiB5vIjlggK1fJ677v90iayndYLO9s8VYB4CgfSFx2XcdlxVEUXdRdZguejKgoihNmXc2MxAYGK5umqXVyroPyi+QSCawySfrBkaCSd3foSOjnESavzpPCXL7BIlAHH+bJ+wlgBKkPb+LnI9oENoEVCMz9aBwWj7vGE8wkJh1gk16J4xrQgRXPEXsjf4cXFhdaHwgU/TEAAAAASUVORK5CYII=" alt="shopping-bag">
+                                    </a>
+                                    <!-- Dropdown 購物車內容 -->
+                                    <div class="dropdown-menu dropdown-menu-end p-4" aria-labelledby="cartDropdown" style="width: 300px;">
+                                        <div class="d-flex align-items-center">
+                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADzSURBVHgB7VTBDYMwDAwl/OkGsAHdoGMg8ai6QbsB3YANKh5IPBmhG3SFjJAPT5ReqiBFgSpJUR9UnGRELrbPNsKErB2Bi1Oe50kYhvcgCDIhRAzqMQzDuW1btlhAJqeUPlViHRwiB5vIjlggK1fJ677v90iayndYLO9s8VYB4CgfSFx2XcdlxVEUXdRdZguejKgoihNmXc2MxAYGK5umqXVyroPyi+QSCawySfrBkaCSd3foSOjnESavzpPCXL7BIlAHH+bJ+wlgBKkPb+LnI9oENoEVCMz9aBwWj7vGE8wkJh1gk16J4xrQgRXPEXsjf4cXFhdaHwgU/TEAAAAASUVORK5CYII=" alt="cart">
+                                            <h5>購物車</h5>
+                                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIpSURBVHgB3VVNTjJBEO0ZPlZs/E7wjQcg8J3A4QSyJEAinkA9gXHnTjwB4wJCwgZPMOMNMBzA2bpjw4IQwPe02hQtM/4kLrSTmc5Uv3qvqqurx5ifPry8xXq9vlcqlTqbzebA87wqTIEspbBNMN8OBoPoSwLNZrPj+/4ViPZM/qDYRZaQv8vYarWuEHFPyBPMx6vVar/f73t88P2fNq7hCYilj/lIBgI8hdNsvV6fvbcFzBRY+jCYLgI4yxQQcE/IayCfmA8M+FXhE1OEmemgPCf6B0yBBTUajaBQKPSwPcfD4TDVWHfNBoelWbFY3I+iaEacr6M3L6cksRGQAFOIOSahQx7LGjFGfBJmsVgsOhb7RwV1yBeiv7EGRidEgYjURDiWYFJiLJ6+yCLkg8/uVgZyzs1yuXzdd6YOApKmVsQhr+mtQ90S4apYmz6mdDKj0WirsK5IFrnFai5X4FuGFkj5QrH/aYAqaCAYPoFbePGtaq4tAblbOGpZ5NwWtyaOSFW47t8IoDB3Mh9ZmxzBV3Lu8Y7C9xSH9R2/EUBzRJjYHCEa7hkoRzBxC6pEEntMpY9CCmd2su5GpPmpqwI3b8zL0b0qCho4nU4nlUrlLyOBUKNcLj/SlkfObEE+FPJrkF/q9Z3/g3a73QX4RD55Xd+wAW2PsLAgDWXPQ9qE/NTlyv3hgODcqKbZNd671nN/mVYI0R4iwq1fJognsN3N5/NoPB7PzK8dT3wVaGnzw3cGAAAAAElFTkSuQmCC" alt="cancel" class="ms-auto">
+                                        </div>
+                                        <hr>
+                                        <div class="cart-item">
+                                            <p><strong>【國際組織票 Full Pass】</strong></p>
+                                            <p>張數: 1</p>
+                                            <p>單價: NT$2,400</p>
+                                        </div>
+                                        <div class="cart-item">
+                                            <p><strong>【國際組織票 day1】</strong></p>
+                                            <p>張數: 2</p>
+                                            <p>單價: NT$1,200</p>
+                                        </div>
+                                        <hr>
+                                        <p>總數: 3</p>
+                                        <p>金額: NT$4,800</p>
+                                        <button class="btn btn-danger w-100" style="background-color: #FF5A5F;">結帳</button>
+                                    </div>
+                                </div>
+                                <img src="/B-7-SecConGo/assets/Ellipse 60-d043257e.png" alt="login" class="me-8" data-bs-toggle="modal" data-bs-target="#loginModal">
+                                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16" data-bs-toggle="modal" data-bs-target="#loginModal">
+                                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                                </svg> -->
+                                <div class="btn-group btn-language-toggle" role="group" aria-label="Language toggle">
+                                    <button type="button" class="btn btn-language btn-secondary-500 text-white ">中文</button>
+                                    <button type="button" class="btn btn-language btn-outline-secondary-500 text-neutral-700 flex-grow-1">EN</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- 登入 Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 標籤區塊（登入與註冊） -->
+                    <ul class="nav nav-tabs justify-content-center mb-6 border-bottom-0" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" aria-controls="login" aria-selected="true">登入</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="register-tab" data-bs-toggle="tab" data-bs-target="#register" type="button" role="tab" aria-controls="register" aria-selected="false">註冊</button>
+                        </li>
+                    </ul>
+
+                    <!-- Tab 內容區塊 -->
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="請輸入">
+                                </div>
+                                <div class="mb-3">
+                                    <div class="d-flex justify-content-between">
+                                        <label for="password" class="form-label">密碼</label>
+                                        <a href="#" class="text-end" style="color: #FF5A5F;">忘記密碼？</a>
+                                    </div>
+                                    <div class="input-group">
+                                        <input type="password" class="form-control" id="password" placeholder="請輸入">
+                                        <span class="input-group-text">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAINSURBVHgB7VQ7UgJBEJ3hm643wBvgDYATaGbmegLdEChgtyggVE+AnkBTE5YbSGjmhoam/H0Pu60RV6VMTOyqrenu6e3u96ZnjPmXvxa7a2AYhl4+ny+tVitvuVwmsJNd/rM/JS0Wi2fr9boCs7K1nVhrx9PpNPqu2JcFut3uYTabHUL1xPXCpLKWHb9BobBer0c7F+j3+xdYzsUcg5II3wSdvmhMr9crIzFjTmgD5WQ+nx9to/lUYDAYDBHsS6dRo9G4FEQVIGLnZjab3WkixJewxPiHa4K9A7eRzFbyjibHWtXk9CN5DJXILgqFwhN93AM1LFQFGq4l7A1TEQCyj6ChwD1oNpsT7RD20ybY2mvoVmkBbdVWqzV24h7M29kE2tw7gkwm0xE10ORS7FCTo9tT/OjDvKFPKVMkKHgqZieVol0FxdZpfjTpTtxGcqosFosAHd2yOugaKwpOD/xE4oMGReVz5WHr/3LYPEPuv49sVpU4jh9rtdoeuqvgO4Z+PxqNnuFPoFv6zdv8l6VI1G6375zkm0kilaAxSqUIXXOuya+HwAfch3Pxh7D3oQb8eLj0cY/ja5wxxc0OPtBpUgQUMaEeVMJukfDajWHiXC53onRBJqCs6t6BLwtIEZ+TJZ0ZoWVzLihOn+f4rwT9J/nxNZX7cWaEe0d4GW/wPFz+6rHblt8+1//y9/IKlGYwRgx6Zk8AAAAASUVORK5CYII=" alt="eye">
+    </span>
+                                    </div>
+                                </div>
+                                <div class="form-check mb-3">
+                                    <input type="checkbox" class="form-check-input" id="rememberMe">
+                                    <label class="form-check-label" for="rememberMe">記住帳密</label>
+                                </div>
+                                <button type="submit" class="btn btn-danger w-100" style="background-color: #FF5A5F;">登入</button>
+                            </form>
+                        </div>
+                        <!-- 註冊區塊 -->
+                        <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+                            <!-- 在此處放置註冊表單內容 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Offcanvas 購物車內容 -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 id="cartOffcanvasLabel">購物車</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <!-- 購物車內容 -->
+            <div class="cart-item">
+                <p><strong>【國際組織票 Full Pass】</strong></p>
+                <p>張數: 1</p>
+                <p>單價: NT$2,400</p>
+            </div>
+            <div class="cart-item">
+                <p><strong>【國際組織票 day1】</strong></p>
+                <p>張數: 2</p>
+                <p>單價: NT$1,200</p>
+            </div>
+            <hr>
+            <p>總數: 3</p>
+            <p>金額: NT$4,800</p>
+            <button class="btn btn-danger w-100" style="background-color: #FF5A5F;">結帳</button>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!--Main區塊-->
+    <main class="main bg-neutral-100">
+        <!--member-options 選單區塊-->
+        <Section class="member-options">
+            <div class="container">
+                <!--container:1320px 置中-->
+                <div class="member-row">
+                    <!--與內容器的column做定位-->
+                    <div class="member-col border-neutral-300">
+                        <!--容器-->
+                        <ul class="contect options-deco d-flex ">
+                            <!--內容-->
+                            <li class="mr-6 "><a href="#" title="account">帳號密碼設定</a></li>
+                            <li class="mr-6 "><a href="#" title="myOrder">我的訂單</a></li>
+                            <li><a href="#" title="myPost">我的稿件</a></li>
+                        </ul>
+                    </div>
+                    <h1 class="myorder-title text-primary-500 fs-1 mt-6 mb-6">個人訂單資料</h1>
+                </div>
+            </div>
+        </Section>
+
+        <!--memberOrder Info選單區塊-->
+        <Section class="order-info">
+            <div class="container">
+                <!--container:1296px 置中-->
+                <div class="order-info-row">
+                    <!--與內容器的column做定位-->
+                    <div class="order-info-col">
+                        <!--容器-->
+                        <div class="contect info-list">
+                            <!--內容-->
+                            <ul class="d-flex pb-10">
+                                <li class="info-item-deco mr-6">
+                                    <p class="info-item-title">訂單編號</p>
+                                    <p class="info-item-context">#2024082101</p>
+                                    <li class="info-item-deco mr-6">
+                                        <p class="info-item-title">訂單狀態</p>
+                                        <p class="info-item-context">已完成付款</p>
+                                    </li>
+                                    <li class="info-item-deco mr-6">
+                                        <p class="info-item-title">票券類型</p>
+                                        <p class="info-item-context">電子票券</p>
+                                    </li>
+                                    <li class="info-item-deco mr-6">
+                                        <p class="info-item-title">票券數量</p>
+                                        <p class="info-item-context">1</p>
+                                    </li>
+                                    <li class="info-item-deco">
+                                        <p class="info-item-title">訂單金額</p>
+                                        <p class="info-item-context">NT$2,400</p>
+                                    </li>
+                            </ul>
+                        </div>
+        </Section>
+
+        <div class="container">
+            <!--container:1296px 置中-->
+            <div class="info-con-col d-flex align-items-center">
+                <!--容器-->
+                <div class="contect info-con d-flex ">
+                    <!--內容-->
+                    <img src="./img/banner1-pc.png" alt="ConVision" class="Con-Vision-pic">
+                </div>
+                <div class="info-con-desc">
+                    <p class="fs-4 mb-4">資咖購 SecConGo TW 2024</p>
+                    <p class="fs-5 mb-2">開始時間：2024/10/20 (日) 09：00</p>
+                    <p class="fs-5 mb-2">活動地點：台北文創大樓 6 樓 (110 台北市信義區菸廠路 88 號)</p>
+                    <p class="fs-5 ">主辦單位：資咖購 SecConGo</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <!--container:1296px 置中-->
+            <div class="info-conbtn-row">
+                <!--與內容器的column做定位-->
+                <div class="info-conbtn-col text-center">
+                    <!--容器-->
+                    <div class="contect">
+                        <!--內容-->
+                        <p class="info-conbtn">
+                            <a class="btn-primary" href="#" ait="">查看詳細資訊 
+                  <img src="./img/icon/arrow-up-wh.png" alt="訂單資訊展開">
+                </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <!--container:1296px 置中-->
+                <div class="info-finaldesc-row">
+                    <!--與內容器的column做定位-->
+                    <div class="info-finaldesc-col">
+                        <!--容器-->
+                        <div class="info-finaldesc-contect d-flex">
+                            <!--內容-->
+                            <img src="./img/icon/check-circle-blue.png" alt="checkicon" class="info-final-pic">
+                            <p class="info-finaldesc-title fs-4">恭喜您已完成訂單</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <!--container:1296px 置中-->
+                <div class="info-desctable-row">
+                    <!--與內容器的column做定位-->
+                    <div class="info-desctable-col">
+                        <!--容器-->
+                        <div class="contect d-flex">
+                            <!--內容-->
+                            <ul class="info-desctable d-flex">
+                                <li class="info-desctable-headthrow1 fs-6">商品</li>
+                                <li class="info-desctable-headthrow2 fs-6">優惠</li>
+                                <li class="info-desctable-headthrow2 fs-6">單價</li>
+                                <li class="info-desctable-headthrow2 fs-6">數量</li>
+                                <li class="info-desctable-headthrow2 fs-6">小計</li>
+                            </ul>
+                        </div>
+
+                        <ul class="info-desc-tabletext d-flex align-items-center">
+                            <li class="desctable d-flex align-items-center">
+                                <img src="./img/ticket icon-4.png" alt="ticketicon" class="info-desctable-pic">
+                                <p class="info-desctable-title fs-5">國際組織票 Full Pass</p>
+                            </li>
+                            <li class="info-desctable-text fs-5 ">-</li>
+                            <li class="price-deco">
+                                <h5 class="info-desctable-text fs-5">NT$2,400</h5>
+                                <h6 class="info-desctable-price fs-6">NT5,000</h6>
+                            </li>
+                            <li class="info-desctable-text fs-5 ">1</li>
+                            <li class="info-desctable-text fs-5 ">NT$2,400</li>
+                        </ul>
+                        <h4 class="info-desctable-pricetitle fs-4">合計：NT$2,400</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="order-info-row">
+                <div class="order-info-col">
+                    <div class="content">
+                        <div class="order-info d-flex align-items-center">
+                            <p class="order-info-title ">訂單資訊</p>
+                            <a class="btn-order" href="#">修改訂單</a>
+                            <a class="btn-order" href="#">取消訂單</a>
+                        </div>
+
+                        <ul class="order-des">
+                            <li class="order-desc-title fs-6 mb-2">姓名 | Full Name</li>
+                            <li class="order-desc-text fs-5">王小明</li>
+                            <ul class="order-des">
+                                <li class="order-desc-title fs-6 mb-2">電子郵件| E-mail</li>
+                                <li class="order-desc-text fs-5">SecConGo1122334@server.org</li>
+                                <ul class="order-des">
+                                    <li class="order-desc-title fs-6 mb-2">聯絡電話 | Mobile or Telephone Number</li>
+                                    <li class="order-desc-text fs-5">0912-345-678</li>
+                                </ul>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        </div>
+        </Section>
+
+
+
+    </main>
+
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        
+</body>
+
+</html>

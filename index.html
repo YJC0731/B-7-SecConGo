@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-hant">
 
 <head>
     <meta charset="UTF-8" />
@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <title>index</title>
-  <script type="module" crossorigin src="/B-7-SecConGo/assets/main-f1f8782f.js"></script>
-  <link rel="stylesheet" href="/B-7-SecConGo/assets/main-dcab2ddf.css">
+  <script type="module" crossorigin src="/B-7-SecConGo/assets/main-7f9a828c.js"></script>
+  <link rel="stylesheet" href="/B-7-SecConGo/assets/main-6f94f348.css">
 </head>
 
 <body>
@@ -52,7 +52,7 @@
                             </div>
                             <!-- 購物車 Dropdown -->
                             <div class="dropdown">
-                                <a href="#" class="me-8" id="cartDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a href="#" class="me-8 d-flex align-items-center" id="cartDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADzSURBVHgB7VTBDYMwDAwl/OkGsAHdoGMg8ai6QbsB3YANKh5IPBmhG3SFjJAPT5ReqiBFgSpJUR9UnGRELrbPNsKErB2Bi1Oe50kYhvcgCDIhRAzqMQzDuW1btlhAJqeUPlViHRwiB5vIjlggK1fJ677v90iayndYLO9s8VYB4CgfSFx2XcdlxVEUXdRdZguejKgoihNmXc2MxAYGK5umqXVyroPyi+QSCawySfrBkaCSd3foSOjnESavzpPCXL7BIlAHH+bJ+wlgBKkPb+LnI9oENoEVCMz9aBwWj7vGE8wkJh1gk16J4xrQgRXPEXsjf4cXFhdaHwgU/TEAAAAASUVORK5CYII=" alt="shopping-bag">
                                 </a>
                                 <!-- Dropdown 購物車內容 -->
@@ -79,7 +79,11 @@
                                     <button class="btn btn-danger w-100" style="background-color: #FF5A5F;">結帳</button>
                                 </div>
                             </div>
-                            <img src="/B-7-SecConGo/assets/Ellipse 60-d043257e.png" alt="login" class="me-8" data-bs-toggle="modal" data-bs-target="#loginModal">
+                            <!-- <img src="../assets/images/Ellipse 60.png" alt="login" class="me-8" data-bs-toggle="modal" data-bs-target="#loginModal"> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16" data-bs-toggle="modal" data-bs-target="#loginModal">
+                                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                                </svg>
                             <div class="btn-group btn-language-toggle" role="group" aria-label="Language toggle">
                                 <button type="button" class="btn btn-language btn-secondary-500 text-white ">中文</button>
                                 <button type="button" class="btn btn-language btn-outline-secondary-500 text-neutral-700 flex-grow-1">EN</button>
@@ -171,19 +175,17 @@
     </div>
 </div>        <main>
             <section class="banner">
-                <div class="container">
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="/B-7-SecConGo/assets/banner1-pc-ca98bc4c.png" alt="Slide 1"></div>
-                            <div class="swiper-slide"><img src="/B-7-SecConGo/assets/banner2-pc-2145a422.png" alt="Slide 2"></div>
-                            <div class="swiper-slide"><img src="/B-7-SecConGo/assets/banner3-pc-98680c8a.png" alt="Slide 3"></div>
-                            <div class="swiper-slide"><img src="/B-7-SecConGo/assets/banner5-pc-d995989e.png" alt="Slide 3"></div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="/B-7-SecConGo/assets/banner1-pc-ca98bc4c.png" alt="Slide 1"></div>
+                        <div class="swiper-slide"><img src="/B-7-SecConGo/assets/banner2-pc-2145a422.png" alt="Slide 2"></div>
+                        <div class="swiper-slide"><img src="/B-7-SecConGo/assets/banner3-pc-98680c8a.png" alt="Slide 3"></div>
+                        <div class="swiper-slide"><img src="/B-7-SecConGo/assets/banner5-pc-d995989e.png" alt="Slide 3"></div>
+                        <div class="swiper-slide"><img src="/B-7-SecConGo/assets/banner6-pc-125e1c61.png" alt="Slide 3"></div>
 
-                        </div>
-                        <!-- 分頁點的容器 -->
-                        <div class="swiper-pagination"></div>
                     </div>
-
+                    <!-- 分頁點的容器 -->
+                    <div class="swiper-pagination"></div>
                 </div>
             </section>
             <section class="about">
@@ -303,10 +305,78 @@
                     </div>
                 </div>
             </section>
+            <section class="co-chair">
+                <div class="container">
+                    <div class="swiper coChairSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card text-center">
+                                    <img src="/B-7-SecConGo/assets/Co-Chair-1-3c476a87.png" class="card-img-top" alt="Emily Laurent">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Emily Laurent</h5>
+                                        <p class="card-text">歐洲資安領袖主席</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card text-center">
+                                    <img src="/B-7-SecConGo/assets/Co-Chair-2-78c9bd17.png" class="card-img-top" alt="David Chen">
+                                    <div class="card-body">
+                                        <h5 class="card-title">David Chen</h5>
+                                        <p class="card-text">亞洲資安峰會主席</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card text-center">
+                                    <img src="/B-7-SecConGo/assets/Co-Chair-3-b103c1bb.png" class="card-img-top" alt="Catherine Dupont">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Catherine Dupont</h5>
+                                        <p class="card-text">全球女性資安策略峰會主席</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card text-center">
+                                    <img src="/B-7-SecConGo/assets/Co-Chair-4-af8149e5.png" class="card-img-top" alt="Catherine Dupont">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Catherine Dupont</h5>
+                                        <p class="card-text">全球女性資安策略峰會主席</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card text-center">
+                                    <img src="/B-7-SecConGo/assets/Co-Chair-5-71004863.png" class="card-img-top" alt="Catherine Dupont">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Catherine Dupont</h5>
+                                        <p class="card-text">全球女性資安策略峰會主席</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card text-center">
+                                    <img src="/B-7-SecConGo/assets/Co-Chair-6-ef94cb77.png" class="card-img-top" alt="Catherine Dupont">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Catherine Dupont</h5>
+                                        <p class="card-text">全球女性資安策略峰會主席</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 分頁點 -->
+                        <div class="swiper-pagination"></div>
+                        <!-- 導航按鈕 -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+
+            </section>
         </main>
-                    <!-- JavaScript Bundle with Popper -->
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
             
 </body>
 
