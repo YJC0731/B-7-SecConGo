@@ -1,3 +1,6 @@
+
+
+
 // /* header_navbar */
 // .header {
 //     background: #FFFFFF;
@@ -70,7 +73,7 @@
 }
 
 .member-col {
-    padding-top: 80px;
+    // padding-top: 80px;
     border-bottom: 1px solid;
 }
 
@@ -133,10 +136,10 @@
 }
 
 .info-con-col {
-    padding-top: 40px;
-    padding-left: 32px;
-    padding-right: 32px;
-    background: #FFFFFF;
+    // padding-top: 40px; 
+    // padding-left: 32px;
+    // padding-right: 32px;
+    // background: #FFFFFF;
 }
 
 .info-con {
@@ -189,6 +192,11 @@
     padding-bottom: 24px;
 }
 
+.info-final-pic{
+    width: 26.67px;
+    height: 26.67px;
+}
+
 .info-finaldesc-title {
     margin-left: 8px;
     font-family: "Noto Sans TC";
@@ -198,12 +206,6 @@
 
 
 /*table*/
-
-.info-desctable-row {
-    padding-left: 32px;
-    padding-right: 32px;
-    background: #FFFFFF;
-}
 
 .info-desctable-col {
     background: #F0F0F0;
