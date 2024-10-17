@@ -175,172 +175,259 @@
 
 
 
-
     <!--Main區塊-->
     <main class="main bg-neutral-100">
-        <!--member-options 選單區塊-->
-        <Section class="member-options">
-            <div class="container">
-                <!--container:1320px 置中-->
-                <div class="member-row">
-                    <!--與內容器的column做定位-->
-                    <div class="member-col border-neutral-300 pt-11">
-                        <!--容器-->
-                        <ul class="contect options-deco d-flex ">
-                            <!--內容-->
-                            <li class="mr-6 "><a href="#" title="account">帳號密碼設定</a></li>
-                            <li class="mr-6 "><a href="#" title="myOrder">我的訂單</a></li>
-                            <li><a href="#" title="myPost">我的稿件</a></li>
-                        </ul>
-                    </div>
-                    <h1 class="myorder-title text-primary-500 fs-1 mt-6 mb-6">個人訂單資料</h1>
-                </div>
-            </div>
-        </Section>
-
-        <!--memberOrder Info選單區塊-->
-        <Section class="order-info">
-            <div class="container">
-                <!--container:1296px 置中-->
-                <div class="order-info-row">
-                    <!--與內容器的column做定位-->
-                    <div class="order-info-col">
-                        <!--容器-->
-                        <div class="contect info-list">
-                            <!--內容-->
-                            <ul class="d-flex pb-8">
-                                <li class="info-item-deco mr-6">
-                                    <p class="info-item-title">訂單編號</p>
-                                    <p class="info-item-context">#2024082101</p>
-                                    <li class="info-item-deco mr-6">
-                                        <p class="info-item-title">訂單狀態</p>
-                                        <p class="info-item-context">已完成付款</p>
-                                    </li>
-                                    <li class="info-item-deco mr-6">
-                                        <p class="info-item-title">票券類型</p>
-                                        <p class="info-item-context">電子票券</p>
-                                    </li>
-                                    <li class="info-item-deco mr-6">
-                                        <p class="info-item-title">票券數量</p>
-                                        <p class="info-item-context">1</p>
-                                    </li>
-                                    <li class="info-item-deco">
-                                        <p class="info-item-title">訂單金額</p>
-                                        <p class="info-item-context">NT$2,400</p>
-                                    </li>
-                            </ul>
-                        </div>
-        </Section>
-
-        <div class="container ">
-            <!--container:1296px 置中-->
-            <div class="info-con-col d-flex ps-7 bg-neutral-50">
-                <!--容器-->
-                <div class="contect info-con d-flex ">
-                    <!--內容-->
-                    <img src="../assets/images/banner1-pc.png" alt="ConVision" class="Con-Vision-pic">
-                </div>
-                <div class="info-con-desc">
-                    <p class="fs-4 mb-4">資咖購 SecConGo TW 2024</p>
-                    <p class="fs-5 mb-2">開始時間：2024/10/20 (日) 09：00</p>
-                    <p class="fs-5 mb-2">活動地點：台北文創大樓 6 樓 (110 台北市信義區菸廠路 88 號)</p>
-                    <p class="fs-5 ">主辦單位：資咖購 SecConGo</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <!--container:1296px 置中-->
-            <div class="info-conbtn-row">
-                <!--與內容器的column做定位-->
-                <div class="info-conbtn-col text-center">
-                    <!--容器-->
-                    <div class="contect">
+<!--member-options 選單區塊-->
+        <Section class="member-options bg-neutral-100">
+            <div class="container"><!--container:1320px 置中-->
+                <div class="member-row"><!--與內容器的column做定位-->
+                    <div class="member-col pt-11"><!--容器-->
                         <!--內容-->
-                        <p class="info-conbtn">
-                            <a class="btn-primary" href="#" ait="">查看詳細資訊 
-                  <img src="../assets/images/icon/arrow-up-wh.png" alt="訂單資訊展開">
-                </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
+                        <div class="options-deco d-flex border-neutral-300">
+                            <a href="#" class="me-6 tab-link" title="account" tabindex="-1">帳號密碼設定</a>
+                            <a href="#" class="me-6 tab-link" title="myOrder" tabindex="0">我的訂單</a>
+                            <a href="#" class="tab-link" title="myPost" tabindex="1">我的稿件</a>
+                        </div>
+                        <div class="myorder-title text-primary-500 fs-1 mt-6" id="orders">
+                            <h1 class="mb-6">個人訂單資料</h1>
 
-            <div>
-                <div class="info-finaldesc-row">
-                    <!--與內容器的column做定位-->
-                    <div class="info-finaldesc-col ps-5 bg-neutral-50">
-                        <!--容器-->
-                        <div class="info-finaldesc-contect d-flex">
-                            <!--內容-->
-                            <img src="../assets/images/icon/check-circle-blue.png" alt="checkicon" class="info-final-pic">
-                            <p class="info-finaldesc-title fs-4">恭喜您已完成訂單</p>
+                            <!--這裡是訂單的內容| memberOrder Info_order-info選單區塊1-->
+                            <Section class="order-info">
+                                <div class="order-info-row bg-neutral-50"><!--與內容器的column做定位-->
+                                    <div class="order-info-col bg-neutral-50"><!--容器-->
+                                        <div class="info-list bg-neutral-50"><!--內容contect-->
+                                            <table class="table table-borderless pb-8">
+                                                <thead>
+                                                <tr class="info-item-title text-neutral-800 fs-5">
+                                                    <th>訂單編號</th>
+                                                    <th>訂單狀態</th>
+                                                    <th>票券類型</th>
+                                                    <th>票券數量</th>
+                                                    <th>訂單金額</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr class="info-item-context text-neutral-900 fs-4">
+                                                    <td>#2024082101</td>
+                                                    <td>已完成付款</td>
+                                                    <td>電子票券</td>
+                                                    <td>1</td>
+                                                    <td>NT$2,400</td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </Section>
+
+                    <!--這裡是訂單的內容| memberOrder Info_order-info選單區塊2-->
+                    <Section class="info-con-col d-flex align-items-center ps-7 pt-8 bg-neutral-50"><!--容器-->
+                        <div class="info-con d-flex  me-4"><!--內容contect -->
+                            <img src="../assets/images/banner1-pc.png" alt="ConVision" class="Con-Vision-pic">
+                        </div>
+                        <div class="info-con-desc text-neutral-900 ">
+                            <h4 class="fs-4 mb-4">資咖購 SecConGo TW 2024</h4>
+                            <p class="fs-5 mb-2">開始時間：2024/10/20 (日) 09：00</p>
+                            <p class="fs-5 mb-2">活動地點：台北文創大樓 6 樓 (110 台北市信義區菸廠路 88 號)</p>
+                            <p class="fs-5 ">主辦單位：資咖購 SecConGo</p>
+                        </div>
+                    </Section>
+
+                    <!--這裡是訂單的內容| memberOrder Info_order-info選單btn區塊3-->
+                    <div class="info-conbtn-row bg-neutral-50"><!--與內容器的column做定位-->
+                        <div class="info-conbtn-col text-center bg-neutral-50"><!--容器-->
+                            <div class="contect"><!--內容-->
+                                <p class="info-conbtn">
+                                    <a class="btn-primary fs-6 text-neutral-50 bg-secondary-500" href="#" ait="">查看詳細資訊 
+                                        <img src="../assets/images/icon/arrow-up-wh.png" alt="訂單資訊展開">
+                                    </a>
+                                </p>
+
+                                <!-- 這裡是訂單展開詳細的內容| memberOrder Info｜info-finaldes區塊1-->
+                                <div class="info-finaldesc-row bg-neutral-50"><!--與內容器的column做定位-->
+                                    <div class="info-finaldesc-col ps-7 bg-neutral-50"> <!--容器-->
+                                        <div class="info-finaldesc-contect d-flex"><!--內容-->
+                                            <img src="../assets/images/icon/check-circle-blue.png" alt="checkicon" class="info-final-pic">
+                                            <h4 class="info-finaldesc-title fs-4">恭喜您已完成訂單</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 這裡是訂單展開詳細的內容| memberOrder Info｜info-finaldes-響應式表格 .table-responsive區塊2-->
+                                <div class="info-desctable-row"><!--與內容器的column做定位-->
+                                    <div class="info-desctable-col ps-7 pe-7 bg-neutral-50"> <!--容器-->
+                                        <div class="info-desctable table-responsive-sm "><!--內容contect -->
+                                            <table class="table table-borderless">
+                                                <thead class="table-light bg-neutral-300">
+                                                    <tr class="info-desctable info-desctable-headthrow1 fs-6 text-neutral-800 ">
+                                                        <th>商品</th>
+                                                        <th>優惠</th>
+                                                        <th>單價</th>
+                                                        <th>數量</th>
+                                                        <th>小計</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="info-desctable-title fs-5">
+                                                        <td class="d-flex justify-content-center align-items-center">
+                                                            <img src="../assets/images/ticket icon-4.png" alt="ticketicon" class="info-desctable-pic">
+                                                            <p class="info-desctable-title fs-5 text-center">國際組織票 Full Pass</p>
+                                                        </td>
+                                                        <td> - </td>
+                                                        <td class="price-deco text-center align-items-center justify-content-center"> 
+                                                            <h5 class="info-desctable-text fs-5 text-secondary-500">NT$2,400</h5>
+                                                            <h6 class="info-desctable-price fs-6">NT5,000</h6>
+                                                        </td>
+                                                        <td>1</td>
+                                                        <td>NT$2,400</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h4 class="info-desctable-pricetitle fs-4">合計：NT$2,400</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- <div> 1018待表單參考設定修改後刪除
+                                    <div class="info-desctable-row">
+                                        <div class="info-desctable-col">
+                                            <div class="contect d-flex">
+                                                <ul class="info-desctable d-flex">
+                                                    <li class="info-desctable-headthrow1 fs-6">商品</li>
+                                                    <li class="info-desctable-headthrow2 fs-6">優惠</li>
+                                                    <li class="info-desctable-headthrow2 fs-6">單價</li>
+                                                    <li class="info-desctable-headthrow2 fs-6">數量</li>
+                                                    <li class="info-desctable-headthrow2 fs-6">小計</li>
+                                                </ul>
+                                            </div>
+                                            <ul class="info-desc-tabletext d-flex align-items-center">
+                                                <li class="desctable d-flex align-items-center">
+                                                    <img src="../assets/images/ticket icon-4.png" alt="ticketicon" class="info-desctable-pic">
+                                                    <p class="info-desctable-title fs-5">國際組織票 Full Pass</p>
+                                                </li>
+                                                <li class="info-desctable-text fs-5 ">-</li>
+                                                <li class="price-deco">
+                                                    <h5 class="info-desctable-text fs-5">NT$2,400</h5>
+                                                    <h6 class="info-desctable-price fs-6">NT5,000</h6>
+                                                </li>
+                                                <li class="info-desctable-text fs-5 ">1</li>
+                                                <li class="info-desctable-text fs-5 ">NT$2,400</li>
+                                            </ul>
+                                            <h4 class="info-desctable-pricetitle fs-4">合計：NT$2,400</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+
+
+
+
+                                <!-- 這裡是訂單展開詳細的內容| memberOrder Info｜info-finaldes-訂單人資訊區塊3-1-->
+                                <div class="order-info-row bg-neutral-50">
+                                    <div class="order-info-col">
+                                        <div class="bg-neutral-100 order-info-con"><!--內容contect-->
+                                            <div class="order-info d-flex align-items-center pt-6 ps-6">
+                                                <h5 class="order-info-title fs-5 text-neutral-800 me-6">訂單資訊</h5>
+                                                <a class="btn-order btn-secondary fs-6 me-6 pt-2 pb-2 " href="#">修改訂單</a>
+                                                <a class="btn-order btn-secondary fs-6 pt-2 pb-2" href="#">取消訂單</a>
+                                            </div>
+                                            <div class="orderinfo-list pt-6 ps-6">
+                                                <table class="table table-borderless pb-8">
+                                                    <thead>
+                                                    <tr class="order-desc-title fs-6 mb-2 text-neutral-800">
+                                                        <th>姓名 | Full Name</th>
+                                                        <th>電子郵件| E-mail</th>
+                                                        <th>聯絡電話 | Mobile or Telephone Number</th>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                      <tr class="order-desc-text fs-5 text-neutral-900">
+                                                        <td >王小明</td>
+                                                        <td>SecConGo1122334@server.org</td>
+                                                        <td>0912-345-678</td>
+                                                      </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div class="info-list pt-6">
+                                                    <table class="table table-borderless pb-8">
+                                                        <thead>
+                                                            <tr class="order-desc-title fs-6 mb-2 text-neutral-800">
+                                                                <th>公司名稱/發票抬頭 | Company</th>
+                                                                <th>公司/組織統一編號 | GUI Number</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="order-desc-text fs-5 text-neutral-900">
+                                                                <td >南方資安科技有限公司</td>
+                                                                <td>202410205</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <!-- 這裡是訂單展開詳細的內容| memberOrder Info｜info-finaldes-訂單人＆主辦通訊區塊3-2-->
+                                <div class="order-coninfo-row bg-neutral-50">
+                                    <div class="order-coninfo-col">
+                                        <div class="bg-neutral-100 "><!--內容contect-->
+                                            <div class="order-coninfo d-flex align-items-center pt-6 ps-6">
+                                                <h5 class="order-payinfo-title fs-5 text-neutral-800 me-6">主辦和顧客訂單通訊</h5>
+                                            </div>
+                                            
+                                            <div class="coninfo-list pt-6 ps-6 d-flex ">
+                                                <p class="fs-6 text-neutral-700">主辦單位會在收到留言訊息後，以 Email 方式回覆，請再多加留意信箱</p>
+                                                
+                                                <div class="flex-dercation-cloum">
+                                                  <a class="btn-order btn-secondary fs-6 me-6 pt-2 pb-2 " href="#">上傳圖片</a>
+                                                  <a class="btn-order btn-secondary fs-6 pt-2 pb-2" href="#">送出</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                                <!-- 這裡是訂單展開詳細的內容| memberOrder Info｜info-finaldes-訂單人＆主辦通訊區塊3-3-->
+                                
+                                <div class="order-payinfo-row bg-neutral-50">
+                                    <div class="order-payinfo-col">
+                                        <div class="bg-neutral-100 "><!--內容contect-->
+                                            
+                                            <div class="order-payinfo d-flex align-items-center pt-6 ps-6">
+                                                <h5 class="order-payinfo-title fs-5 text-neutral-800 me-6">付款資訊</h5>
+                                            </div>
+                                            
+                                            <div class="payinfo-list pt-6 ps-6">
+                                                <table class="table table-borderless pb-8">
+                                                    <thead>
+                                                        <tr class="order-desc-title fs-6 mb-2 text-neutral-800">
+                                                            <th>付款方式 | Payment Method</th>
+                                                            <th>付款狀態 | Statusr</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="order-desc-text fs-5 text-neutral-900">
+                                                            <td >南方資安科技有限公司</td>
+                                                            <td>202410205</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                
+
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <div>
-                <div class="info-desctable-row">
-                    <!--與內容器的column做定位-->
-                    <div class="info-desctable-col">
-                        <!--容器-->
-                        <div class="contect d-flex">
-                            <!--內容-->
-                            <ul class="info-desctable d-flex">
-                                <li class="info-desctable-headthrow1 fs-6">商品</li>
-                                <li class="info-desctable-headthrow2 fs-6">優惠</li>
-                                <li class="info-desctable-headthrow2 fs-6">單價</li>
-                                <li class="info-desctable-headthrow2 fs-6">數量</li>
-                                <li class="info-desctable-headthrow2 fs-6">小計</li>
-                            </ul>
-                        </div>
-
-                        <ul class="info-desc-tabletext d-flex align-items-center">
-                            <li class="desctable d-flex align-items-center">
-                                <img src="../assets/images/ticket icon-4.png" alt="ticketicon" class="info-desctable-pic">
-                                <p class="info-desctable-title fs-5">國際組織票 Full Pass</p>
-                            </li>
-                            <li class="info-desctable-text fs-5 ">-</li>
-                            <li class="price-deco">
-                                <h5 class="info-desctable-text fs-5">NT$2,400</h5>
-                                <h6 class="info-desctable-price fs-6">NT5,000</h6>
-                            </li>
-                            <li class="info-desctable-text fs-5 ">1</li>
-                            <li class="info-desctable-text fs-5 ">NT$2,400</li>
-                        </ul>
-                        <h4 class="info-desctable-pricetitle fs-4">合計：NT$2,400</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="order-info-row">
-                <div class="order-info-col">
-                    <div class="content">
-                        <div class="order-info d-flex align-items-center">
-                            <p class="order-info-title ">訂單資訊</p>
-                            <a class="btn-order" href="#">修改訂單</a>
-                            <a class="btn-order" href="#">取消訂單</a>
-                        </div>
-
-                        <ul class="order-des">
-                            <li class="order-desc-title fs-6 mb-2">姓名 | Full Name</li>
-                            <li class="order-desc-text fs-5">王小明</li>
-                            <ul class="order-des">
-                                <li class="order-desc-title fs-6 mb-2">電子郵件| E-mail</li>
-                                <li class="order-desc-text fs-5">SecConGo1122334@server.org</li>
-                                <ul class="order-des">
-                                    <li class="order-desc-title fs-6 mb-2">聯絡電話 | Mobile or Telephone Number</li>
-                                    <li class="order-desc-text fs-5">0912-345-678</li>
-                                </ul>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
+        
 
         </div>
         </div>
