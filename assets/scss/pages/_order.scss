@@ -1,4 +1,3 @@
-
 // /* header_navbar */
 // .header {
 //     background: #FFFFFF;
@@ -60,104 +59,79 @@
 //     color: var(--Neutral50);
 // }
 
+
 /* member-options */
 
-.main {
-    // background: #F8F8F8;
+.member-row{
+    padding-right: -12px;
+    padding-left: -12px;
 }
 
-.member-options {
-    // background: #F8F8F8;
-}
-
-.member-col {
-    // padding-top: 80px;
+.options-deco{
     border-bottom: 1px solid;
 }
 
-.options-deco li {
+.tab-link {
     padding-bottom: 4px;
     color: #868686;
 }
 
-.options-deco li:hover {
+.tab-link:focus{
     color: #F16C5D;
     border-bottom: 3px solid #F16C5D;
+    cursor: pointer;
 }
 
 .myorder-title {
-    // font-family: "Noto Sans TC";
     line-height: 1.2;
-    // text-align: left;
-    // color: #064162;
-    // margin-top: 24px;
-    // padding-bottom: 24px;
 }
 
 
-/*memberOrder Info選單區塊 */
+/*memberOrder Info選單區塊1*/
 .order-info-row {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    background: #FFFFFF;
+    padding-right: -12px;
+    padding-left: -12px;
 }
 
 .order-info-col {
     padding: 24px 32px 0px 32px;
-    background: #FFFFFF;
 }
 
 .info-list {
-    background: #FFFFFF;
     padding-bottom: 40px;
     border-bottom: 1px solid #E4E4E4;
 }
 
-.info-item-deco {
-    width: 227.2px;
-}
 
-.info-item-title {
-    color: #5B5B5B;
+.info-list .table {
+    border-collapse: collapse; /* 移除表格間距 */
+    border-spacing: 0;
+    margin: 0; /* 清除表格周圍的預設 margin */
+  }
 
-    font-size: 20px;
-    padding-bottom: 8px;
-}
+.info-list .table th, 
+.info-list .table td {
+    padding:8px; /* 調整內邊距 */
+    text-align: left;
+    background-color: transparent; /* 移除背景顏色 */
+    font-size: inherit; /* 移除 th 和 td 的字體大小設置 */
+    color: inherit;     /* 移除 th 和 td 的字體顏色設置 */
+  }
 
-.info-item-context {
-    color: #2C2C2C;
+.info-list .table th {
+    font-weight: normal; 
+  }
 
-    font-size: 24px;
-}
-
-.info-con-col {
-    // padding-top: 40px; 
-    // padding-left: 32px;
-    // padding-right: 32px;
-    // background: #FFFFFF;
-}
-
-.info-con {
-    margin-right: 16px;
-}
+  /*memberOrder Info選單區塊2*/
 
 .Con-Vision-pic {
     width: 306px;
-    height: 168px;
+    height: auto;
 }
 
-.info-con-desc {
-    color: #2C2C2C;
-
-
-}
-
-.info-conbtn-col {
-    padding-left: 32px;
-    padding-right: 32px;
-    background: #FFFFFF;
-}
-
+  /*memberOrder Info選單btn區塊3*/
 .info-conbtn {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -165,20 +139,15 @@
 }
 
 .btn-primary {
-    background: #F16C5D;
-    color: #FFFFFF;
-    font-size: 16px;
-
+    display: inline-block;
+    cursor: pointer;
     width: 148px;
     padding: 8px 16px;
-    gap: 4px;
     border-radius: 8px;
 }
 
-.info-finaldesc-row {
-    background: #FFFFFF;
-}
 
+  /*訂單展開詳細的內容｜info-finaldes區塊1*/
 .info-finaldesc-col {
     padding-left: 32px;
     padding-right: 32px;
@@ -193,36 +162,36 @@
 
 .info-finaldesc-title {
     margin-left: 8px;
-
-
     color: #3D8BB7;
 }
 
+/*訂單展開詳細的內容｜info-finaldes .table區塊2*/
+.info-desctable .table {
+    border-collapse: collapse; /* 移除表格間距 */
+    border-spacing: 0;
+    margin: 0; /* 清除表格周圍的預設 margin */
+  }
 
-/*table*/
+.info-desctable .table th, 
+.info-desctable .table td {
+    padding:8px; /* 調整內邊距 */
+    text-align: center;
+    background-color: transparent; /* 移除背景顏色 */
+    font-size: inherit; /* 移除 th 和 td 的字體大小設置 */
+    color: inherit;     /* 移除 th 和 td 的字體顏色設置 */
+  }
 
-.info-desctable-col {
-    background: #F0F0F0;
-}
-
-.info-desctable {
-    border-bottom: 1px solid #E4E4E4;
-}
+.info-desctable .table th {
+    font-weight: normal; 
+  }
 
 .info-desctable-headthrow1 {
-    width: 494px;
-
-
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 24px;
-    color: #5B5B5B;
 }
 
 .info-desctable-headthrow2 {
-    width: 184.5px;
-
-
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: center;
@@ -250,14 +219,10 @@
 }
 
 .info-desctable-title {
-
-
     color: #5B5B5B;
 }
 
 .info-desctable-text {
-
-
     padding-top: 12px;
     padding-bottom: 12px;
     width: 184.5px;
@@ -265,11 +230,6 @@
     background: #FFFFFF;
     text-align: center;
     align-items: center;
-}
-
-.price-deco {
-
-    text-align: center;
 }
 
 .price-deco h5 {
@@ -281,42 +241,49 @@
 }
 
 .info-desctable-pricetitle {
-
-
     text-align: right;
     color: #3D8BB7;
     padding-top: 20px;
-    padding-bottom: 20px;
     padding-right: 40px;
     background: #FFFFFF;
+    border-top: 1px solid #E4E4E4;
 }
 
-.order-info-row {
-    background: #F8F8F8;
+/*訂單展開詳細的內容｜info-finaldes-訂單人資訊區塊3*/
+.order-info-con{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
-.order-info-title {
-    font-family: "Noto Sans TC";
-    margin-right: 24px;
-    font-size: 20px;
-
-    color: #5B5B5B;
-}
-
-.btn-order {
+.btn-order{
     border-radius: 8px;
-    border: 1px;
     padding: 8px 16px;
-    padding-right: 16px;
-    margin-right: 16px;
-
     border: 1px solid #F16C5D;
     color: #F16C5D;
+    cursor: pointer;
 }
 
-.order-desc {
-
-
-    margin-top: 24px;
-    width: 394.67px;
+.btn-order .btn-secondary:hover {
+ border: 1px solid #F16C5D;
+ background: #F16C5D; 
+ color: #fff;
 }
+
+.info-list .table {
+    border-collapse: collapse; /* 移除表格間距 */
+    border-spacing: 0;
+    margin: 0; /* 清除表格周圍的預設 margin */
+  }
+
+.info-list .table th, 
+.info-list .table td {
+    padding:8px; /* 調整內邊距 */
+    text-align: left;
+    background-color: transparent; /* 移除背景顏色 */
+    font-size: inherit; /* 移除 th 和 td 的字體大小設置 */
+    color: inherit;     /* 移除 th 和 td 的字體顏色設置 */
+  }
+
+.info-list .table th {
+    font-weight: normal; 
+  }
