@@ -8,100 +8,843 @@
   </head>
   <body>
     <%- include('./layout/header'); -%>
-        <main>
-            <section class="banner">
-            </section>
-            <section>
-              <div class="container">
-                <div class="mt-20 mb-8">
-                  <h1 class="text-primary-500 fw-bold mb-6">大會資訊</h1>
-                  <h5 class="lh-one-half mb-4">活動日期：2024 年 10 月 20 日 09:00 ~ 17:00  (08:30 開始報到)</h5>
-                  <h5 class="lh-one-half mb-4">活動地點：台北文創大樓 6 樓 (110 台北市信義區菸廠路 88 號)</h5>
-                  <h5 class="lh-one-half">參加方式：預先購票</h5>
-                </div>
+    <main>
+      <section class="banner"></section>
+      <section>
+        <div class="container">
+          <div class="mt-20 mb-8">
+            <h1 class="text-primary-500 fw-bold mb-6">大會資訊</h1>
+            <h5 class="lh-one-half mb-4">
+              活動日期：2024 年 10 月 20 日 09:00 ~ 17:00 (08:30 開始報到)
+            </h5>
+            <h5 class="lh-one-half mb-4">
+              活動地點：台北文創大樓 6 樓 (110 台北市信義區菸廠路 88 號)
+            </h5>
+            <h5 class="lh-one-half">參加方式：預先購票</h5>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="mt-20 mb-8">
+            <h1 class="text-primary-500 fw-bold mb-6">購票方案</h1>
+            <h5 class="lh-one-half mb-6 text-neutral-800">
+              Full Pass 從早鳥票、一般票，到國際組織票，Business Pass
+              票、媒體採訪 Media Pass 票，您可以根據自身需要選擇票種
+            </h5>
+          </div>
+        </div>
+      </section>
+      <section class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-6">
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body text-center w-279 mt-2 mb-2">
+                <img
+                  src="/assets/images/ticket icon.png"
+                  class="card-img-top"
+                  alt="ticket icon"
+                />
+                <h2 class="card-title fw-bold text-neutral-800 fs-8">
+                  Full Pass 早鳥
+                </h2>
+                <h5 class="price-text lh-one-half text-secondary-500 mr-2 mb-0">
+                  NT.
+                </h5>
+                <h2 class="price-text fw-bold text-secondary-500 mr-2 mb-0">
+                  2,400
+                </h2>
+                <h5 class="price-text lh-one-half text-secondary-500 mb-0">
+                  /張
+                </h5>
               </div>
-            </section>
-            <section>
-              <div class="container">
-                <div class="mt-20 mb-8">
-                  <h1 class="text-primary-500 fw-bold mb-6">購票方案</h1>
-                  <h5 class="lh-one-half mb-6 text-neutral-800">Full Pass 從早鳥票、一般票，到國際組織票，Business Pass 票、媒體採訪 Media Pass 票，您可以根據自身需要選擇票種</h5>
-                </div>
+              <div class="w-279">
+                <ul class="check-list bg-neutral-100">
+                  <li>
+                    <img
+                      class="check"
+                      src="/assets/images/icon/check.png"
+                      alt="check"
+                    />
+                    <h6
+                      class="text-neutral-800 lh-one-half display-inline-block"
+                    >
+                      限定早鳥報名禮
+                    </h6>
+                  </li>
+                  <li>
+                    <img
+                      class="check"
+                      src="/assets/images/icon/check.png"
+                      alt="check"
+                    />
+                    <h6
+                      class="text-neutral-800 lh-one-half display-inline-block"
+                    >
+                      大會特製紀念品
+                    </h6>
+                  </li>
+                  <li>
+                    <img
+                      class="check"
+                      src="/assets/images/icon/check.png"
+                      alt="check"
+                    />
+                    <h6
+                      class="text-neutral-800 lh-one-half display-inline-block"
+                    >
+                      午餐與餐點
+                    </h6>
+                  </li>
+                  <li>
+                    <img
+                      class="check"
+                      src="/assets/images/icon/check.png"
+                      alt="check"
+                    />
+                    <h6
+                      class="text-neutral-800 lh-one-half display-inline-block"
+                    >
+                      抽獎資格
+                    </h6>
+                  </li>
+                  <li>
+                    <img
+                      class="check"
+                      src="/assets/images/icon/check.png"
+                      alt="check"
+                    />
+                    <h6
+                      class="text-neutral-800 lh-one-half display-inline-block"
+                    >
+                      講師授權可公開的簡報檔
+                    </h6>
+                  </li>
+                  <li>
+                    <img
+                      class="check"
+                      src="/assets/images/icon/check.png"
+                      alt="check"
+                    />
+                    <h6
+                      class="text-neutral-800 lh-one-half display-inline-block"
+                    >
+                      講師授權可公開的簡報檔
+                    </h6>
+                  </li>
+                  <li>
+                    <img
+                      class="check"
+                      src="/assets/images/icon/check.png"
+                      alt="check"
+                    />
+                    <h6
+                      class="text-neutral-800 lh-one-half display-inline-block mb-0"
+                    >
+                      全程參與 SecConGo TW 2024
+                    </h6>
+                  </li>
+                </ul>
               </div>
-            </section>
-            <section class="container">
-              <div class="row row-cols-1 row-cols-md-3 g-6">
-                <div class="col">
-                  <div class="card h-100">
-                    <div class="card-body text-center w-279 mt-2 mb-2">
-                      <img src="/assets/images/ticket icon.png" class="card-img-top" alt="ticket icon">
-                      <h2 class="card-title fw-bold text-neutral-800">Full Pass 早鳥</h2>
-                      <p class="card-text"><h5 class="price-text lh-one-half text-secondary-500 mr-2">NT.</h5><h2 class="price-text fw-bold text-secondary-500 mr-2">2,400</h2><h5 class="price-text lh-one-half text-secondary-500">/張</h5></p>
+              <div class="card-footer text-center bg-neutral-50">
+                <div class="dropdown">
+                  <a
+                    href="#"
+                    class="cart-btn bg-secondary-500 text-neutral-50"
+                    id="cartDropdown"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <h6 class="lh-one-half cart-text">加入購物車</h6>
+                  </a>
+                  <!-- Dropdown 購物車內容 -->
+                  <div
+                    class="dropdown-menu dropdown-menu-end p-4"
+                    aria-labelledby="cartDropdown"
+                    style="width: 300px"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="../assets/images/icon/shopping-bag.png"
+                        alt="cart"
+                      />
+                      <h5>購物車</h5>
+                      <img
+                        src="../assets/images/icon/cancel.png"
+                        alt="cancel"
+                        class="ms-auto"
+                      />
                     </div>
-                    <div class="w-279">
-                      <ul class="check-list bg-neutral-100">
-                        <li>
-                          <img class="check" src="/assets/images/icon/check.png" alt="check">
-                          <h6 class="text-neutral-800 lh-one-half display-inline-block">限定早鳥報名禮</h6>
-                        </li>
-                        <li>
-                          <img class="check" src="/assets/images/icon/check.png" alt="check">
-                          <h6 class="text-neutral-800 lh-one-half display-inline-block">大會特製紀念品</h6>
-                        </li>
-                        <li>
-                          <img class="check" src="/assets/images/icon/check.png" alt="check">
-                          <h6 class="text-neutral-800 lh-one-half display-inline-block">午餐與餐點</h6>
-                        </li>
-                        <li>
-                          <img class="check" src="/assets/images/icon/check.png" alt="check">
-                          <h6 class="text-neutral-800 lh-one-half display-inline-block">抽獎資格</h6>
-                        </li>
-                        <li>
-                          <img class="check" src="/assets/images/icon/check.png" alt="check">
-                          <h6 class="text-neutral-800 lh-one-half display-inline-block">講師授權可公開的簡報檔</h6>
-                        </li>
-                        <li>
-                          <img class="check" src="/assets/images/icon/check.png" alt="check">
-                          <h6 class="text-neutral-800 lh-one-half display-inline-block">講師授權可公開的簡報檔</h6>
-                        </li>
-                        <li>
-                          <img class="check" src="/assets/images/icon/check.png" alt="check">
-                          <h6 class="text-neutral-800 lh-one-half display-inline-block">全程參與 SecConGo TW 2024</h6>
-                        </li>
-                      </ul>
+                    <hr />
+                    <div class="cart-item">
+                      <p><strong>【國際組織票 Full Pass】</strong></p>
+                      <p>張數: 1</p>
+                      <p>單價: NT$2,400</p>
                     </div>
-                    <div class="card-footer">
-                      <small class="text-muted">Last updated 3 mins ago</small>
+                    <div class="cart-item">
+                      <p><strong>【國際組織票 day1】</strong></p>
+                      <p>張數: 2</p>
+                      <p>單價: NT$1,200</p>
                     </div>
+                    <hr />
+                    <p>總數: 3</p>
+                    <p>金額: NT$4,800</p>
+                    <button
+                      class="btn btn-danger w-100"
+                      style="background-color: #ff5a5f"
+                    >
+                      結帳
+                    </button>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="card h-100">
-                    <div class="card-body text-center">
-                    <img src="/assets/images/ticket icon-5.png" class="card-img-top" alt="...">
-                      <h2 class="card-title">Card title</h2>
-                      <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body text-center w-279 mt-2 mb-2">
+                <img
+                  src="/assets/images/ticket icon-5.png"
+                  class="card-img-top"
+                  alt="ticket icon"
+                />
+                <h2 class="card-title fw-bold text-neutral-500 fs-8">
+                  Full Pass
+                </h2>
+                <h5 class="price-text lh-one-half text-neutral-500 mr-2 mb-0">
+                  NT.
+                </h5>
+                <h2 class="price-text fw-bold text-neutral-500 mr-2 mb-0">
+                  3,600
+                </h2>
+                <h5 class="price-text lh-one-half text-neutral-500 mb-0">
+                  /張
+                </h5>
+              </div>
+              <div class="w-279">
+                <ul class="check-list bg-neutral-100">
+                  <li>
+                    <img
+                      class="check-filter"
+                      src="/assets/images/icon/check.png"
+                      alt="check"
+                    />
+                    <h6
+                      class="text-neutral-500 lh-one-half display-inline-block"
+                    >
+                      大會特製紀念品
+                    </h6>
+                  </li>
+                  <li>
+                    <img
+                      class="check-filter"
+                      src="/assets/images/icon/check.png"
+                      alt="check"
+                    />
+                    <h6
+                      class="text-neutral-500 lh-one-half display-inline-block"
+                    >
+                      午餐與餐點
+                    </h6>
+                  </li>
+                  <li>
+                    <img
+                      class="check-filter"
+                      src="/assets/images/icon/check.png"
+                      alt="check"
+                    />
+                    <h6
+                      class="text-neutral-500 lh-one-half display-inline-block"
+                    >
+                      抽獎資格
+                    </h6>
+                  </li>
+                  <li>
+                    <img
+                      class="check-filter"
+                      src="/assets/images/icon/check.png"
+                      alt="check"
+                    />
+                    <h6
+                      class="text-neutral-500 lh-one-half display-inline-block"
+                    >
+                      講師授權可公開的簡報檔
+                    </h6>
+                  </li>
+                  <li>
+                    <img
+                      class="check-filter"
+                      src="/assets/images/icon/check.png"
+                      alt="check"
+                    />
+                    <h6
+                      class="text-neutral-500 lh-one-half display-inline-block"
+                    >
+                      講師授權可公開的簡報檔
+                    </h6>
+                  </li>
+                  <li>
+                    <img
+                      class="check-filter"
+                      src="/assets/images/icon/check.png"
+                      alt="check"
+                    />
+                    <h6
+                      class="text-neutral-500 lh-one-half display-inline-block mb-0 pb-8"
+                    >
+                      全程參與 SecConGo TW 2024
+                    </h6>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-footer text-center bg-neutral-50">
+                <a
+                  class="close-btn bg-neutral-300 text-neutral-50 disabled "
+                  role="button"
+                  aria-disabled="true"
+                  href="#"
+                  ><h6 class="lh-one-half cart-text">尚未開啟</h6></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body text-center m0-auto mt-2 mb-2">
+                <img
+                  src="/assets/images/ticket icon-4.png"
+                  class="card-img-top"
+                  alt="ticket icon"
+                />
+                <h2 class="card-title fw-bold text-neutral-800 fs-8">
+                  國際組織票 Full Pass
+                </h2>
+                <h5 class="price-text lh-one-half text-secondary-500 mr-2 mb-0">
+                  NT.
+                </h5>
+                <h2 class="price-text fw-bold text-secondary-500 mr-2 mb-0">
+                  2,400
+                </h2>
+                <h5 class="price-text lh-one-half text-secondary-500 mb-0">
+                  /張
+                </h5>
+              </div>
+              <div class="w-279">
+                <ul class="check-list bg-neutral-100">
+                  <li>
+                    <img
+                      class="check"
+                      src="/assets/images/icon/check.png"
+                      alt="check"
+                    />
+                    <h6
+                      class="text-neutral-800 lh-one-half display-inline-block"
+                    >
+                      大會特製紀念品
+                    </h6>
+                  </li>
+                  <li>
+                    <img
+                      class="check"
+                      src="/assets/images/icon/check.png"
+                      alt="check"
+                    />
+                    <h6
+                      class="text-neutral-800 lh-one-half display-inline-block"
+                    >
+                      午餐與餐點
+                    </h6>
+                  </li>
+                  <li>
+                    <img
+                      class="check"
+                      src="/assets/images/icon/check.png"
+                      alt="check"
+                    />
+                    <h6
+                      class="text-neutral-800 lh-one-half display-inline-block"
+                    >
+                      抽獎資格
+                    </h6>
+                  </li>
+                  <li>
+                    <img
+                      class="check"
+                      src="/assets/images/icon/check.png"
+                      alt="check"
+                    />
+                    <h6
+                      class="text-neutral-800 lh-one-half display-inline-block"
+                    >
+                      講師授權可公開的簡報檔
+                    </h6>
+                  </li>
+                  <li>
+                    <img
+                      class="check"
+                      src="/assets/images/icon/check.png"
+                      alt="check"
+                    />
+                    <h6
+                      class="text-neutral-800 lh-one-half display-inline-block"
+                    >
+                      講師授權可公開的簡報檔
+                    </h6>
+                  </li>
+                  <li>
+                    <img
+                      class="check"
+                      src="/assets/images/icon/check.png"
+                      alt="check"
+                    />
+                    <h6
+                      class="text-neutral-800 lh-one-half display-inline-block mb-0 pb-8"
+                    >
+                      全程參與 SecConGo TW 2024
+                    </h6>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-footer text-center bg-neutral-50">
+                <div class="dropdown">
+                  <a
+                    href="#"
+                    class="cart-btn bg-secondary-500 text-neutral-50"
+                    id="cartDropdown"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <h6 class="lh-one-half cart-text">加入購物車</h6>
+                  </a>
+                  <!-- Dropdown 購物車內容 -->
+                  <div
+                    class="dropdown-menu dropdown-menu-end p-4"
+                    aria-labelledby="cartDropdown"
+                    style="width: 300px"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="../assets/images/icon/shopping-bag.png"
+                        alt="cart"
+                      />
+                      <h5>購物車</h5>
+                      <img
+                        src="../assets/images/icon/cancel.png"
+                        alt="cancel"
+                        class="ms-auto"
+                      />
                     </div>
-                    <div class="card-footer">
-                      <small class="text-muted">Last updated 3 mins ago</small>
+                    <hr />
+                    <div class="cart-item">
+                      <p><strong>【國際組織票 Full Pass】</strong></p>
+                      <p>張數: 1</p>
+                      <p>單價: NT$2,400</p>
                     </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card h-100">
-                    <div class="card-body text-center">
-                    <img src="/assets/images/ticket icon-4.png" class="card-img-top" alt="...">
-                      <h2 class="card-title">Card title</h2>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <div class="cart-item">
+                      <p><strong>【國際組織票 day1】</strong></p>
+                      <p>張數: 2</p>
+                      <p>單價: NT$1,200</p>
                     </div>
-                    <div class="card-footer">
-                      <small class="text-muted">Last updated 3 mins ago</small>
-                    </div>
+                    <hr />
+                    <p>總數: 3</p>
+                    <p>金額: NT$4,800</p>
+                    <button
+                      class="btn btn-danger w-100"
+                      style="background-color: #ff5a5f"
+                    >
+                      結帳
+                    </button>
                   </div>
                 </div>
               </div>
-            </section>
-        </main>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container mt-6">
+        <div class="row row-cols-1 row-cols-md-3 g-6">  
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body text-center m0-auto mt-2 mb-2">
+                <img
+                  src="/assets/images/ticket icon-1.png"
+                  class="card-img-top"
+                  alt="ticket icon"
+                />
+                <h2 class="card-title fw-bold text-neutral-800 fs-8 mt-2">
+                  團報專區 Full Pass
+                </h2>
+                <h5 class="price-text lh-one-half text-secondary-500 mr-2 mb-0 pt-2">
+                  請來信諮詢
+                </h5>
+              </div>
+              <div class="m0-auto">
+                <ul class="check-list bg-neutral-100 pr-6">
+                  <li>
+                    <img
+                      class="check"
+                      src="/assets/images/icon/check.png"
+                      alt="check"
+                    />
+                    <h6
+                      class="text-neutral-800 lh-one-half display-inline-block"
+                    >
+                    團體購票折扣 (提供優惠代碼購票)
+                    </h6>
+                  </li>
+                  <li>
+                    <img
+                      class="check"
+                      src="/assets/images/icon/check.png"
+                      alt="check"
+                    />
+                    <h6
+                      class="text-neutral-800 lh-one-half display-inline-block"
+                    >
+                      大會特製紀念品
+                    </h6>
+                  </li>
+                  <li>
+                    <img
+                      class="check"
+                      src="/assets/images/icon/check.png"
+                      alt="check"
+                    />
+                    <h6
+                      class="text-neutral-800 lh-one-half display-inline-block"
+                    >
+                      午餐與餐點
+                    </h6>
+                  </li>
+                  <li>
+                    <img
+                      class="check"
+                      src="/assets/images/icon/check.png"
+                      alt="check"
+                    />
+                    <h6
+                      class="text-neutral-800 lh-one-half display-inline-block"
+                    >
+                      抽獎資格
+                    </h6>
+                  </li>
+                  <li>
+                    <img
+                      class="check"
+                      src="/assets/images/icon/check.png"
+                      alt="check"
+                    />
+                    <h6
+                      class="text-neutral-800 lh-one-half display-inline-block"
+                    >
+                      講師授權可公開的簡報檔
+                    </h6>
+                  </li>
+                  <li>
+                    <img
+                      class="check"
+                      src="/assets/images/icon/check.png"
+                      alt="check"
+                    />
+                    <h6
+                      class="text-neutral-800 lh-one-half display-inline-block"
+                    >
+                      講師授權可公開的簡報檔
+                    </h6>
+                  </li>
+                  <li>
+                    <img
+                      class="check"
+                      src="/assets/images/icon/check.png"
+                      alt="check"
+                    />
+                    <h6
+                      class="text-neutral-800 lh-one-half display-inline-block mb-0"
+                    >
+                      全程參與 SecConGo TW 2024
+                    </h6>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-footer text-center bg-neutral-50">
+                <a href="tel:+123456789"><h6 class="lh-one-half cart-text cart-btn border-btn bg-neutral-50 text-secondary-500">洽詢我們</h6></a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body text-center w-279 mt-2 mb-2">
+                <img
+                  src="/assets/images/ticket icon-2.png"
+                  class="card-img-top"
+                  alt="ticket icon"
+                />
+                <h2 class="card-title fw-bold text-neutral-800 fs-8">
+                  Business Pass
+                </h2>
+                <h5 class="price-text lh-one-half text-secondary-500 mr-2 mb-0">
+                  NT.
+                </h5>
+                <h2 class="price-text fw-bold text-secondary-500 mr-2 mb-0">
+                  0
+                </h2>
+                <h5 class="price-text lh-one-half text-secondary-500 mb-0">
+                  /張
+                </h5>
+              </div>
+              <div class="w-279">
+                <ul class="check-list bg-neutral-100">
+                  <li>
+                    <img
+                      class="check"
+                      src="/assets/images/icon/check.png"
+                      alt="check"
+                    />
+                    <h6
+                      class="text-neutral-800 lh-one-half display-inline-block"
+                    >
+                      限定早鳥報名禮
+                    </h6>
+                  </li>
+                  <li>
+                    <img
+                      class="check"
+                      src="/assets/images/icon/check.png"
+                      alt="check"
+                    />
+                    <h6
+                      class="text-neutral-800 lh-one-half display-inline-block"
+                    >
+                      大會特製紀念品
+                    </h6>
+                  </li>
+                  <li>
+                    <img
+                      class="check"
+                      src="/assets/images/icon/check.png"
+                      alt="check"
+                    />
+                    <h6
+                      class="text-neutral-800 lh-one-half display-inline-block"
+                    >
+                      午餐與餐點
+                    </h6>
+                  </li>
+                  <li>
+                    <img
+                      class="check"
+                      src="/assets/images/icon/check.png"
+                      alt="check"
+                    />
+                    <h6
+                      class="text-neutral-800 lh-one-half display-inline-block"
+                    >
+                      抽獎資格
+                    </h6>
+                  </li>
+                  <li>
+                    <img
+                      class="check"
+                      src="/assets/images/icon/check.png"
+                      alt="check"
+                    />
+                    <h6
+                      class="text-neutral-800 lh-one-half display-inline-block"
+                    >
+                      講師授權可公開的簡報檔
+                    </h6>
+                  </li>
+                  <li>
+                    <img
+                      class="check"
+                      src="/assets/images/icon/check.png"
+                      alt="check"
+                    />
+                    <h6
+                      class="text-neutral-800 lh-one-half display-inline-block"
+                    >
+                      講師授權可公開的簡報檔
+                    </h6>
+                  </li>
+                  <li>
+                    <img
+                      class="check"
+                      src="/assets/images/icon/check.png"
+                      alt="check"
+                    />
+                    <h6
+                      class="text-neutral-800 lh-one-half display-inline-block mb-0"
+                    >
+                      全程參與 SecConGo TW 2024
+                    </h6>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-footer text-center bg-neutral-50">
+                <div class="dropdown">
+                  <a
+                    href="#"
+                    class="cart-btn bg-secondary-500 text-neutral-50"
+                    id="cartDropdown"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <h6 class="lh-one-half cart-text">加入購物車</h6>
+                  </a>
+                  <!-- Dropdown 購物車內容 -->
+                  <div
+                    class="dropdown-menu dropdown-menu-end p-4"
+                    aria-labelledby="cartDropdown"
+                    style="width: 300px"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="../assets/images/icon/shopping-bag.png"
+                        alt="cart"
+                      />
+                      <h5>購物車</h5>
+                      <img
+                        src="../assets/images/icon/cancel.png"
+                        alt="cancel"
+                        class="ms-auto"
+                      />
+                    </div>
+                    <hr />
+                    <div class="cart-item">
+                      <p><strong>【國際組織票 Full Pass】</strong></p>
+                      <p>張數: 1</p>
+                      <p>單價: NT$2,400</p>
+                    </div>
+                    <div class="cart-item">
+                      <p><strong>【國際組織票 day1】</strong></p>
+                      <p>張數: 2</p>
+                      <p>單價: NT$1,200</p>
+                    </div>
+                    <hr />
+                    <p>總數: 3</p>
+                    <p>金額: NT$4,800</p>
+                    <button
+                      class="btn btn-danger w-100"
+                      style="background-color: #ff5a5f"
+                    >
+                      結帳
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body text-center m0-auto mt-2 mb-2">
+                <img
+                  src="/assets/images/ticket icon-3.png"
+                  class="card-img-top"
+                  alt="ticket icon"
+                />
+                <h2 class="card-title fw-bold text-neutral-800 fs-8 mt-2">
+                  媒體採訪 Media Pass
+                </h2>
+                <h5 class="price-text lh-one-half text-secondary-500 mr-2 mb-0 pt-2">
+                  請來信諮詢
+                </h5>
+              </div>
+              <div class="m0-auto">
+                <ul class="check-list bg-neutral-100 pr-6">
+                  <li>
+                    <img
+                      class="check"
+                      src="/assets/images/icon/check.png"
+                      alt="check"
+                    />
+                    <h6
+                      class="text-neutral-800 lh-one-half display-inline-block"
+                    >
+                    限定早鳥報名禮
+                    </h6>
+                  </li>
+                  <li>
+                    <img
+                      class="check"
+                      src="/assets/images/icon/check.png"
+                      alt="check"
+                    />
+                    <h6
+                      class="text-neutral-800 lh-one-half display-inline-block"
+                    >
+                      大會特製紀念品
+                    </h6>
+                  </li>
+                  <li>
+                    <img
+                      class="check"
+                      src="/assets/images/icon/check.png"
+                      alt="check"
+                    />
+                    <h6
+                      class="text-neutral-800 lh-one-half display-inline-block"
+                    >
+                      午餐與餐點
+                    </h6>
+                  </li>
+                  <li>
+                    <img
+                      class="check"
+                      src="/assets/images/icon/check.png"
+                      alt="check"
+                    />
+                    <h6
+                      class="text-neutral-800 lh-one-half display-inline-block"
+                    >
+                      抽獎資格
+                    </h6>
+                  </li>
+                  <li>
+                    <img
+                      class="check"
+                      src="/assets/images/icon/check.png"
+                      alt="check"
+                    />
+                    <h6
+                      class="text-neutral-800 lh-one-half display-inline-block"
+                    >
+                      講師授權可公開的簡報檔
+                    </h6>
+                  </li>
+                  <li>
+                    <img
+                      class="check"
+                      src="/assets/images/icon/check.png"
+                      alt="check"
+                    />
+                    <h6
+                      class="text-neutral-800 lh-one-half display-inline-block"
+                    >
+                      講師授權可公開的簡報檔
+                    </h6>
+                  </li>
+                  <li>
+                    <img
+                      class="check"
+                      src="/assets/images/icon/check.png"
+                      alt="check"
+                    />
+                    <h6
+                      class="text-neutral-800 lh-one-half display-inline-block mb-0"
+                    >
+                      全程參與 SecConGo TW 2024
+                    </h6>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-footer text-center bg-neutral-50">
+                <a href="tel:+123456789"><h6 class="lh-one-half cart-text cart-btn border-btn bg-neutral-50 text-secondary-500">洽詢我們</h6></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
