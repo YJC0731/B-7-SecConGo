@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ticket</title>
-    <script type="module" crossorigin src="/B-7-SecConGo/assets/main-b54dfd0b.js"></script>
-    <link rel="stylesheet" href="/B-7-SecConGo/assets/main-39f6bcad.css">
+    <script type="module" crossorigin src="/B-7-SecConGo/assets/main-f1e0e54e.js"></script>
+    <link rel="stylesheet" href="/B-7-SecConGo/assets/main-631b3d7b.css">
   </head>
   <body>
     <header>
@@ -15,7 +15,7 @@
             <nav class="navbar navbar-expand-lg ">
                 <div class="container-fluid">
                     <!-- logo -->
-                    <a class="navbar-brand " href="../pages/index.html"><img src="/B-7-SecConGo/assets/logo-67f8a7f0.png" alt="logo"></a>
+                    <a class="navbar-brand " href="index.html"><img src="/B-7-SecConGo/assets/logo-67f8a7f0.png" alt="logo"></a>
                     <!-- 漢堡選單按鈕 -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -27,10 +27,10 @@
                                 <a class="nav-link text-neutral-800 px-0" aria-current="page" href="#">關於我們</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-neutral-800 px-0" href="#">活動議程</a>
+                                <a class="nav-link text-neutral-800 px-0" href="agenda.html">活動議程</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-neutral-800 px-0" href="#">售票資訊</a>
+                                <a class="nav-link text-neutral-800 px-0" href="ticket.html">售票資訊</a>
                             </li>
 
                         </ul>
@@ -76,7 +76,7 @@
                                 </div>
                             </div>
                             <!-- <img src="../assets/images/Ellipse 60.png" alt="login" class="me-8" data-bs-toggle="modal" data-bs-target="#loginModal"> -->
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16" data-bs-toggle="modal" data-bs-target="#loginModal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-circle mr-8" viewBox="0 0 16 16" data-bs-toggle="modal" data-bs-target="#loginModal">
                                   <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
                                     <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
                                 </svg>
@@ -102,8 +102,8 @@
             <div class="modal-body">
                 <!-- 標籤區塊（登入與註冊） -->
                 <ul class="nav nav-tabs justify-content-center mb-6 border-bottom-0" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" aria-controls="login" aria-selected="true">登入</button>
+                    <li class="nav-item " role="presentation">
+                        <button class="nav-link active bg-primary-500 text-white" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="submit" role="tab" aria-controls="login" aria-selected="true">登入</button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="register-tab" data-bs-toggle="tab" data-bs-target="#register" type="button" role="tab" aria-controls="register" aria-selected="false">註冊</button>
@@ -115,13 +115,13 @@
                     <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
                         <form>
                             <div class="mb-3">
-                                <label for="email" class="form-label">Email</label>
+                                <label for="email" class="form-label text-neutral-800">Email</label>
                                 <input type="email" class="form-control" id="email" placeholder="請輸入">
                             </div>
                             <div class="mb-3">
                                 <div class="d-flex justify-content-between">
-                                    <label for="password" class="form-label">密碼</label>
-                                    <a href="#" class="text-end" style="color: #FF5A5F;">忘記密碼？</a>
+                                    <label for="password" class="form-label text-neutral-800">密碼</label>
+                                    <a href="#" class="text-end fw-bold text-secondary-500">忘記密碼？</a>
                                 </div>
                                 <div class="input-group">
                                     <input type="password" class="form-control" id="password" placeholder="請輸入">
@@ -1035,7 +1035,110 @@
         </ul>
       </section>
     </main>
-    <!-- JavaScript Bundle with Popper -->
+    <footer>
+    <section class="footer-info bg-primary-500">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-6 col-md-12">
+                    <div class="map ">
+                        <iframe class="rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.6910198114238!2d121.55882912595652!3d25.0445577378653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abbf10d06711%3A0x18365043482713a4!2z6Ie65YyX5paH5Ym1!5e0!3m2!1szh-TW!2stw!4v1729312144556!5m2!1szh-TW!2stw"
+                            width="600" height="310" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <div class="footer-server-info d-flex justify-content-between border-bottom pb-6">
+                        <div class="footer-sever-title">
+                            <p class="mb-0 fs-4 text-neutral-50 fw-bold">大會服務小組</p>
+                            <a class="text-neutral-50" href="mailto:SecConGo@server.org">SecConGo@server.org</a>
+                        </div>
+                        <div class="footer-sever-socialMedia">
+                            <a href="#" class="me-4"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKoSURBVHgBzZmvcuJQGMUPTGTbQbeGVZ2qVhS9wAtAPSJIFK1CMS0z+N0aJLBvAC/AZDWmK1FNBdhlBoNLvxNumJAhgYQ0zW/mS0hykxzOd/9CBhGxLKsouzuJn2qfU0GWEqaKfxJGJpMx8NWIqJzEs8R/KzzvEgOJPOJGCftlxccgNqHyoKoVzbFDvEvoOAUrXtf8eEYUrE0akmKQZnGBIrU94mi5jhNZrVZ2LBYLnJ2d4eLiApeXl0G36PLupXRHT+6TGeyK02UXzm4P4/HYjul0uvd6oVBAv98PesSDiBw5B5pLXF520SosNo41m01fYQ7z+RwHGIgWduzs7JF1XaC4PCJSr9cPijuSHFxG2QKVezoiwpTOZjPEyKNosodNx8HIqSW9Xg9fwCM3Th0sIiJspQw/2Cgqlcr2+Pz8HEfSlHjRrM2sJI+IBFV6Cut2u4gIx/8iU1zECQQJvL+/x4ncUeAt0ovtYB7p5TbtAnMUmEN6yWU4jTi29Gg0QrvdxinUajW0Wq2jy9PBJRLkwIzGyzJxgTc3N2GKmxT4hgS5vr4OU/yDAv8iITjMhRjqyBvH4qMdZHoajcbOOc5iJpPJ3vLlcnnHsaurK4TE0Lji51QbR3Q3fJk3RWzZfgJLpRKq1SoiYlKbM916RfowuHEE/kb66HBjC1Tz/zS5OBRNJj+41yQvSLhP9MGEco9sBSoXn/D9dBz3iNtBihzie1P9qjRsyXpLSAEuVgwkz0i9e4esT+EH3oDkMCTq+y7sFcj6KEGRSaSbaS05vyR4yQbdqSznNzMRP3aj3JdWN4ECiaq0JYk/iI+hxA959sEB4qBAwmYvofOh2Ag1ER461lHC6n4p9aIhBKp/0vlZLfir6/Way1ZONPLw/A2haRrLf2DTQg1E4BMW6gOjN6oUNgAAAABJRU5ErkJggg==" alt="fb"></a>
+                            <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALgSURBVHgBzZmvj+JAFMdfyVoSzoLpOdxi0MdikOQSLMkeDgx7BkXCbYJB7WLAwSbgwCAxLKcRcA4UnAC7m/AHzM136Fx6lxb6Y7b0kzzaptPpl+9MX19bjTzCGMvwRYrHF2MZMwK889gZ8YvHXNO0OX00XFSMR4PHG3PPlkefh06qMYQ9MXX0lQnlHVWZN8cuseVxT35gal2z44ncwk5D+sqCY4lzuhG4ZMHzaqUlYiEOlqcoeDLs0nDzBvfs+jyYNWkmcTpfwGadrguS/Gee2LGkG9OOBtmIOx6PNJvNSBXRaJSSySTF43Gr3TFDy3dsCAcN97ZWrQ+HAxUKBSFSJRDX7/ftRIJPcFFeJA27VoPBQLk4gD/e6XTONRFzUQrM2LWS4vL5PJXLZfIL+shms06aVvETYaeqRHdyRKVSoel0KuaPW9LptDgWfWAOOgA3iwwczDhpvVgsxLBgzoxGI2o2m5RIJC4eBzG1Wo16vZ44Fn2gL4ekIPDWSUt0nMvlqNvtim0MOU6KpR3YB9eKxaKYKjgWfaAvhwgHdXIBJjZOgrQDR+Bku93+x02sQzz2wUE4hkxw4aKw4vaGPCRmOFCtVoVDmFOY9AgpAI5BGFxrtVo0mUzIIzEIdF5F/AdODHcgUoqVDIdDIdhniopFyCdws16viyHEOqJUKgnnVORPOIh7nmcXJZvNRsxNxYg7yTuFlx0Erii8/IbAnxReVmF3cB4xnvjDOA930CbTTJuuwIWiYY4fWbAizbxZtZJ5bb/fk2px4/H4XMGKsn9nfiZ5JqMGsxK5Xq+VFq64NZ5x8IWL+4YVs0C4iLLfd9L2yY7HHdzDxt9bnfEU9UjX51GKswRDza7HMzmBBfteRrK00mJXzXylYBP4nMcduYUFM9zOhvWMSLyv2TL14KXoA6mAd6TzeGHqwMioT2cmoVvmHjj2w60wjTzCTg/8CDy26kaYP0MgcKGhnFt5/QzxB1QQHlys8U9HAAAAAElFTkSuQmCC" alt="mail"></a>
+                        </div>
+                    </div>
+                    <div class="footer-server-address mb-6 mt-6">
+                        <div class="footer-server-address-titl mb-1 fw-bold text-neutral-50">地址</div>
+                        <div class="footer-server-address-info d-flex justify-content-between align-items-center">
+                            <p class="mb-0 text-neutral-50">110 台北市信義區菸廠路 88 號 6 樓<br>(台北文創大樓 Taipei New Horizon)</p>
+                            <div class="footer-btn-width">
+                                <a href="https://www.taipeinewhorizon.com.tw/transportation" target="_blank">
+                                <button type="submit" class="btn btn-address">交通資訊</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-server-sub">
+                        <div class="footer-server-sub-title mb-2 text-neutral-50 fw-bold">訂閱我們</div>
+                        <div class="footer-sever-sub-form d-flex align-items-center w-100">
+                            <input type="email" id="emailInput" class="form-control me-4 " placeholder="請輸入 Email">
+                            <button type="submit" id="subscribeBtn" class="btn  text-neutral-50 btn-sub footer-btn-width">送出</button>
+                        </div>
+                        <div id="error-message" class="text-danger mt-2" style="display: none;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="footer">
+            <div class="container pb-11 d-flex justify-content-between">
+                <div class="footer-logo pt-6">
+                    <a class="navbar-brand " href="../pages/index.html"><img src="/B-7-SecConGo/assets/logo-67f8a7f0.png" alt="logo"></a>
+                </div>
+                <div class="footerBar pt-9 ">
+                    <ul class="d-flex">
+                        <li><a href="#">最新消息</a></li>
+                        <li>
+                            <a href="#">活動議程</a>
+                        </li>
+                        <li>
+                            <a href="#">售票資訊</a>
+                        </li>
+                        <li>
+                            <a href="#" class="me-0">隱私權聲明</a>
+                        </li>
+                    </ul>
+                    <div class="copyright text-end">
+                        <p>
+                            Copyright © 2024 SecConGo All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- AI提供回到首頁 -->
+    <!-- 回到頂部按鈕 -->
+    <button id="backToTop" class="btn  position-fixed bottom-0 end-0 m-4 d-none  ">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEISURBVHgB7dZLCoMwEIDhJFTXPYpX8FjuPEpvor2BN2h6A9eK2AmYEgIxjxlXzg+liS8+hGCE4DiO+9f3/dP8BGFKEGVgdV0PVVUNlEgpCLI4GDZmvu/7tK5rC8dngQwN9HE2KiQKGMLZKJDFwBjOhkUWAVNxNgwyexUHcFpKOTrzN8y1ncC4KV3dWcAQblmWFt7S1wF94K+lQCYDz3BwTvvXd12nKZBJwFwcJTIKLMVRIdWVOAqkuhqHReas4mJcBHl6z9kbnA0IhhMFLoCcjufO2UAXSYXzkTGc6SEiHQ9Ab5v8DmQ0sg3rVTEQGwOxMRAbA7FFvySpbdv2UkqNZuxuBjiOu3s//QzldKiTLTUAAAAASUVORK5CYII=" alt="back up" class="back-to-top-icon ">
+        <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+        <path fill-rule="evenodd" d="M8 12a.5.5 0 0 1-.5-.5v-5.793l-2.146 2.147a.5.5 0 0 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5a.5.5 0 0 1-.5.5z"/>
+    </svg>
+</button>
+
+    <!-- JavaScript 控制 -->
+    <script>
+        // 當用戶滾動到一定距離後顯示「回到頂部」按鈕
+        window.addEventListener('scroll', function() {
+            const backToTopButton = document.getElementById('backToTop');
+            if (window.scrollY > 300) { // 當滾動距離大於 300px 時顯示按鈕
+                backToTopButton.classList.remove('d-none');
+            } else {
+                backToTopButton.classList.add('d-none');
+            }
+        });
+
+        // 點擊按鈕滾動到頁面頂部
+        document.getElementById('backToTop').addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // 滾動效果平滑
+            });
+        });
+    </script>
+    <!-- 回到首頁結束 -->
+</footer>
+
+<!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     
