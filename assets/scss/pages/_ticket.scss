@@ -19,8 +19,16 @@ body{
   display: inline-block;
 }
 
+.m0-auto{
+  margin: 0 auto;
+}
+
 .mt-20 {
   margin-top: 80px;
+}
+
+.mb-0{
+  margin-bottom: 0;
 }
 
 .mb-4 {
@@ -35,6 +43,13 @@ body{
   margin-right: 8px;
 }
 
+.pb-8{
+  padding-bottom: 32px;
+}
+
+.fs-8{
+  font-size: 32px;
+}
 
 
 
@@ -45,6 +60,11 @@ body{
   background: url(/assets/images/banner7.png);
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.card{
+  border-radius: 16px;
+  border: 1px solid #E4E4E4;
 }
 
 .card-img-top {
@@ -58,22 +78,77 @@ body{
 
 .check-list{
   list-style: none;
-  padding: 16px 0 0 24px;
+  padding: 16px 0 16px 24px;
+  margin-bottom: 0;
 }
 
 .check {
+  filter: opacity(0.4) drop-shadow(0 0 0 #3D8BB7);
   width: 16px;
   display: inline-block;
 }
 
-// .w-208{
-//   width: 208px;
-//   margin: 0 auto;
-// }
+.check-filter{
+  filter: opacity(0.4) drop-shadow(0 0 0 #D1D1D1);
+  width: 16px;
+  display: inline-block;
+}
 
 .w-279{
   width: 279px;
   margin: 0 auto;
 }
 
+.cart-btn{
+  padding: 8px 16px 8px 16px;
+  border-radius: 8px;
+}
 
+.contact-btn{
+  padding: 7px 15px;
+  border-radius: 8px;
+  border: 1px solid #F16C5D;
+  color: #F16C5D;
+}
+
+.close-btn{
+  padding: 8px 24px 8px 24px;
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+.close-btn h6{
+  font-weight: normal;
+}
+
+.cart-btn h6{
+  font-weight: normal;
+}
+
+.cart-text{
+  margin-bottom: 0;
+}
+
+.card-footer{
+  padding: 24px 0 40px;
+  border: 0;
+}
+
+.card-footer a:hover{
+  transform: scale(1.1);
+  background: #FB9700!important;
+}
+
+.btn-danger:hover{
+  background: #FB9700!important;
+  transform: scale(0.9);
+  transition: all 0.1s;
+}
+
+.card-footer .contact-btn:hover{
+  color: white;
+}
+
+.note-list{
+  list-style: initial;
+}
