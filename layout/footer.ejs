@@ -1,24 +1,103 @@
 <footer>
-    <div class="footer bg-primary-500">
+    <section class="footer-info bg-primary-500">
         <div class="container">
             <div class="row justify-content-between">
-                <div class="col-lg-6">
-                    <div class="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.6910198114238!2d121.55882912595652!3d25.0445577378653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abbf10d06711%3A0x18365043482713a4!2z6Ie65YyX5paH5Ym1!5e0!3m2!1szh-TW!2stw!4v1729312144556!5m2!1szh-TW!2stw"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="col-lg-6 col-md-12">
+                    <div class="map ">
+                        <iframe class="rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.6910198114238!2d121.55882912595652!3d25.0445577378653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abbf10d06711%3A0x18365043482713a4!2z6Ie65YyX5paH5Ym1!5e0!3m2!1szh-TW!2stw!4v1729312144556!5m2!1szh-TW!2stw"
+                            width="600" height="310" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
-                <div class="col-lg-5">
-                    <div class="footer-server-info">
+                <div class="col-lg-5 col-md-12">
+                    <div class="footer-server-info d-flex justify-content-between border-bottom pb-6">
                         <div class="footer-sever-title">
-                            <p>大會服務小組</p>
-                            <a href="mailto:SecConGo@server.org">SecConGo@server.org</a>
+                            <p class="mb-0 fs-4 text-neutral-50 fw-bold">大會服務小組</p>
+                            <a class="text-neutral-50" href="mailto:SecConGo@server.org">SecConGo@server.org</a>
                         </div>
+                        <div class="footer-sever-socialMedia">
+                            <a href="#" class="me-4"><img src="../assets/images/icon/fb.png" alt="fb"></a>
+                            <a href="#"><img src="../assets/images/icon/mail.png" alt="mail"></a>
+                        </div>
+                    </div>
+                    <div class="footer-server-address mb-6 mt-6">
+                        <div class="footer-server-address-titl mb-1 fw-bold text-neutral-50">地址</div>
+                        <div class="footer-server-address-info d-flex justify-content-between align-items-center">
+                            <p class="mb-0 text-neutral-50">110 台北市信義區菸廠路 88 號 6 樓<br>(台北文創大樓 Taipei New Horizon)</p>
+                            <div class="footer-btn-width">
+                                <button type="submit" class="btn btn-address ">交通資訊</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-server-sub">
+                        <div class="footer-server-sub-title mb-2 text-neutral-50 fw-bold">訂閱我們</div>
+                        <div class="footer-sever-sub-form d-flex align-items-center w-100">
+                            <input type="email" id="emailInput" class="form-control me-4 " placeholder="請輸入 Email">
+                            <button type="submit" id="subscribeBtn" class="btn  text-neutral-50 btn-sub footer-btn-width">送出</button>
+                        </div>
+                        <div id="error-message" class="text-danger mt-2" style="display: none;"></div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    <section>
+        <div class="footer">
+            <div class="container pb-11 d-flex justify-content-between">
+                <div class="footer-logo pt-6">
+                    <a class="navbar-brand " href="../pages/index.html"><img src="../assets/images/logo.png" alt="logo"></a>
+                </div>
+                <div class="footerBar pt-9 ">
+                    <ul class="d-flex">
+                        <li><a href="#">最新消息</a></li>
+                        <li>
+                            <a href="#">活動議程</a>
+                        </li>
+                        <li>
+                            <a href="#">售票資訊</a>
+                        </li>
+                        <li>
+                            <a href="#" class="me-0">隱私權聲明</a>
+                        </li>
+                    </ul>
+                    <div class="copyright text-end">
+                        <p>
+                            Copyright © 2024 SecConGo All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- AI提供回到首頁 -->
+    <!-- 回到頂部按鈕 -->
+    <button id="backToTop" class="btn  position-fixed bottom-0 end-0 m-4 d-none  ">
+    <img src="../assets/images/icon/Component 2.png" alt="back up" class="back-to-top-icon ">
+        <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+        <path fill-rule="evenodd" d="M8 12a.5.5 0 0 1-.5-.5v-5.793l-2.146 2.147a.5.5 0 0 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5a.5.5 0 0 1-.5.5z"/>
+    </svg>
+</button>
+
+    <!-- JavaScript 控制 -->
+    <script>
+        // 當用戶滾動到一定距離後顯示「回到頂部」按鈕
+        window.addEventListener('scroll', function() {
+            const backToTopButton = document.getElementById('backToTop');
+            if (window.scrollY > 300) { // 當滾動距離大於 300px 時顯示按鈕
+                backToTopButton.classList.remove('d-none');
+            } else {
+                backToTopButton.classList.add('d-none');
+            }
+        });
+
+        // 點擊按鈕滾動到頁面頂部
+        document.getElementById('backToTop').addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // 滾動效果平滑
+            });
+        });
+    </script>
+    <!-- 回到首頁結束 -->
 </footer>
 
 <!-- JavaScript Bundle with Popper -->
