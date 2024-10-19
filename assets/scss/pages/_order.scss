@@ -16,13 +16,12 @@
 //     width: 384px;
 //     padding-top: 31px;
 //     padding-bottom: 31px;
-//     font-family: "Noto Sans TC";
 // }
 // .list-deco a {
 //     padding-top: 10px;
 //     padding-bottom: 16px;
-//     font-family: "Noto Sans TC";
 // }
+
 // .list-deco a:hover {
 //     border-bottom: 4px solid var(--Supportyellow600);
 //     color: var(--Supportyellow600);
@@ -58,6 +57,53 @@
 //     background: var(--secondary500);
 //     color: var(--Neutral50);
 // }
+
+/* navbar-頁面選單 */
+.list-deco a {
+  color: #5B5B5B;  
+  padding-top: 10px;
+    padding-bottom: 16px;
+}
+
+.list-deco a:hover {
+    border-bottom: 4px solid #FB9700;
+    color: #FB9700;
+}
+
+
+/* navbar-購物車 */
+.cart-ticket{
+  width: 102px;
+  height:auto;
+  padding: 24.86px 3.82px 8.29px 14.66px;
+}
+
+.cancel-icon{
+  width: 24px;
+  height: 24px;
+  padding: 3px 4px 3px 4px;
+}
+
+/* navbar-會員登入清單列表 */
+.dropdown img:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.dropdown-menu a{
+  cursor: pointer;
+  background: #fff;
+}
+
+.dropdown-menu a:hover{
+  background:rgba(251, 151, 0, .05);
+  color: #FB9700;
+}
+
+.dropdown-menu a:focus{
+  background: #FF735F;
+  color: #ffffff;
+}
 
 /* member-options */
 .options-deco{
