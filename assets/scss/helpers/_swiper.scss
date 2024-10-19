@@ -53,8 +53,6 @@
 
 .swiper-wrapper {
     display: flex;
-    gap: -20px; // 減少間距為 0
-    // justify-content: center; // 中間圖片居中，左右圖片對齊
 }
 
 .swiper {
@@ -82,4 +80,127 @@
     border-radius: 40px;
     background-color: $secondary-500;
     opacity: 1;
+}
+
+// co-chair部分
+.co-chair {
+    padding: 40px 0 120px 0;
+    .swiper-slide {
+        margin-right: 24px; // 設置圖片之間的距離為 24px
+        display: flex;
+        justify-content: center;
+        // 移除縮小效果，使得 co-chair 部分的圖片在滑動過程中不縮小
+        img {
+            transform: none !important; // 覆寫縮小效果
+            filter: brightness(1) !important; // 保持正常亮度
+        }
+    }
+    .swiper-wrapper {
+        display: flex;
+        align-items: stretch;
+    }
+    .chair-card {
+        position: relative;
+        background-color: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: box-shadow 0.3s ease;
+        max-width: 100%;
+        // 移除正常狀態下的陰影
+        box-shadow: none;
+        &:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); // 只有在 hover 時才有陰影
+        }
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0; // 覆蓋整個卡片區域
+            padding: 16px;
+            text-align: left;
+            display: flex; // 使用 flex 使文字對齊
+            flex-direction: column;
+            justify-content: flex-end; // 讓文字位於底部
+            z-index: 2; // 增加 z-index 以確保文字顯示在圖片上
+            transition: transform 0.3s ease; // 增加過渡效果
+            span {
+                display: block;
+                font-size: 14px;
+                margin-bottom: 4px;
+            }
+            h3 {
+                font-size: 18px;
+                margin: 0 0 8px;
+            }
+            // 當 hover 狀態時，向上移動
+            .chair-card:hover & {
+                transform: translateY(-30%);
+            }
+        }
+        .chair-info {
+            padding: 16px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            display: none; // 默認隱藏
+            flex-direction: column;
+            text-align: left;
+            z-index: 3; // 更高的 z-index 以確保 hover 時顯示在最上層
+            h3,
+            span,
+            p {
+                margin: 0;
+            }
+            p {
+                font-size: 14px;
+                line-height: 1.5;
+                color: #fff;
+            }
+        }
+        &:hover .chair-info {
+            display: flex; // 當 hover 時顯示描述文字
+        }
+    }
+    .swiper-pagination-bullet {
+        background-color: #6c757d;
+        opacity: 0.5;
+    }
+    .swiper-pagination-bullet-active {
+        background-color: #007bff;
+        opacity: 1;
+    }
+    .swiper-controls {
+        position: absolute;
+        bottom: 10px; // 調整位置到右下角
+        right: 10px;
+        display: flex;
+        gap: 10px;
+        .swiper-button-next,
+        .swiper-button-prev {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s;
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.7);
+            }
+            &::after {
+                font-size: 16px;
+            }
+        }
+    }
 }
