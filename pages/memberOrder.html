@@ -22,17 +22,16 @@
                     </button>
                         <!-- 中間選單 -->
                         <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-                            <ul class="navbar-nav mx-auto ">
+                            <ul class="navbar-nav mx-auto fs-5">
                                 <li class="nav-item">
-                                    <a class="nav-link text-neutral-800 px-0" aria-current="page" href="#">關於我們</a>
+                                    <a class="nav-link text-neutral-500 px-0 " aria-current="page" href="#">關於我們</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-neutral-800 px-0" href="agenda.html">活動議程</a>
+                                <li class="nav-item list-deco">
+                                    <a class="nav-link px-0" href="agenda.html">活動議程</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-neutral-800 px-0" href="ticket.html">售票資訊</a>
+                                <li class="nav-item list-deco">
+                                    <a class="nav-link px-0" href="ticket.html">售票資訊</a>
                                 </li>
-
                             </ul>
                             <!-- 右側選單 -->
                             <div class="d-flex align-items-center">
@@ -52,34 +51,51 @@
                                         <img src="../assets/images/icon/shopping-bag.png" alt="shopping-bag">
                                     </a>
                                     <!-- Dropdown 購物車內容 -->
-                                    <div class="dropdown-menu dropdown-menu-end p-4" aria-labelledby="cartDropdown" style="width: 300px;">
-                                        <div class="d-flex align-items-center">
-                                            <img src="../assets/images/icon/shopping-bag.png" alt="cart">
-                                            <h5>購物車</h5>
-                                            <img src="../assets/images/icon/cancel.png" alt="cancel" class="ms-auto">
+                                    <div class="dropdown-menu dropdown-menu-end p-4" aria-labelledby="cartDropdown" style="width: 360px;">
+                                        <div class="d-flex align-items-center text-center pt-5">
+                                            <img class="me-2 pb-2" src="../assets/images/icon/shopping-bag.png" alt="cart">
+                                            <h5 class="text-neutral-900">購物車</h5>
+                                            <img src="../assets/images/icon/cancel.png" alt="cancel" class="ms-auto pb-2">
                                         </div>
                                         <hr>
-                                        <div class="cart-item">
-                                            <p><strong>【國際組織票 Full Pass】</strong></p>
-                                            <p>張數: 1</p>
-                                            <p>單價: NT$2,400</p>
+                                        <div class="cart-item pb-6 d-flex">
+                                            <a href="ticket.html"><img class="cart-ticket me-2" src="../assets/images/ticket icon-4.png" alt="ticket-icon"></a>
+                                            <div>
+                                            <h5 class="pt-4 pb-4 fs-5"><strong>國際組織票 Full Pass</strong></h5>
+                                            <p class="fs-6 pb-2 text-neutral-800">張數: 1</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                            <p class="fs-6 text-neutral-800">單價: NT$2,400</p>
+                                            <img class="cancel-icon" src="../assets/images/icon/delete.png" alt="delete">
                                         </div>
-                                        <div class="cart-item">
-                                            <p><strong>【國際組織票 day1】</strong></p>
-                                            <p>張數: 2</p>
-                                            <p>單價: NT$1,200</p>
+                                        </div>
                                         </div>
                                         <hr>
-                                        <p>總數: 3</p>
-                                        <p>金額: NT$4,800</p>
+                                        <p class="text-primary-500 ms-5">總數: 1</p>
+                                        <p class="pb-8 text-primary-500 ms-5">金額: NT$2,400</p>
                                         <button class="btn btn-danger w-100" style="background-color: #FF5A5F;">結帳</button>
                                     </div>
                                 </div>
-                                <img src="../assets/images/Ellipse 60.png" alt="login" class="me-8" data-bs-toggle="modal" data-bs-target="#loginModal">
-                                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16" data-bs-toggle="modal" data-bs-target="#loginModal">
-                                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-                                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
-                                </svg> -->
+                                
+                                <!--會員登入選單-->
+                                <div class="dropdown">
+                                    <a href="#" class="d-flex align-items-center hvp" id="memberlist" data-bs-toggle="dropdown" aria-expanded="false">
+                                    </a>
+                                    <!-- 會員登入列表-->
+                                    <div class="memdropdown">
+                                        <a class="d-flex align-items-center" id="memberlist" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src="../assets/images/Ellipse 60.png" alt="login" class="me-8" data-bs-toggle="modal">
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-end pt-4 text-center" aria-labelledby="memberlist" style="width:auto;">
+                                            <li><a class="dropdown-item disabled" type="button">會員資料</a></li>
+                                            <li><a class="dropdown-item" href="memberOrder.html" type="button">我的訂單</a></li>
+                                            <li><a class="dropdown-item disabled" type="button">投稿查看</a></li>
+                                            <hr>
+                                            <li><a class="dropdown-item" href="index.html" type="button">登出</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- 語系 -->
                                 <div class="btn-group btn-language-toggle" role="group" aria-label="Language toggle">
                                     <button type="button" class="btn btn-language btn-secondary-500 text-white ">中文</button>
                                     <button type="button" class="btn btn-language btn-outline-secondary-500 text-neutral-700 flex-grow-1">EN</button>
