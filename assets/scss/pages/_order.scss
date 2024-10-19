@@ -59,14 +59,7 @@
 //     color: var(--Neutral50);
 // }
 
-
 /* member-options */
-
-.member-row{
-    padding-right: -12px;
-    padding-left: -12px;
-}
-
 .options-deco{
     border-bottom: 1px solid;
 }
@@ -76,7 +69,7 @@
     color: #868686;
 }
 
-.tab-link:focus{
+.options-deco a:focus{
     color: #F16C5D;
     border-bottom: 3px solid #F16C5D;
     cursor: pointer;
@@ -91,8 +84,6 @@
 .order-info-row {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    padding-right: -12px;
-    padding-left: -12px;
 }
 
 .order-info-col {
@@ -100,7 +91,6 @@
 }
 
 .info-list {
-    padding-bottom: 40px;
     border-bottom: 1px solid #E4E4E4;
 }
 
@@ -125,34 +115,31 @@
   }
 
   /*memberOrder Info選單區塊2*/
-
-.Con-Vision-pic {
+  .Con-Vision-pic {
     width: 306px;
     height: auto;
 }
 
   /*memberOrder Info選單btn區塊3*/
-.info-conbtn {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    border-bottom: 1px solid #E4E4E4;
+
+  .accordion-item{
+    border:hidden;
 }
 
-.btn-primary {
+.accordion-body{
+    border-top: 1px solid #E4E4E4;
+}
+
+  .btn-primary {
     display: inline-block;
     cursor: pointer;
-    width: 148px;
-    padding: 8px 16px;
     border-radius: 8px;
 }
 
 
   /*訂單展開詳細的內容｜info-finaldes區塊1*/
-.info-finaldesc-col {
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+  .tab-deco{
+    table-layout: fixed;
 }
 
 .info-final-pic{
@@ -161,7 +148,7 @@
 }
 
 .info-finaldesc-title {
-    margin-left: 8px;
+    // margin-left: 8px;
     color: #3D8BB7;
 }
 
@@ -174,7 +161,7 @@
 
 .info-desctable .table th, 
 .info-desctable .table td {
-    padding:8px; /* 調整內邊距 */
+    padding:12px; /* 調整內邊距 */
     text-align: center;
     background-color: transparent; /* 移除背景顏色 */
     font-size: inherit; /* 移除 th 和 td 的字體大小設置 */
@@ -183,76 +170,40 @@
 
 .info-desctable .table th {
     font-weight: normal; 
+    padding-top:12px;
   }
 
-.info-desctable-headthrow1 {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 24px;
-}
-
-.info-desctable-headthrow2 {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: center;
-    color: #5B5B5B;
-    border-left: 1px solid #E4E4E4;
-}
-
 .desctable {
-    width: 494px;
-    border-bottom: 1px solid #E4E4E4
+    border-bottom: 1px solid #E4E4E4;
 }
 
-.info-desc-tabletext {
-    background: #FFFFFF;
-    border-bottom: 1px solid #E4E4E4
+.info-desctable-title{
+    margin-top: 37px;
+    margin-bottom: 37px;
 }
 
 .info-desctable-pic {
     width: 80px;
     height: 80px;
     margin-right: 10px;
-    margin-top: 12px;
-    margin-bottom: 12px;
-    margin-left: 24px;
-}
-
-.info-desctable-title {
-    color: #5B5B5B;
 }
 
 .info-desctable-text {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    width: 184.5px;
-    color: #5B5B5B;
-    background: #FFFFFF;
-    text-align: center;
-    align-items: center;
-}
-
-.price-deco h5 {
-    color: #F16C5D;
+    padding-top: 25px;
 }
 
 .info-desctable-price {
     text-decoration: line-through;
+    padding-bottom: 25px;
 }
 
 .info-desctable-pricetitle {
-    text-align: right;
-    color: #3D8BB7;
-    padding-top: 20px;
-    padding-right: 40px;
-    background: #FFFFFF;
     border-top: 1px solid #E4E4E4;
 }
 
-/*訂單展開詳細的內容｜info-finaldes-訂單人資訊區塊3*/
+/*訂單展開詳細的內容｜info-finaldes-訂單人資訊區塊3-1*/
 .order-info-con{
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    border-radius: 8px;
 }
 
 .btn-order{
@@ -263,27 +214,191 @@
     cursor: pointer;
 }
 
-.btn-order .btn-secondary:hover {
- border: 1px solid #F16C5D;
- background: #F16C5D; 
- color: #fff;
-}
+.order-info a:hover {
+    border: 1px solid #F16C5D;
+    background: #F16C5D; 
+    color: #fff;
+   }
 
-.info-list .table {
+.order-desc-list .table {
     border-collapse: collapse; /* 移除表格間距 */
     border-spacing: 0;
     margin: 0; /* 清除表格周圍的預設 margin */
+    table-layout: fixed  /* 固定欄位寬度，確保等寬 */
   }
 
-.info-list .table th, 
-.info-list .table td {
+.order-desc-list .table th, 
+.order-desc-list .table td {
     padding:8px; /* 調整內邊距 */
     text-align: left;
-    background-color: transparent; /* 移除背景顏色 */
+    background: transparent; /* 移除背景顏色 */
     font-size: inherit; /* 移除 th 和 td 的字體大小設置 */
     color: inherit;     /* 移除 th 和 td 的字體顏色設置 */
   }
 
-.info-list .table th {
+.order-desc-list .table th {
     font-weight: normal; 
   }
+
+//memberOrder Info｜info-finaldes-訂單人＆主辦通訊區塊3-2/
+.order-coninfo-col {
+    padding: 24px 32px 0px 32px;
+}
+
+.order-coninfo-con{
+    border-radius: 8px;
+}
+
+.order-coninfo-msg{
+    width: 100%; /* 讓 textarea 寬度占滿父容器 */
+    max-width: 100%; /* 限制最大寬度，為了避免超出父容器的寬度 */
+    height: auto; /* 高度自動調整 */
+    padding: 10px;
+    border-radius: 5px;
+    color: #a1a1a1;
+    border: 1px solid #e0e0e0;
+    resize: vertical; /* 允許使用者垂直調整高度 */
+  }
+  
+  @media (min-width: 768px) {
+    .textarea {
+      height: 150px; /* 在平板或更大的裝置上固定高度 */
+    }
+  }
+
+// 訂單人＆主辦通訊區塊3-2 btn //
+/* 隱藏實際的檔案上傳 input */
+.file-input {
+    display: none;
+}
+
+/* 自訂上傳按鈕的樣式 */
+.custom-upload-button {
+    border-radius: 8px;
+    padding: 8px 16px;
+    border: 1px solid #F16C5D;
+    color: #F16C5D;
+    cursor: pointer;
+}
+
+.upload-container label:hover {
+    border: 1px solid #F16C5D;
+    background: #F16C5D; 
+    color: #fff;
+   }
+
+/* 模擬的假彈出視窗 */
+.fake-popup {
+    display: none;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 300px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 彈出視窗內的文字與按鈕樣式 */
+.fake-popup p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.cancel-button, 
+.confirm-button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cancel-button {
+    background-color: #ccc;
+    margin-right: 10px;
+}
+
+.confirm-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* 當使用者點擊上傳按鈕時，顯示假彈出視窗 */
+.custom-upload-button:active ~ .fake-popup {
+    display: block;
+}
+
+
+
+.upload-container a{
+    border-radius: 8px;
+    padding: 8px 16px;
+    border: 1px solid #F16C5D;
+    color: #F16C5D;
+    cursor: pointer;
+  }
+
+  .upload-container a:hover{
+    border: 1px solid #F16C5D;
+    background: #F16C5D; 
+    color: #fff;
+   }
+
+
+ // 訂單人＆主辦通訊區塊3-2，送出彈窗設計 
+  .modal-dialog{
+    border-radius: 16px;
+  }
+
+  .modal-header .btn-close{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+  }
+  
+
+  .modal-dialog button{
+    border-radius: 8px;
+    padding: 8px 16px;
+    border: 1px solid #F16C5D;
+    background: #fff;
+    color: #F16C5D;
+    cursor: pointer;
+  }
+
+  .modal-dialog button:hover{
+    background: #F16C5D; 
+    color: #fff;
+  }
+
+//  memberOrder Info｜info-finaldes-訂單人＆主辦通訊區塊3-3
+.order-payinfo-col {
+    padding: 24px 32px 0px 32px;
+}
+
+.order-payinfo-con{
+    border-radius: 8px;
+}
+
+.order-paydesc-list .table {
+    border-collapse: collapse; /* 移除表格間距 */
+    border-spacing: 0;
+    margin: 0; /* 清除表格周圍的預設 margin */
+    table-layout: fixed  /* 固定欄位寬度，確保等寬 */
+  }
+
+.order-paydesc-list .table th, 
+.order-paydesc-list .table td {
+    padding:8px; /* 調整內邊距 */
+    text-align: left;
+    background: transparent; /* 移除背景顏色 */
+    font-size: inherit; /* 移除 th 和 td 的字體大小設置 */
+    color: inherit;     /* 移除 th 和 td 的字體顏色設置 */
+  }
+
+.order-paydesc-list .table th {
+    font-weight: normal; 
+  }
+
