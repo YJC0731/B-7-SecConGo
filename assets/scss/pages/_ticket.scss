@@ -104,6 +104,13 @@ body{
   border-radius: 8px;
 }
 
+.contact-btn{
+  padding: 7px 15px;
+  border-radius: 8px;
+  border: 1px solid #F16C5D;
+  color: #F16C5D;
+}
+
 .close-btn{
   padding: 8px 24px 8px 24px;
   border-radius: 8px;
@@ -129,10 +136,17 @@ body{
 
 .card-footer a:hover{
   transform: scale(1.1);
+  background: #FB9700!important;
 }
 
-.border-btn{
-  border: 1px solid #F16C5D;
+.btn-danger:hover{
+  background: #FB9700!important;
+  transform: scale(0.9);
+  transition: all 0.1s;
+}
+
+.card-footer .contact-btn:hover{
+  color: white;
 }
 
 .note-list{
