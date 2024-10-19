@@ -1,46 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>agenda</title>
-    
+
 </head>
+
 <body>
     <%- include('./layout/header'); -%>
 
-    <div class="bg-neutral-100">
-        <div class="container">
-            <div >
-                <div class="row d-flex g-0"><!--最外層div-->
-                    <div class="col-md-2 list"><!--放左側的順序表-->
-                        <nav class="sidebar">
-                            <div class="">
-                            <a href="#section1">活動議程表</a>
-                            <a href="#section2">講師陣容</a>
-                            <a href="#section3">講師徵稿</a>
-                            </div>
-                        </nav>
-                    </div> 
-                    <div class="col-md-10 mb-11 "><!--3個表個表單的div-->                          
-                        <section id="section1"><!--活動議程表的div-->             
-                            <div class="text-align-center bg-neutral-50 pb-11 pt-11 pe-8 ps-8 ">
-                                <h2 class="mb-6">活動議程表</h2>
-                                <div class="text-neutral-800 mb-6">
-                                <span >本活動需購票入場（ <a class="event-agenda-a" href="#">線上購票</a> ）</span>
-                                <span class="d-block">若有任何疑問，歡迎與我們聯繫： SecConGo@server.org</span>
+        <div class="bg-neutral-100">
+            <div class="container">
+                <div>
+                    <div class="row d-flex g-0">
+                        <!--最外層div-->
+                        <div class="col-md-2 list">
+                            <!--放左側的順序表-->
+                            <nav class="sidebar">
+                                <div class="">
+                                    <a href="#section1">活動議程表</a>
+                                    <a href="#section2">講師陣容</a>
+                                    <a href="#section3">講師徵稿</a>
                                 </div>
-                                <div class="event-seat mb-6 "><!--abc廳-->
-                                    <ul class="d-flex justify-content-center">
-                                        <li class="me-6"><a href="#infoABC">ABC 廳(上午場)</a></li>
-                                        <li class="me-6"><a href="#infoA">A 廳(下午場)</a></li>
-                                        <li class="me-6"><a href="#infoB">B 廳(下午場)</a></li>
-                                        <li><a href="#infoC">C 廳(下午場)</a></li>
-                                    </ul>
-                                </div>
-                                 
-                                <label class="info-display" id="infoABC"><!--活動議程表行程表div-->
+                            </nav>
+                        </div>
+                        <div class="col-md-10 mb-11 ">
+                            <!--3個表個表單的div-->
+                            <section id="section1">
+                                <!--活動議程表的div-->
+                                <div class="text-align-center bg-neutral-50 pb-11 pt-11 pe-8 ps-8 ">
+                                    <h2 class="mb-6">活動議程表</h2>
+                                    <div class="text-neutral-800 mb-6">
+                                        <span>本活動需購票入場（ <a class="event-agenda-a" href="#">線上購票</a> ）</span>
+                                        <span class="d-block">若有任何疑問，歡迎與我們聯繫： SecConGo@server.org</span>
+                                    </div>
+                                    <div class="event-seat mb-6 ">
+                                        <!--abc廳-->
+                                        <ul class="d-flex justify-content-center">
+                                            <li class="me-6"><a href="#infoABC">ABC 廳(上午場)</a></li>
+                                            <li class="me-6"><a href="#infoA">A 廳(下午場)</a></li>
+                                            <li class="me-6"><a href="#infoB">B 廳(下午場)</a></li>
+                                            <li><a href="#infoC">C 廳(下午場)</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <label class="info-display" id="infoABC"><!--活動議程表行程表div-->
                                     <table class="event-schedule">
                                         <tr class="event-schedule-border">
                                             <th class="event-schedule-title-time">時間</th>
@@ -91,409 +98,421 @@
                                     </table>
 
                                 </label>
-                                
-                                <div class="info-display" id="infoA"><!--活動議程表行程表div-->
-                                    <table class="event-schedule ">
-                                        <tr class="event-schedule-border">
-                                            <th class="event-schedule-title-time">時間</th>
-                                            <th>議程</th>
-                                        </tr>
-                                        <tr class="event-schedule-border">
-                                            <td class="event-schedule-time">13:10 ~ 13:50</td>
-                                            <td>
-                                                <a class="event-schedule-issue" href="#">應對分散式拒絕服務攻擊 ( DDOS ) 的新策略</a>
-                                                <div>
-                                                    <a class="event-schedule-speaker" href="#">田中一郎 ( Ichiro Tanaka )</a>
-                                                    <span class="text-neutral-700">日本資訊安全公司 ( Nihon InfoSec Co., Ltd. )｜技術協理</span>
-                                                </div>
-                                            </td>
-                                            
-                                        </tr>
-                                        <tr class="event-schedule-border">
-                                            <td class="event-schedule-time">13:50 ~ 14:30</td>
-                                            <td>
-                                                <a class="event-schedule-issue" href="#">Advanced Persistent Threats (APTs): Detection and Mitigation Strategies</a>
-                                                <div>
-                                                    <a class="event-schedule-speaker" href="#">Michael Davis</a>
-                                                    <span class="text-neutral-700">Global CyberDefend｜Director of Cybersecurity Operations</span>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr class="event-schedule-border bg-neutral-100">
-                                            <td class="event-schedule-time">14:30 ~ 15:00</td>
-                                            <td class="fz-5 text-neutral-800">Tea Break 中場休息</td>
-                                        </tr>
-                                        <tr class="event-schedule-border">
-                                            <td class="event-schedule-time">15:00 ~ 15:40</td>
-                                            <td>
-                                                <a class="event-schedule-issue" href="#">人為因素在資訊安全中的作用與風險管理</a>
-                                                <div>
-                                                    <a class="event-schedule-speaker" href="#">李佳穎 ( Chia-Ying Lee )</a>
-                                                    <span class="text-neutral-700">智慧資安股份有限公司｜資安顧問 (Cybersecurity Consultant)</span>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    
-                                        <tr class="event-schedule-border">
-                                            <td class="event-schedule-time">15:40 ~ 16:20</td>
-                                            <td>
-                                                <a class="event-schedule-issue" href="#">Cybersecurity in the Age of Remote Work: New Threats and Solutions</a>
-                                                <div>
-                                                    <a class="event-schedule-speaker" href="#">Sarah Anderson</a>
-                                                    <span class="text-neutral-700">SecureTech Solutions｜Chief Information Security Officer (CISO)</span>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr class="bg-neutral-100">
-                                            <td class="event-schedule-time">16:30 ~ 16:50</td>
-                                            <td class="fz-5 text-neutral-800">Close Remark / Lucky Draw ( B廳 )</td>
-                                        </tr>
-                                    </table>
 
-                                </div>
+                                    <div class="info-display" id="infoA">
+                                        <!--活動議程表行程表div-->
+                                        <table class="event-schedule ">
+                                            <tr class="event-schedule-border">
+                                                <th class="event-schedule-title-time">時間</th>
+                                                <th>議程</th>
+                                            </tr>
+                                            <tr class="event-schedule-border">
+                                                <td class="event-schedule-time">13:10 ~ 13:50</td>
+                                                <td>
+                                                    <a class="event-schedule-issue" href="#">應對分散式拒絕服務攻擊 ( DDOS ) 的新策略</a>
+                                                    <div>
+                                                        <a class="event-schedule-speaker" href="#">田中一郎 ( Ichiro Tanaka )</a>
+                                                        <span class="text-neutral-700">日本資訊安全公司 ( Nihon InfoSec Co., Ltd. )｜技術協理</span>
+                                                    </div>
+                                                </td>
 
-                                <div class="info-display" id="infoB"><!--活動議程表行程表div-->
-                                    <table class="event-schedule ">
-                                        <tr class="event-schedule-border">
-                                            <th class="event-schedule-title-time">時間</th>
-                                            <th>議程</th>
-                                        </tr>
-                                        <tr class="event-schedule-border">
-                                            <td class="event-schedule-time">13:10 ~ 13:50</td>
-                                            <td>
-                                                <a class="event-schedule-issue" href="#">網絡安全演習:從演練到實戰</a>
-                                                <div>
-                                                    <a class="event-schedule-speaker" href="#">李明華 ( Ming-Hua Li )</a>
-                                                    <span class="text-neutral-700">National Tsing Hua University｜資訊安全助理教授</span>
-                                                </div>
-                                            </td>
-                                            
-                                        </tr>
-                                        <tr class="event-schedule-border">
-                                            <td class="event-schedule-time">13:50 ~ 14:30</td>
-                                            <td>
-                                                <a class="event-schedule-issue" href="#">人工智能與機器學習在程式安全中的應用</a>
-                                                <div>
-                                                    <a class="event-schedule-speaker" href="#">John Lee</a>
-                                                    <span class="text-neutral-700">資安科技股份有限公司 ( CyberTech Solutions Ltd. )｜資深資訊安全工程師</span>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr class="event-schedule-border bg-neutral-100">
-                                            <td class="event-schedule-time">14:30 ~ 15:00</td>
-                                            <td class="fz-5 text-neutral-800">Tea Break 中場休息</td>
-                                        </tr>
-                                        <tr class="event-schedule-border">
-                                            <td class="event-schedule-time">15:00 ~ 15:40</td>
-                                            <td>
-                                                <a class="event-schedule-issue" href="#">Securing the Internet of Things (IoT): Best Practices and Challenges</a>
-                                                <div>
-                                                    <a class="event-schedule-speaker" href="#">Carlos Alvarez</a>
-                                                    <span class="text-neutral-700">Seguridad Global｜Chief Security Officer (CSO)</span>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    
-                                        <tr class="event-schedule-border">
-                                            <td class="event-schedule-time">15:40 ~ 16:20</td>
-                                            <td>
-                                                <a class="event-schedule-issue" href="#">DevSecOps : 將安全性融入軟體開發生命周期</a>
-                                                <div>
-                                                    <a class="event-schedule-speaker" href="#">林文彬 (Wen-Bin Lin)</a>
-                                                    <span class="text-neutral-700">台灣資安公司｜資安工程師 (Security Engineer)</span>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr class="bg-neutral-100">
-                                            <td class="event-schedule-time">16:30 ~ 16:50</td>
-                                            <td class="fz-5 text-neutral-800">Close Remark / Lucky Draw ( B廳 )</td>
-                                        </tr>
-                                    </table>
+                                            </tr>
+                                            <tr class="event-schedule-border">
+                                                <td class="event-schedule-time">13:50 ~ 14:30</td>
+                                                <td>
+                                                    <a class="event-schedule-issue" href="#">Advanced Persistent Threats (APTs): Detection and Mitigation Strategies</a>
+                                                    <div>
+                                                        <a class="event-schedule-speaker" href="#">Michael Davis</a>
+                                                        <span class="text-neutral-700">Global CyberDefend｜Director of Cybersecurity Operations</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="event-schedule-border bg-neutral-100">
+                                                <td class="event-schedule-time">14:30 ~ 15:00</td>
+                                                <td class="fz-5 text-neutral-800">Tea Break 中場休息</td>
+                                            </tr>
+                                            <tr class="event-schedule-border">
+                                                <td class="event-schedule-time">15:00 ~ 15:40</td>
+                                                <td>
+                                                    <a class="event-schedule-issue" href="#">人為因素在資訊安全中的作用與風險管理</a>
+                                                    <div>
+                                                        <a class="event-schedule-speaker" href="#">李佳穎 ( Chia-Ying Lee )</a>
+                                                        <span class="text-neutral-700">智慧資安股份有限公司｜資安顧問 (Cybersecurity Consultant)</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
 
-                                </div>
+                                            <tr class="event-schedule-border">
+                                                <td class="event-schedule-time">15:40 ~ 16:20</td>
+                                                <td>
+                                                    <a class="event-schedule-issue" href="#">Cybersecurity in the Age of Remote Work: New Threats and Solutions</a>
+                                                    <div>
+                                                        <a class="event-schedule-speaker" href="#">Sarah Anderson</a>
+                                                        <span class="text-neutral-700">SecureTech Solutions｜Chief Information Security Officer (CISO)</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="bg-neutral-100">
+                                                <td class="event-schedule-time">16:30 ~ 16:50</td>
+                                                <td class="fz-5 text-neutral-800">Close Remark / Lucky Draw ( B廳 )</td>
+                                            </tr>
+                                        </table>
 
-
-                                <div class="info-display" id="infoC"><!--活動議程表行程表div-->
-                                    <table class="event-schedule ">
-                                        <tr class="event-schedule-border">
-                                            <th class="event-schedule-title-time">時間</th>
-                                            <th>議程</th>
-                                        </tr>
-                                        <tr class="event-schedule-border">
-                                            <td class="event-schedule-time">13:10 ~ 13:50</td>
-                                            <td>
-                                                <a class="event-schedule-issue" href="#">建立抗量子計算的加密體系</a>
-                                                <div>
-                                                    <a class="event-schedule-speaker" href="#">陳偉明 ( Wei-Ming Chen )</a>
-                                                    <span class="text-neutral-700">Taiwan Cybersecurity Research Institute｜資訊安全研究員</span>
-                                                </div>
-                                            </td>
-                                            
-                                        </tr>
-                                        <tr class="event-schedule-border">
-                                            <td class="event-schedule-time">13:50 ~ 14:30</td>
-                                            <td>
-                                                <a class="event-schedule-issue" href="#">物聯網設備的安全挑戰與最佳實踐</a>
-                                                <div>
-                                                    <a class="event-schedule-speaker" href="#">Emily Zhang</a>
-                                                    <span class="text-neutral-700">China Cyber Solutions｜Chief Technology Officer ( CTO )</span>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr class="event-schedule-border bg-neutral-100">
-                                            <td class="event-schedule-time">14:30 ~ 15:00</td>
-                                            <td class="fz-5 text-neutral-800">Tea Break 中場休息</td>
-                                        </tr>
-                                        <tr class="event-schedule-border">
-                                            <td class="event-schedule-time">15:00 ~ 15:40</td>
-                                            <td>
-                                                <a class="event-schedule-issue" href="#">數據隱私與合規挑戰:全球視角</a>
-                                                <div>
-                                                    <a class="event-schedule-speaker" href="#">王淑惠 (Shu-Hui Wang)</a>
-                                                    <span class="text-neutral-700">National Taiwan University of Science and Technology｜資訊安全講師 ( Cybersecurity Lecturer )</span>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    
-                                        <tr class="event-schedule-border">
-                                            <td class="event-schedule-time">15:40 ~ 16:20</td>
-                                            <td>
-                                                <a class="event-schedule-issue" href="#">Fortifying National Cyber Defense: A Strategic Approach to Information Security</a>
-                                                <div>
-                                                    <a class="event-schedule-speaker" href="#">Sophie Dubois</a>
-                                                    <span class="text-neutral-700">CyberDefence France｜Director of Information Security</span>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr class="bg-neutral-100">
-                                            <td class="event-schedule-time">16:30 ~ 16:50</td>
-                                            <td class="fz-5 text-neutral-800">Close Remark / Lucky Draw ( B廳 )</td>
-                                        </tr>
-                                    </table>
-
-                                </div>
-                                
-
-
-                            </div>
-                        </section>
-                        <section id="section2"> <!--講師陣容div-->
-                            <div>
-                                <div class="bg-neutral-50">
-                                    <div class="text-align-center mt-6 pt-8 pb-6">
-                                        <h2>講師陣容</h2>
-                                        <span class="d-block fz-5 text-neutral-700">Faculty</span>
                                     </div>
-                                    <div class="d-flex justify-content-between pb-6">
-                                        <div class="card d-flex flex-row me-6 align-item-center">
-                                            <img src="../assets/images/speaker-10.jpg" class="card-img-top" alt="speaker-1">
-                                            <div class="card-body">
-                                            <h5 class="text-neutral-800">James O'Connor</h5>
-                                            <p class="text-neutral-600">Global Security Consulting|Cybersecurity Strategist</p>                                    
-                                            <button type="button" class="speaker-card-btn">講師介紹</button>
-                                            </div>
-                                        </div>
-                                        <div class="card d-flex flex-row align-item-center">
-                                            <img src="../assets/images/speaker-2.jpg" class="card-img-top" alt="speaker-2">
-                                            <div class="card-body">
-                                            <h5 class="text-neutral-800">Olivia Martinez</h5>
-                                            <p class="text-neutral-600">CyberSec Innovations|Chief Security Architect</p>
-                                            <button type="button" class="speaker-card-btn" >講師介紹</button>
-                                            </div>
-                                        </div>
+
+                                    <div class="info-display" id="infoB">
+                                        <!--活動議程表行程表div-->
+                                        <table class="event-schedule ">
+                                            <tr class="event-schedule-border">
+                                                <th class="event-schedule-title-time">時間</th>
+                                                <th>議程</th>
+                                            </tr>
+                                            <tr class="event-schedule-border">
+                                                <td class="event-schedule-time">13:10 ~ 13:50</td>
+                                                <td>
+                                                    <a class="event-schedule-issue" href="#">網絡安全演習:從演練到實戰</a>
+                                                    <div>
+                                                        <a class="event-schedule-speaker" href="#">李明華 ( Ming-Hua Li )</a>
+                                                        <span class="text-neutral-700">National Tsing Hua University｜資訊安全助理教授</span>
+                                                    </div>
+                                                </td>
+
+                                            </tr>
+                                            <tr class="event-schedule-border">
+                                                <td class="event-schedule-time">13:50 ~ 14:30</td>
+                                                <td>
+                                                    <a class="event-schedule-issue" href="#">人工智能與機器學習在程式安全中的應用</a>
+                                                    <div>
+                                                        <a class="event-schedule-speaker" href="#">John Lee</a>
+                                                        <span class="text-neutral-700">資安科技股份有限公司 ( CyberTech Solutions Ltd. )｜資深資訊安全工程師</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="event-schedule-border bg-neutral-100">
+                                                <td class="event-schedule-time">14:30 ~ 15:00</td>
+                                                <td class="fz-5 text-neutral-800">Tea Break 中場休息</td>
+                                            </tr>
+                                            <tr class="event-schedule-border">
+                                                <td class="event-schedule-time">15:00 ~ 15:40</td>
+                                                <td>
+                                                    <a class="event-schedule-issue" href="#">Securing the Internet of Things (IoT): Best Practices and Challenges</a>
+                                                    <div>
+                                                        <a class="event-schedule-speaker" href="#">Carlos Alvarez</a>
+                                                        <span class="text-neutral-700">Seguridad Global｜Chief Security Officer (CSO)</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="event-schedule-border">
+                                                <td class="event-schedule-time">15:40 ~ 16:20</td>
+                                                <td>
+                                                    <a class="event-schedule-issue" href="#">DevSecOps : 將安全性融入軟體開發生命周期</a>
+                                                    <div>
+                                                        <a class="event-schedule-speaker" href="#">林文彬 (Wen-Bin Lin)</a>
+                                                        <span class="text-neutral-700">台灣資安公司｜資安工程師 (Security Engineer)</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="bg-neutral-100">
+                                                <td class="event-schedule-time">16:30 ~ 16:50</td>
+                                                <td class="fz-5 text-neutral-800">Close Remark / Lucky Draw ( B廳 )</td>
+                                            </tr>
+                                        </table>
+
                                     </div>
-                                    <div class="d-flex justify-content-between pb-8">
-                                        <div class="card d-flex flex-row me-6 align-item-center">
-                                            <img src="../assets/images/speaker-3.jpg" class="card-img-top" alt="speaker-3">
-                                            <div class="card-body">
-                                            <h5 class="text-neutral-800">王智勇 ( Zhi-Yong Wang )</h5>
-                                            <p class="text-neutral-600">CyberTech Solutions Ltd. | 資訊安全分析師</p>
-                                            <button type="button" class="speaker-card-btn" >講師介紹</button>
-                                            </div>
-                                        </div>
-                                        <div class="card d-flex flex-row align-item-center">
-                                            <img src="../assets/images/speaker-11.jpg" class="card-img-top" alt="speaker-4">
-                                            <div class="card-body">
-                                            <h5 class="text-neutral-800">Michael Davis</h5>
-                                            <p class="text-neutral-600">Global CyberDefend|Director of Cybersecurity Operations</p>
-                                            <button type="button" class="speaker-card-btn" >講師介紹</button>
-                                            </div>
-                                        </div>
+
+
+                                    <div class="info-display" id="infoC">
+                                        <!--活動議程表行程表div-->
+                                        <table class="event-schedule ">
+                                            <tr class="event-schedule-border">
+                                                <th class="event-schedule-title-time">時間</th>
+                                                <th>議程</th>
+                                            </tr>
+                                            <tr class="event-schedule-border">
+                                                <td class="event-schedule-time">13:10 ~ 13:50</td>
+                                                <td>
+                                                    <a class="event-schedule-issue" href="#">建立抗量子計算的加密體系</a>
+                                                    <div>
+                                                        <a class="event-schedule-speaker" href="#">陳偉明 ( Wei-Ming Chen )</a>
+                                                        <span class="text-neutral-700">Taiwan Cybersecurity Research Institute｜資訊安全研究員</span>
+                                                    </div>
+                                                </td>
+
+                                            </tr>
+                                            <tr class="event-schedule-border">
+                                                <td class="event-schedule-time">13:50 ~ 14:30</td>
+                                                <td>
+                                                    <a class="event-schedule-issue" href="#">物聯網設備的安全挑戰與最佳實踐</a>
+                                                    <div>
+                                                        <a class="event-schedule-speaker" href="#">Emily Zhang</a>
+                                                        <span class="text-neutral-700">China Cyber Solutions｜Chief Technology Officer ( CTO )</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="event-schedule-border bg-neutral-100">
+                                                <td class="event-schedule-time">14:30 ~ 15:00</td>
+                                                <td class="fz-5 text-neutral-800">Tea Break 中場休息</td>
+                                            </tr>
+                                            <tr class="event-schedule-border">
+                                                <td class="event-schedule-time">15:00 ~ 15:40</td>
+                                                <td>
+                                                    <a class="event-schedule-issue" href="#">數據隱私與合規挑戰:全球視角</a>
+                                                    <div>
+                                                        <a class="event-schedule-speaker" href="#">王淑惠 (Shu-Hui Wang)</a>
+                                                        <span class="text-neutral-700">National Taiwan University of Science and Technology｜資訊安全講師 ( Cybersecurity Lecturer )</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="event-schedule-border">
+                                                <td class="event-schedule-time">15:40 ~ 16:20</td>
+                                                <td>
+                                                    <a class="event-schedule-issue" href="#">Fortifying National Cyber Defense: A Strategic Approach to Information Security</a>
+                                                    <div>
+                                                        <a class="event-schedule-speaker" href="#">Sophie Dubois</a>
+                                                        <span class="text-neutral-700">CyberDefence France｜Director of Information Security</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="bg-neutral-100">
+                                                <td class="event-schedule-time">16:30 ~ 16:50</td>
+                                                <td class="fz-5 text-neutral-800">Close Remark / Lucky Draw ( B廳 )</td>
+                                            </tr>
+                                        </table>
+
                                     </div>
-                                    <div class="d-flex justify-content-between pb-8">
-                                        <div class="card d-flex flex-row me-6 align-item-center">
-                                            <img src="../assets/images/speaker-15.jpg" class="card-img-top" alt="speaker-5">
-                                            <div class="card-body">
-                                            <h5 class="text-neutral-800">Sarah Anderson</h5>
-                                            <p class="text-neutral-600">SecureTech Solutions|Chief Information Security Officer (CISO)</p>
-                                            <button type="button" class="speaker-card-btn" >講師介紹</button>
-                                            </div>
-                                        </div>
-                                        <div class="card d-flex flex-row align-item-center">
-                                            <img src="../assets/images/speaker-8.jpg" class="card-img-top" alt="speaker-6">
-                                            <div class="card-body">
-                                            <h5 class="text-neutral-800">John Lee</h5>
-                                            <p class="text-neutral-600">CyberTech Solutions Ltd.|資深資訊安全工程師</p>
-                                            <button type="button" class="speaker-card-btn" >講師介紹</button>
-                                            </div>
-                                        </div>
-                                    </div>
+
 
 
                                 </div>
-                            </div>
-
-                        </section>
-
-                        <section id="section3">
-                            <div class="speaker-contri mt-6"><!--講師徵稿div-->
-                                <div class="bg-f pt-8 pb-8 pr-8 pl-8">
-                                    <div class="mb-6">
-                                        <div class="bg-f d-flex justify-content-between align-item-center"><!--title-->
-                                            <div>
-                                                <h2>2024 講師徵稿</h2>
-                                                <span class="d-block fz-5 text-neutral-700">Call for Speaker Application Form</span>
+                            </section>
+                            <section id="section2">
+                                <!--講師陣容div-->
+                                <div>
+                                    <div class="bg-neutral-50">
+                                        <div class="text-align-center mt-6 pt-8 pb-6">
+                                            <h2>講師陣容</h2>
+                                            <span class="d-block fz-5 text-neutral-700">Faculty</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between pb-6">
+                                            <div class="agenda-card d-flex flex-row me-6 align-item-center">
+                                                <img src="../assets/images/speaker-10.jpg" class="card-img-top" alt="speaker-1">
+                                                <div class="card-body">
+                                                    <h5 class="text-neutral-800">James O'Connor</h5>
+                                                    <p class="text-neutral-600">Global Security Consulting|Cybersecurity Strategist</p>
+                                                    <button type="button" class="speaker-card-btn">講師介紹</button>
+                                                </div>
                                             </div>
-                                            <div class="speaker-contri-btn"><!--按鈕-->
-                                        
-                                                <button class=" speaker-contri-btn pt-2 pb-2 pr-4 pl-4" type="submit" >登入/註冊以投稿</button>
+                                            <div class="agenda-card d-flex flex-row align-item-center">
+                                                <img src="../assets/images/speaker-2.jpg" class="card-img-top" alt="speaker-2">
+                                                <div class="card-body">
+                                                    <h5 class="text-neutral-800">Olivia Martinez</h5>
+                                                    <p class="text-neutral-600">CyberSec Innovations|Chief Security Architect</p>
+                                                    <button type="button" class="speaker-card-btn">講師介紹</button>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="mt-6 ">
-                                            <p class="text-neutral-800">資咖購 SecConGo 會議活動將於 10 月 20 日在台北舉辦，促進國際資安技術發展與學術交流，現公開徵求議程講師。<br>若您有意願分享資安領域的議題，歡迎提出申請，議程委員會將在 9 月 12 日前回覆您。</p>
+                                        <div class="d-flex justify-content-between pb-8">
+                                            <div class="agenda-card d-flex flex-row me-6 align-item-center">
+                                                <img src="../assets/images/speaker-3.jpg" class="card-img-top" alt="speaker-3">
+                                                <div class="card-body">
+                                                    <h5 class="text-neutral-800">王智勇 ( Zhi-Yong Wang )</h5>
+                                                    <p class="text-neutral-600">CyberTech Solutions Ltd. | 資訊安全分析師</p>
+                                                    <button type="button" class="speaker-card-btn">講師介紹</button>
+                                                </div>
+                                            </div>
+                                            <div class="agenda-card d-flex flex-row align-item-center">
+                                                <img src="../assets/images/speaker-11.jpg" class="card-img-top" alt="speaker-4">
+                                                <div class="card-body">
+                                                    <h5 class="text-neutral-800">Michael Davis</h5>
+                                                    <p class="text-neutral-600">Global CyberDefend|Director of Cybersecurity Operations</p>
+                                                    <button type="button" class="speaker-card-btn">講師介紹</button>
+                                                </div>
+                                            </div>
                                         </div>
+                                        <div class="d-flex justify-content-between pb-8">
+                                            <div class="agenda-card d-flex flex-row me-6 align-item-center">
+                                                <img src="../assets/images/speaker-15.jpg" class="card-img-top" alt="speaker-5">
+                                                <div class="card-body">
+                                                    <h5 class="text-neutral-800">Sarah Anderson</h5>
+                                                    <p class="text-neutral-600">SecureTech Solutions|Chief Information Security Officer (CISO)</p>
+                                                    <button type="button" class="speaker-card-btn">講師介紹</button>
+                                                </div>
+                                            </div>
+                                            <div class="agenda-card d-flex flex-row align-item-center">
+                                                <img src="../assets/images/speaker-8.jpg" class="card-img-top" alt="speaker-6">
+                                                <div class="card-body">
+                                                    <h5 class="text-neutral-800">John Lee</h5>
+                                                    <p class="text-neutral-600">CyberTech Solutions Ltd.|資深資訊安全工程師</p>
+                                                    <button type="button" class="speaker-card-btn">講師介紹</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
                                     </div>
-                                    <div class="speaker-contri-seek pt-6 pb-6 pl-6">
-                                        <div class=" mb-6">
-                                            <span class="d-block text-neutral-800">根據本年度大會主軸，我們徵求演講主題如下：</span>
-                                            <div class="pt-2">
-                                                <ul>
-                                                    <li>雲端資安 <span class="fz-4">(Cloud Security)</span></li>
-                                                    <li>智慧應用安全 <span class="fz-4">(Smart Application Security)</span></li>
-                                                    <li>欺敵防禦技術 <span class="fz-4">(Deception Defense Technology)</span></li>
-                                                    <li>零信任架構 <span class="fz-4">(Zero Trust Architecture)</span></li>
-                                                    <li>應用程式安全 <span class="fz-4">(Application Security)</span></li>
-                                                    <li>資安事件分析技術 <span class="fz-4">(Information Security lnsident Analysis Technology)</span></li>
-                                                </ul>
-                                            </div>
+                                </div>
 
+                            </section>
+
+                            <section id="section3">
+                                <div class="speaker-contri mt-6">
+                                    <!--講師徵稿div-->
+                                    <div class="bg-f pt-8 pb-8 pr-8 pl-8">
+                                        <div class="mb-6">
+                                            <div class="bg-f d-flex justify-content-between align-item-center">
+                                                <!--title-->
+                                                <div>
+                                                    <h2>2024 講師徵稿</h2>
+                                                    <span class="d-block fz-5 text-neutral-700">Call for Speaker Application Form</span>
+                                                </div>
+                                                <div class="speaker-contri-btn">
+                                                    <!--按鈕-->
+
+                                                    <button class=" speaker-contri-btn pt-2 pb-2 pr-4 pl-4" type="submit">登入/註冊以投稿</button>
+                                                </div>
+                                            </div>
+                                            <div class="mt-6 ">
+                                                <p class="text-neutral-800">資咖購 SecConGo 會議活動將於 10 月 20 日在台北舉辦，促進國際資安技術發展與學術交流，現公開徵求議程講師。<br>若您有意願分享資安領域的議題，歡迎提出申請，議程委員會將在 9 月 12 日前回覆您。</p>
+                                            </div>
                                         </div>
-                                        <div class="text-neutral-800">
-                                            <span class="d-block pb-2">徵求講者議程要求：</span>
-                                            <span>                              專題演講 40 分鐘 (含開場及 Q&A )，需符合上述議題。  
+                                        <div class="speaker-contri-seek pt-6 pb-6 pl-6">
+                                            <div class=" mb-6">
+                                                <span class="d-block text-neutral-800">根據本年度大會主軸，我們徵求演講主題如下：</span>
+                                                <div class="pt-2">
+                                                    <ul>
+                                                        <li>雲端資安 <span class="fz-4">(Cloud Security)</span></li>
+                                                        <li>智慧應用安全 <span class="fz-4">(Smart Application Security)</span></li>
+                                                        <li>欺敵防禦技術 <span class="fz-4">(Deception Defense Technology)</span></li>
+                                                        <li>零信任架構 <span class="fz-4">(Zero Trust Architecture)</span></li>
+                                                        <li>應用程式安全 <span class="fz-4">(Application Security)</span></li>
+                                                        <li>資安事件分析技術 <span class="fz-4">(Information Security lnsident Analysis Technology)</span></li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                            <div class="text-neutral-800">
+                                                <span class="d-block pb-2">徵求講者議程要求：</span>
+                                                <span>                              專題演講 40 分鐘 (含開場及 Q&A )，需符合上述議題。  
                                             </span>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="speaker-contri-agree mt-6">
-                                        <span class="d-block">
+                                        <div class="speaker-contri-agree mt-6">
+                                            <span class="d-block">
                                             資咖購 SecConGo 得將本人因參加本次活動所提供之個人資料，提供予主辦單位進行蒐集、處理及利用。本人亦同意台灣數位安全聯盟得寄發各類活動、課程及產品行銷有關之 eDM 或與商品或服務有關之訊息或行銷宣傳品至本人參加本活動過程中所填寫的聯絡地址及電子郵件信箱外，亦得以其認為適當之方式以電話或其他通訊方式提供各類活動、課程及產品行銷相關訊息予本人。
                                         </span>
-                                        <span class="d-block">
+                                            <span class="d-block">
                                             聯絡窗口 (Contact)：<a href="#"> SecConGo＠server.org</a>
                                         </span>
-                                    </div>
-                                    <form action="agenda.html" method="get" id="speakerform">
-                                        <div class="speaker-info">
-                                            <div class="pt-6 pr-6 pl-6 pb-8"><!--聯絡人資料-->
-                                                <div class="d-flex speaker-info-title-border">
-                                                    <div class="speaker-info-title pb-2">
-                                                    <span class="d-block pr-6">聯絡人資料</span>
-                                                    </div>
-                                                    <div>
-                                                        <span class="d-block f-color-primary">* 為必填欄位</span>
-
-                                                    </div>
-                                                </div>
-                                                
-                                                <div>    
-                                                    <div>
-                                                        <div class="d-flex pt-6">    
-                                                            <div class="pr-6">
-                                                                <label class="text-neutral-700 pb-1" for="name">姓名 | Full Name <span class="f-color-primary">*</span></label>
-                                                                <input class="speaker-info-enter-box" type="text" id="name" placeholder="請輸入" required>
-                                                            </div>
-                                                            <div>
-                                                                <label class="text-neutral-700 pb-1" for="public-name">公開姓名 | Public Name<span class="f-color-primary">*</span></label>
-                                                                <input class="speaker-info-enter-box" type="text" id="public-name" placeholder="請輸入" required>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="d-flex pt-6">    
-                                                            <div class="pr-6">
-                                                                <label class="text-neutral-700 pb-1" for="e-mail">電子郵件 | E-mail<span class="f-color-primary">*</span></label>
-                                                                <input class="speaker-info-enter-box" type="text" id="e-mail" placeholder="請輸入" required>
-                                                            </div>
-
-                                                            <div>
-                                                                <label class="text-neutral-700 pb-1" for="tel">聯絡電話 | Mobile or Telephone Number<span class="f-color-primary">*</span></label>
-                                                                <input class="speaker-info-enter-box" type="text" id="tel" placeholder="請輸入" required>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="d-flex pt-6">    
-                                                            <div class="pr-6">
-                                                                <label class="text-neutral-700 pb-1" for="company">公司/組織名稱 | Company or Organization Name<span class="f-color-primary">*</span></label>
-                                                                <input class="speaker-info-enter-box" type="text" id="company" placeholder="請輸入" required>
-                                                            </div>
-
-                                                            <div>
-                                                                <label class="text-neutral-700 pb-1" for="job">職稱 | Job Title<span class="f-color-primary">*</span></label>
-                                                                <input class="speaker-info-enter-box" type="text" id="job" placeholder="請輸入" required>
-                                                            </div>
-                                                        </div>
-                                                        
-                                                    </div>
-                                                    <div class="speaker-info-enter-bio pt-6">
-                                                        <label class="text-neutral-700 pb-1" for="biography">自我介紹 | Speaker Biography<span class="f-color-primary">*</span></label>
-                                                        <textarea class="speaker-info-enter-bio-box" name="biography" id="biography" placeholder="請輸入" required></textarea>
-                                                    </div>
-                                                </div>
-                                                
-                                            <div ><!--投稿資料-->
-                                                <div class="pt-8">
-                                                    <div class="d-flex speaker-info-title-border"><!--title-->
+                                        </div>
+                                        <form action="agenda.html" method="get" id="speakerform">
+                                            <div class="speaker-info">
+                                                <div class="pt-6 pr-6 pl-6 pb-8">
+                                                    <!--聯絡人資料-->
+                                                    <div class="d-flex speaker-info-title-border">
                                                         <div class="speaker-info-title pb-2">
-                                                        <span class="d-block pr-6">投稿資料</span>
+                                                            <span class="d-block pr-6">聯絡人資料</span>
                                                         </div>
                                                         <div>
                                                             <span class="d-block f-color-primary">* 為必填欄位</span>
-                        
+
                                                         </div>
                                                     </div>
-                                                    <div><!--分類div-->
-                                                        <div class="pt-6 pb-6">
-                                                            <div>
-                                                                <label class="text-neutral-700 pb-1" for="#">分類標籤 | Category<span class="f-color-primary">*</span>
-                                                                </label>
+
+                                                    <div>
+                                                        <div>
+                                                            <div class="d-flex pt-6">
+                                                                <div class="pr-6">
+                                                                    <label class="text-neutral-700 pb-1" for="name">姓名 | Full Name <span class="f-color-primary">*</span></label>
+                                                                    <input class="speaker-info-enter-box" type="text" id="name" placeholder="請輸入" required>
+                                                                </div>
+                                                                <div>
+                                                                    <label class="text-neutral-700 pb-1" for="public-name">公開姓名 | Public Name<span class="f-color-primary">*</span></label>
+                                                                    <input class="speaker-info-enter-box" type="text" id="public-name" placeholder="請輸入" required>
+                                                                </div>
                                                             </div>
-                                                                <div><!--選項div-->
-                                                                    <div class="d-flex justify-content-between pb-2">
-                                                                        <div>
-                                                                            <div class="d-flex align-item-center category-item-width">
-                                                                                <input class="radio-box" type="radio" name="category" value="雲端資安" id="CloudSecurity" required>
-                                                                                <label for="CloudSecurity">
+
+                                                            <div class="d-flex pt-6">
+                                                                <div class="pr-6">
+                                                                    <label class="text-neutral-700 pb-1" for="e-mail">電子郵件 | E-mail<span class="f-color-primary">*</span></label>
+                                                                    <input class="speaker-info-enter-box" type="text" id="e-mail" placeholder="請輸入" required>
+                                                                </div>
+
+                                                                <div>
+                                                                    <label class="text-neutral-700 pb-1" for="tel">聯絡電話 | Mobile or Telephone Number<span class="f-color-primary">*</span></label>
+                                                                    <input class="speaker-info-enter-box" type="text" id="tel" placeholder="請輸入" required>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="d-flex pt-6">
+                                                                <div class="pr-6">
+                                                                    <label class="text-neutral-700 pb-1" for="company">公司/組織名稱 | Company or Organization Name<span class="f-color-primary">*</span></label>
+                                                                    <input class="speaker-info-enter-box" type="text" id="company" placeholder="請輸入" required>
+                                                                </div>
+
+                                                                <div>
+                                                                    <label class="text-neutral-700 pb-1" for="job">職稱 | Job Title<span class="f-color-primary">*</span></label>
+                                                                    <input class="speaker-info-enter-box" type="text" id="job" placeholder="請輸入" required>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="speaker-info-enter-bio pt-6">
+                                                            <label class="text-neutral-700 pb-1" for="biography">自我介紹 | Speaker Biography<span class="f-color-primary">*</span></label>
+                                                            <textarea class="speaker-info-enter-bio-box" name="biography" id="biography" placeholder="請輸入" required></textarea>
+                                                        </div>
+                                                    </div>
+
+                                                    <div>
+                                                        <!--投稿資料-->
+                                                        <div class="pt-8">
+                                                            <div class="d-flex speaker-info-title-border">
+                                                                <!--title-->
+                                                                <div class="speaker-info-title pb-2">
+                                                                    <span class="d-block pr-6">投稿資料</span>
+                                                                </div>
+                                                                <div>
+                                                                    <span class="d-block f-color-primary">* 為必填欄位</span>
+
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <!--分類div-->
+                                                                <div class="pt-6 pb-6">
+                                                                    <div>
+                                                                        <label class="text-neutral-700 pb-1" for="#">分類標籤 | Category<span class="f-color-primary">*</span>
+                                                                </label>
+                                                                    </div>
+                                                                    <div>
+                                                                        <!--選項div-->
+                                                                        <div class="d-flex justify-content-between pb-2">
+                                                                            <div>
+                                                                                <div class="d-flex align-item-center category-item-width">
+                                                                                    <input class="radio-box" type="radio" name="category" value="雲端資安" id="CloudSecurity" required>
+                                                                                    <label for="CloudSecurity">
                                                                                     <span class="d-block text-neutral-800 fs-5">雲端資安</span>
                                                                                     <span class="d-block text-neutral-800">(CloudSecurity)</span>   
-                                                                                </label>                       
-                                                                            </div>   
-                                                                        </div>
-                                                                        <div>
-                                                                            <div class="d-flex align-item-center category-item-width">                                                       
-                                                                                <input class="radio-box" type="radio" name="category" value="智慧應用安全" id="Smart Application Security">
-                                                                                <label for="Smart Application Security">
+                                                                                </label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div>
+                                                                                <div class="d-flex align-item-center category-item-width">
+                                                                                    <input class="radio-box" type="radio" name="category" value="智慧應用安全" id="Smart Application Security">
+                                                                                    <label for="Smart Application Security">
                                                                                 <span class="d-block text-neutral-800 fs-5">智慧應用安全</span>
                                                                                 <span class="d-block text-neutral-800">(Smart Application Security)</span>
-                                                                                </label>                                                                                         
-                                                                            </div>   
-                                                                        </div>
-                                                                            <div class="d-flex align-item-center category-item-width">                                                      
+                                                                                </label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="d-flex align-item-center category-item-width">
                                                                                 <input class="radio-box" type="radio" name="category" value="欺敵防禦技術" id="Deception Defense Technology">
                                                                                 <label for="Deception Defense Technology">
                                                                         
                                                                                 <span class="d-block text-neutral-800 fs-5">欺敵防禦技術</span>
                                                                                 <span class="d-block text-neutral-800">(Deception Defense Technology)</span> 
-                                                                                </label>                                           
-                                                                            </div>   
+                                                                                </label>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="d-flex justify-content-between">
@@ -505,68 +524,71 @@
                                                                                         <span class="d-block fs-5">零信任架構</span>
                                                                                         <span class="d-block">(Zero Trust Architecture)</span>
                                                                                     </div> 
-                                                                                </label>                             
-                                                                            </div>   
+                                                                                </label>
+                                                                            </div>
                                                                         </div>
                                                                         <div>
-                                                                            <div class="d-flex align-item-center category-item-width">          
+                                                                            <div class="d-flex align-item-center category-item-width">
                                                                                 <input class="radio-box" type="radio" name="category" value="應用程式安全" id="Application Security">
                                                                                 <label for="Application Security">
                                                                                     <div class="text-neutral-800">
                                                                                         <span class="d-block fs-5">應用程式安全</span>                     
                                                                                         <span class="d-block">(Application Security)</span>
                                                                                     </div>
-                                                                                </label>                              
-                                                                            </div>   
-                                                                        </div> 
-                                                                            <div class="d-flex align-item-center 
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="d-flex align-item-center 
                                                                             category-item-width">
-                                                                                
-                                                                                <input class="radio-box" type="radio" name="category" value="資安事件分析技術" id="Information Security Incident Analysis Technology">
-                                                                                <label  for="Information Security Incident Analysis Technology">
+
+                                                                            <input class="radio-box" type="radio" name="category" value="資安事件分析技術" id="Information Security Incident Analysis Technology">
+                                                                            <label for="Information Security Incident Analysis Technology">
                                                                                     <div class="text-neutral-800">
                                                                                         <span class="d-block fs-5">資安事件分析技術</span>
                                                                                         <span class="d-block">(Information Security Incident<br>Analysis Technology)</span>                              
                                                                                     </div>
                                                                                 </label>
-                                                                            </div>   
                                                                         </div>
-                                                                    </div>   
+                                                                    </div>
                                                                 </div>
+                                                            </div>
                                                         </div>
 
                                                     </div>
-                                                    <div class="pb-8"><!--投稿主題-->
+                                                    <div class="pb-8">
+                                                        <!--投稿主題-->
                                                         <div>
-                                                            <div class="d-flex pt-6">    
+                                                            <div class="d-flex pt-6">
                                                                 <div class="pr-6">
                                                                     <label class="text-neutral-700 pb-1" for="topic">投稿主題 | Topic<span class="f-color-primary">*</span></label>
                                                                     <br>
                                                                     <input class="speaker-info-enter-box" type="text" id="topic" placeholder="請輸入" required>
                                                                 </div>
-                        
+
                                                                 <div class="language">
                                                                     <label class="text-neutral-700 pb-1" for="language">語言 | Language<span class="f-color-primary">*</span></label>
-                                                                    <select class="d-block langu-select"  name="language" id="language" placeholder="請輸入" required>
+                                                                    <select class="d-block langu-select" name="language" id="language" placeholder="請輸入" required>
                                                                         <option style="color:rgb(91, 91, 91)" value="English">請輸入</option>
                                                                         <option style="color:rgb(91, 91, 91)" value="English">英文 English</option>
                                                                         <option style="color:rgb(91, 91, 91)" value="Chinese">中文 Chinese</option>
                                                                         <option style="color:rgb(91, 91, 91)" value="Japanese">日文 Japanese</option>
                                                                         <option style="color:rgb(91, 91, 91)" value="Korean">韓文 Korean</option>                                                                     
-                                                                    </select>                                                                   
-                                                                </div>                                                    
+                                                                    </select>
+                                                                </div>
                                                             </div>
                                                             <div class="speaker-info-enter-bio pt-6">
                                                                 <label class="text-neutral-700 pb-1" for="Session Summary">課程摘要 | Session Summary<span class="f-color-primary">*</span></label>
                                                                 <textarea class="speaker-info-enter-bio-box" name="Session Summary" id="Session Summary" placeholder="請輸入" required></textarea>
                                                             </div>
-                                                            
+
                                                         </div>
 
                                                     </div>
-                                                    <div class="pb-8"><!--授權拍照層-->
+                                                    <div class="pb-8">
+                                                        <!--授權拍照層-->
                                                         <div class="d-flex pb-6">
-                                                            <div class="authorize-width"><!--授權拍照-->
+                                                            <div class="authorize-width">
+                                                                <!--授權拍照-->
                                                                 <div>
                                                                     <label class="text-neutral-700 pb-1" for="#">授權拍照 | Authorize Photography<span class="f-color-primary">*</span></label>
                                                                 </div>
@@ -583,10 +605,11 @@
                                                                         <label for="no">
                                                                             <span class="fz-5">不方便 </span><span class="fz-4">(No Allowed)</span>
                                                                         </label>
-                                                                    </div>                                           
+                                                                    </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="authorize-width ps-6"><!--授權簡報-->
+                                                            <div class="authorize-width ps-6">
+                                                                <!--授權簡報-->
                                                                 <div>
                                                                     <label class="text-neutral-700 pb-1" for="#">授權簡報公關 | Authorize Presentation Sharing<span class="f-color-primary">*</span></label>
                                                                 </div>
@@ -605,7 +628,7 @@
                                                                         </label>
                                                                     </div>
                                                                 </div>
-                                                            </div>       
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="ps-6 pe-6 pb-8">
@@ -625,12 +648,12 @@
                                                                     <div class="modal-dialog">
                                                                         <div class="modal-content">
                                                                             <div class="modal-header">
-                                                                            
+
                                                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                                             </div>
                                                                             <div class="modal-body text-align-center">
-                                                                            <h5 class="pb-6 text-neutral-800 ">確定要取消投稿嗎？</h5>
-                                                                            <p class="text-neutral-700">取消後，系統會直接關閉您輸入的所有問題回覆喔！</p>
+                                                                                <h5 class="pb-6 text-neutral-800 ">確定要取消投稿嗎？</h5>
+                                                                                <p class="text-neutral-700">取消後，系統會直接關閉您輸入的所有問題回覆喔！</p>
                                                                             </div>
                                                                             <div class="modal-footer justify-content-center">
                                                                                 <button type="button" class="cel-btn" data-bs-dismiss="modal">取消</button>
@@ -638,19 +661,19 @@
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                </div>                                                                
+                                                                </div>
                                                             </div>
                                                             <div class="pe-6">
                                                                 <button class="final-check-btn-cancel" data-bs-toggle="modal" data-bs-target="#delete" type="button">清空</button>
                                                                 <div class="modal fade" id="delete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                                     <div class="modal-dialog">
                                                                         <div class="modal-content">
-                                                                            <div class="modal-header">                                                                            
+                                                                            <div class="modal-header">
                                                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                                             </div>
                                                                             <div class="modal-body ps-8 pe-8">
-                                                                            <h3 class="pb-6 text-neutral-800 text-align-center">要清除表單內容嗎？</h3>
-                                                                            <p class="text-neutral-700">清除表單內容後，系統會移除你輸入的所有問題回覆，而這項操作將無法復原。</p>
+                                                                                <h3 class="pb-6 text-neutral-800 text-align-center">要清除表單內容嗎？</h3>
+                                                                                <p class="text-neutral-700">清除表單內容後，系統會移除你輸入的所有問題回覆，而這項操作將無法復原。</p>
                                                                             </div>
                                                                             <div class="modal-footer justify-content-center">
                                                                                 <button type="button" class="cel-btn" data-bs-dismiss="modal">取消</button>
@@ -658,20 +681,20 @@
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                </div>                                                               
+                                                                </div>
                                                             </div>
                                                             <div>
                                                                 <button class="final-check-btn-send" data-bs-toggle="modal" data-bs-target="#myModal" type="button">送出</button>
                                                                 <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                                     <div class="modal-dialog">
-                                                                        <div class="modal-content">                                                                          
+                                                                        <div class="modal-content">
                                                                             <div class="modal-body text-align-center">
                                                                                 <h5 class="pb-6 text-neutral-800">確認是否要提交表單?</h5>
                                                                                 <p class="text-neutral-700">提交表單後，將會送出您的填寫的資料。</p>
                                                                             </div>
                                                                             <div class="modal-footer justify-content-center">
                                                                                 <button type="button" class="cel-btn" data-bs-dismiss="modal">取消</button>
-                                                                                <button type="submit" class=" sub-btn" id="speakerform" data-bs-dismiss="modal">提交表單</button>                                                                                
+                                                                                <button type="submit" class=" sub-btn" id="speakerform" data-bs-dismiss="modal">提交表單</button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -684,43 +707,44 @@
 
 
                                                     </div>
-                                                
-                                                    
+
+
                                                 </div>
 
 
                                             </div>
 
 
-                                        </div>
+                                    </div>
                                     </form>
 
 
                                 </div>
 
-                            </div>
-                        </section>    
-                                
-                    </div> 
-                    
+                        </div>
+                        </section>
+
+                    </div>
+
 
                 </div>
-            </div>    
+            </div>
         </div>
 
 
-    
-    
-
-     
 
 
 
-   
-    
-    </div>
-    <%- include('./layout/footer'); -%>
 
-    <script type="module" src="../main.js"></script>
+
+
+
+
+
+        </div>
+        <%- include('./layout/footer'); -%>
+
+            <script type="module" src="../main.js"></script>
 </body>
+
 </html>

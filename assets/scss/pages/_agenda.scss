@@ -32,7 +32,6 @@ body {
 
 .list {
     padding-top: 120px;
-    
 }
 
 .list a {
@@ -46,15 +45,14 @@ body {
 .list a:hover {
     color: #FB9700;
 }
-.sidebar{
+
+.sidebar {
     width: 200px;
     position: fixed;
     height: 100%;
     background-color: #f8f8f8;
     padding: 20px;
 }
-
-
 
 h2 {
     color: #064162;
@@ -65,7 +63,6 @@ h2 {
 .d-block {
     display: block;
 }
-
 
 .event-agenda-a {
     color: #F16C5D;
@@ -82,7 +79,8 @@ h2 {
 }
 
 .event-seat li a {
-    position: relative;/**/
+    position: relative;
+    /**/
     text-decoration: none;
     padding-bottom: 4px;
     line-height: 1.5;
@@ -90,17 +88,12 @@ h2 {
     /*滑過畫面會跳動，加上面那行空出空間，當hover時，畫面就不會跳動*/
 }
 
-
-
 .event-seat li a:hover {
     color: #F16C5D;
     font-weight: bold;
     box-shadow: 0px -3px #F16C5D inset;
     /*border-bottom: 3px solid #F16C5D;  */
-
 }
-
-
 
 .event-schedule {
     width: 996px;
@@ -166,21 +159,21 @@ th {
     display: block;
     /* 顯示目標資訊 */
 }
-.card{
+
+.agenda-card {
     width: 50%;
 }
 
-.speaker-card-btn{
-    color:#fff;
+.speaker-card-btn {
+    color: #fff;
     background-color: #F16C5D;
     padding: 8px 30px;
     border: 1px solid #F16C5D;
     border-radius: 8px;
-
 }
-.speaker-card-btn:hover{
-    background-color: hsla(6, 100%, 50%, 1)
 
+.speaker-card-btn:hover {
+    background-color: hsla(6, 100%, 50%, 1)
 }
 
 .speaker-contri-btn {
@@ -192,7 +185,7 @@ th {
 }
 
 .speaker-contri-btn:hover {
-    background-color:  hsla(6, 100%, 50%, 1);
+    background-color: hsla(6, 100%, 50%, 1);
 }
 
 .speaker-contri-seek li {
@@ -270,33 +263,35 @@ input::-webkit-input-placeholder {
     color: #a1a1a1;
     /* placeholder字体大小 */
 }
-.category-item-width{
+
+.category-item-width {
     width: 311px;
 }
-.langu-select{
+
+.langu-select {
     width: 462px;
     height: 46px;
     color: #A1A1A1;
-    border-radius:8px;
+    border-radius: 8px;
     border: 1px solid #e0e0e0;
     font-size: 20px;
     padding: 8px 12px;
-
 }
+
+
 /*.language option:hover{
     border: 1px solid #f8f8f8;
     background-color: rgba(241, 249, 253, 1);
     
 
 }*/
-.authorize-width{
+
+.authorize-width {
     width: 462px;
 }
 
 
-
 /*radio選項的設定*/
-
 
 
 /*.radio-input{
@@ -304,28 +299,36 @@ input::-webkit-input-placeholder {
 }
 
 */
-.radio-box{
+
+.radio-box {
     display: none;
 }
 
-.radio-box + label {
+.radio-box+label {
     position: relative;
-    padding-left: 30px; /* 留出空間顯示圓形 */
+    padding-left: 30px;
+    /* 留出空間顯示圓形 */
     cursor: pointer;
-    user-select: none; /* 禁止選取文字 */
+    user-select: none;
+    /* 禁止選取文字 */
 }
-.radio-box + label::before {
+
+.radio-box+label::before {
     content: '';
     position: absolute;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 20px; /* 圓形的寬度 */
-    height: 20px; /* 圓形的高度 */
-    border: 1px solid #e4e4e4; /* 邊框顏色 */
-    border-radius: 50%; /* 使其圓形 */
-    background: #ffffff; /* 背景顏色 */
-    
+    width: 20px;
+    /* 圓形的寬度 */
+    height: 20px;
+    /* 圓形的高度 */
+    border: 1px solid #e4e4e4;
+    /* 邊框顏色 */
+    border-radius: 50%;
+    /* 使其圓形 */
+    background: #ffffff;
+    /* 背景顏色 */
 }
 
 // .radio-box:checked + label::before {
@@ -337,53 +340,76 @@ input::-webkit-input-placeholder {
 //     background-position: center; /* 圖片位置 */
 //     filter: brightness(0) invert(1);
 // }
-
-.radio-box:checked + label::before {
+.radio-box:checked+label::before {
     content: '';
     position: absolute;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 20px; /* 圓形的寬度 */
-    height: 20px; /* 圓形的高度 */
-    background: #3D8BB7; /* 選中後的背景顏色 */
-    border: 1px solid #3D8BB7; /* 選中後的邊框顏色 */
-    border-radius: 50%; /* 使其圓形 */
+    width: 20px;
+    /* 圓形的寬度 */
+    height: 20px;
+    /* 圓形的高度 */
+    background: #3D8BB7;
+    /* 選中後的背景顏色 */
+    border: 1px solid #3D8BB7;
+    /* 選中後的邊框顏色 */
+    border-radius: 50%;
+    /* 使其圓形 */
 }
 
-.radio-box:checked + label::after {
+.radio-box:checked+label::after {
     content: '';
     position: absolute;
-    left: 3px; /* 根據需要調整位置 */
+    left: 3px;
+    /* 根據需要調整位置 */
     top: 50%;
     transform: translateY(-50%);
-    width: 14px; /* 圖片大小 */
-    height: 14px; /* 圖片大小 */
-    background-image: url('../assets/images/icon/check.png'); /* 打勾圖片 */
-    background-size: cover; /* 調整為適合大小 */
-    background-repeat: no-repeat; /* 不重複 */
-    filter: brightness(0) invert(1); /* 將灰色變為白色 */
+    width: 14px;
+    /* 圖片大小 */
+    height: 14px;
+    /* 圖片大小 */
+    background-image: url('../assets/images/icon/check.png');
+    /* 打勾圖片 */
+    background-size: cover;
+    /* 調整為適合大小 */
+    background-repeat: no-repeat;
+    /* 不重複 */
+    filter: brightness(0) invert(1);
+    /* 將灰色變為白色 */
 }
+
+
 /*radio需要確認id跟for，id一頁只能有一個*/
-.know-the-activity-method{
-    display: flex; /* 使用 Flexbox */
-    flex-direction: column; /* 垂直排列 */
-    align-items: center; /* 垂直置中 */
-    justify-content: center; /* 水平置中 */
-    text-align: center; /* 文字置中 */
-    height: 142px; /* 若需要可調整容器高度 */
+
+.know-the-activity-method {
+    display: flex;
+    /* 使用 Flexbox */
+    flex-direction: column;
+    /* 垂直排列 */
+    align-items: center;
+    /* 垂直置中 */
+    justify-content: center;
+    /* 水平置中 */
+    text-align: center;
+    /* 文字置中 */
+    height: 142px;
+    /* 若需要可調整容器高度 */
 }
-.radio-know{
-    display:none;
+
+.radio-know {
+    display: none;
 }
-.radio-know + label{
+
+.radio-know+label {
     position: relative;
     padding-left: 30px;
-    cursor:pointer;
+    cursor: pointer;
     user-select: none;
 }
-.radio-know + label::before{
-    content:'';
+
+.radio-know+label::before {
+    content: '';
     position: absolute;
     left: 0;
     top: 50%;
@@ -394,12 +420,14 @@ input::-webkit-input-placeholder {
     border-radius: 4px;
     background: #ffffff;
 }
-.radio-know:checked + label::before{
+
+.radio-know:checked+label::before {
     background: #3d8bb7;
     border: 1px solid #3d8bb7;
 }
-.radio-know:checked + label::after{
-    content:'';
+
+.radio-know:checked+label::after {
+    content: '';
     position: absolute;
     left: 3px;
     top: 50%;
@@ -410,9 +438,9 @@ input::-webkit-input-placeholder {
     background-size: cover;
     background-repeat: no-repeat;
     filter: brightness(0) invert(1);
-
 }
-.final-check-btn-send{
+
+.final-check-btn-send {
     color: #ffffff;
     background-color: #F16C5D;
     border-radius: 8px;
@@ -420,11 +448,12 @@ input::-webkit-input-placeholder {
     cursor: pointer;
     padding: 8px 44px;
 }
-.final-check-btn-send:hover{
+
+.final-check-btn-send:hover {
     background-color: hsla(6, 100%, 50%, 1);
-    
 }
-.final-check-btn-cancel{
+
+.final-check-btn-cancel {
     color: #F16C5D;
     background-color: #ffffff;
     border-radius: 8px;
@@ -432,22 +461,26 @@ input::-webkit-input-placeholder {
     cursor: pointer;
     padding: 8px 44px;
 }
-.final-check-btn-cancel:hover{
+
+.final-check-btn-cancel:hover {
     background-color: hsla(0, 0%, 95%, 1);
 }
-.sub-btn{ 
+
+.sub-btn {
     background-color: #F16C5D;
-    border:1px solid #F16C5D;
+    border: 1px solid #F16C5D;
     border-radius: 8px;
     color: #ffffff;
     cursor: pointer;
     padding: 8px 15px;
 }
-.sub-btn:hover{
-    background-color:  hsla(6, 100%, 50%, 1);
+
+.sub-btn:hover {
+    background-color: hsla(6, 100%, 50%, 1);
     border-color: #F16C5D;
 }
-.cel-btn{
+
+.cel-btn {
     background-color: #868686;
     border: 1px solid #868686;
     color: #ffffff;
@@ -455,8 +488,9 @@ input::-webkit-input-placeholder {
     cursor: pointer;
     padding: 8px 30px;
 }
-.cel-btn:hover{
-    background-color:hsla(0, 0%, 40%, 1)
+
+.cel-btn:hover {
+    background-color: hsla(0, 0%, 40%, 1)
 }
 
 
@@ -478,9 +512,7 @@ input::-webkit-input-placeholder {
     align-items: center;
 }
 
-
-
-.text-align-center{
+.text-align-center {
     text-align: center;
 }
 
@@ -568,7 +600,8 @@ input::-webkit-input-placeholder {
 .pl-2 {
     padding-left: 8px;
 }
-.pr-2{
+
+.pr-2 {
     padding-right: 8px;
 }
 
@@ -619,7 +652,8 @@ input::-webkit-input-placeholder {
 .pl-8 {
     padding-left: 40px;
 }
-.pb-1{
+
+.pb-1 {
     padding-bottom: 4px;
 }
 
