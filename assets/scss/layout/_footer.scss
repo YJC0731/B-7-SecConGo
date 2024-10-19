@@ -1,4 +1,57 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+.footer-info {
+    padding: 120px 0;
+    .map {
+        max-width: 100%;
+    }
+}
+
+.footer {
+    .footerBar {
+        a {
+            margin-right: 74px;
+        }
+    }
+}
+
+.btn-address {
+    background-color: $neutral-50;
+    border: 1px solid $secondary-500;
+    color: $secondary-500;
+    &:hover {
+        background-color: $support-yellow-600;
+        color: $neutral-50;
+        border-color: $support-yellow-600;
+    }
+}
+
+.btn-sub,
+.custom-confirm-button {
+    background-color: $secondary-500;
+    &:hover {
+        background-color: $support-yellow-600;
+    }
+}
+
+.footer-btn-width {
+    width: 96px;
+}
+
+// back to up
+#backToTop {
+    width: 60px; // 調整為你需要的直徑，讓按鈕呈現合適的大小
+    height: 60px; // 同寬度保持一致，確保是圓形
+    background-color: $neutral-200; // 按鈕背景顏色，符合設計稿
+    border-radius: 50%; // 設置圓角為 50%，讓按鈕變成圓形
+    border: none; // 去除按鈕邊框
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // 添加陰影使按鈕更突出
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    &:hover {
+        background-color: $secondary-500; // 懸停時背景顏色稍變淺
+        transform: scale(1.1); // 懸停時稍微放大效果
+        opacity: 0.9; // 懸停時透明度稍降低
+    }
+    img {
+        width: 24px; // 調整圖標大小，讓其合適的顯示在圓形按鈕中
+        height: 24px;
+    }
 }
