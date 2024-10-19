@@ -7,6 +7,7 @@ $utilities: map-merge( $utilities, ( "font-size": map-merge( map-get($utilities,
 @import "./helpers/swiper";
 @import "./layout/header";
 @import "./pages/index";
+@import "./pages/footer";
 @import "./pages/order";
 @import "./pages/ticket";
 @import "./pages/agenda";
